@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Goals API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Goals API</h1>
+
+      <div class="article">
+        <h2>List goals</h2>
+        <h3>GET /api/v1/goals</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Content-Type: application/vnd.api+json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NjBkOGVlZi1jMDE2LTQ5MTctYjQ5OC1iMTYyYTFmNjAxOGQiLCJzdWIiOiI1NzA1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjIwLCJleHAiOjE2MDU5NzI2MjB9.XIBhgyLsiuPsis_DvnQ0Zc3RseGN-sV6jSqtB85VI2g</pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">GET /api/v1/goals</pre>
+
+
+
+            <h4>cURL</h4>
+            <pre class="request curl">curl -g &quot;http://localhost:3000/api/v1/goals&quot; -X GET \
+	-H &quot;Content-Type: application/vnd.api+json&quot; \
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NjBkOGVlZi1jMDE2LTQ5MTctYjQ5OC1iMTYyYTFmNjAxOGQiLCJzdWIiOiI1NzA1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjIwLCJleHAiOjE2MDU5NzI2MjB9.XIBhgyLsiuPsis_DvnQ0Zc3RseGN-sV6jSqtB85VI2g&quot;</pre>
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Content-Type: application/vnd.api+json; charset=utf-8</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;11&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;backpack&quot;,
+        &quot;name&quot;: &quot;🎒 Go backpacking&quot;,
+        &quot;position&quot;: 11
+      }
+    },
+    {
+      &quot;id&quot;: &quot;1&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;be_creative&quot;,
+        &quot;name&quot;: &quot;🎨 Be creative&quot;,
+        &quot;position&quot;: 1
+      }
+    },
+    {
+      &quot;id&quot;: &quot;6&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;be_strategic&quot;,
+        &quot;name&quot;: &quot;📆 Be more strategic&quot;,
+        &quot;position&quot;: 6
+      }
+    },
+    {
+      &quot;id&quot;: &quot;8&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;exercise&quot;,
+        &quot;name&quot;: &quot;💪 Exercise&quot;,
+        &quot;position&quot;: 8
+      }
+    },
+    {
+      &quot;id&quot;: &quot;5&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;get_things_done&quot;,
+        &quot;name&quot;: &quot;🖋 Get things done&quot;,
+        &quot;position&quot;: 5
+      }
+    },
+    {
+      &quot;id&quot;: &quot;3&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;hang_with_kids&quot;,
+        &quot;name&quot;: &quot;😎 Hang with the kids&quot;,
+        &quot;position&quot;: 3
+      }
+    },
+    {
+      &quot;id&quot;: &quot;2&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;learn_something&quot;,
+        &quot;name&quot;: &quot;🏄 Learn something new&quot;,
+        &quot;position&quot;: 2
+      }
+    },
+    {
+      &quot;id&quot;: &quot;9&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;meditate&quot;,
+        &quot;name&quot;: &quot;😌 Meditate&quot;,
+        &quot;position&quot;: 9
+      }
+    },
+    {
+      &quot;id&quot;: &quot;10&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;sleep&quot;,
+        &quot;name&quot;: &quot;😪 Sleep&quot;,
+        &quot;position&quot;: 10
+      }
+    },
+    {
+      &quot;id&quot;: &quot;12&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;sports&quot;,
+        &quot;name&quot;: &quot;⚾️ Watch sports&quot;,
+        &quot;position&quot;: 12
+      }
+    },
+    {
+      &quot;id&quot;: &quot;7&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;take_time_off&quot;,
+        &quot;name&quot;: &quot;⏱ Take some time off&quot;,
+        &quot;position&quot;: 7
+      }
+    },
+    {
+      &quot;id&quot;: &quot;4&quot;,
+      &quot;type&quot;: &quot;goals&quot;,
+      &quot;attributes&quot;: {
+        &quot;key&quot;: &quot;time_with_spouse&quot;,
+        &quot;name&quot;: &quot;😘 Spend time with your partner&quot;,
+        &quot;position&quot;: 4
+      }
+    }
+  ]
+}</pre>
+      </div>
+    </div>
+  </body>
+</html>
