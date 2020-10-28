@@ -18,9 +18,9 @@ Action or Parking Lot Items
 #### Endpoint
 
 ```plaintext
-POST /api/v1/meetings/5518/action_items
+POST /api/v1/meetings/185/action_items
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NTgxZDJlMS1kMTIxLTRlZjEtOTRlYi02MDYwZDM5YzdmMjgiLCJzdWIiOiIxMjI5MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.3RpyQIyIJjQmg_ZWEpKZdDC_lmqrEGzLLQUFY9EOddk
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNzBlMzkzZS00NGY1LTQ2ZWUtYTM4My1lZDUyZmE2ZTMzMjAiLCJzdWIiOiI3NDgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.L5BDdrMgFE561bjpEHxsVeuPPTSmyrRrR8mIjVKXAtY
 ```
 
 `POST /api/v1/meetings/:meeting_id/action_items`
@@ -29,7 +29,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NTgxZDJlMS1kMTIxLTRlZjEtO
 
 
 ```json
-{"data":{"type":"action_item","attributes":{"description":"Discuss reticulating the splines.","owner_id":12290,"creator_id":12290,"category":"action_item","position":3,"due_by":"2020-10-26T16:56:04.200Z"}}}
+{"data":{"type":"action_item","attributes":{"description":"Discuss reticulating the splines.","owner_id":748,"creator_id":748,"category":"action_item","position":3,"due_by":"2020-10-29T17:45:17.531Z"}}}
 ```
 
 
@@ -55,18 +55,18 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "243",
+    "id": "24",
     "type": "action_items",
     "attributes": {
-      "id": 243,
+      "id": 24,
       "category": "action_item",
-      "owner_name": "Violet Dragon Raven Strike",
-      "owner_id": 12290,
+      "owner_name": "Illustrious Ultron Knight The Mimic",
+      "owner_id": 748,
       "description": "Discuss reticulating the splines.",
-      "creator_id": 12290,
-      "due_by": "2020-10-26T16:56:04.200Z",
+      "creator_id": 748,
+      "due_by": "2020-10-29T17:45:17.531Z",
       "position": 3,
-      "creator_name": "Violet Dragon Raven Strike"
+      "creator_name": "Illustrious Ultron Knight The Mimic"
     }
   }
 }
@@ -75,9 +75,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5518/action_items" -d '{"data":{"type":"action_item","attributes":{"description":"Discuss reticulating the splines.","owner_id":12290,"creator_id":12290,"category":"action_item","position":3,"due_by":"2020-10-26T16:56:04.200Z"}}}' -X POST \
+curl "http://localhost:3000/api/v1/meetings/185/action_items" -d '{"data":{"type":"action_item","attributes":{"description":"Discuss reticulating the splines.","owner_id":748,"creator_id":748,"category":"action_item","position":3,"due_by":"2020-10-29T17:45:17.531Z"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NTgxZDJlMS1kMTIxLTRlZjEtOTRlYi02MDYwZDM5YzdmMjgiLCJzdWIiOiIxMjI5MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.3RpyQIyIJjQmg_ZWEpKZdDC_lmqrEGzLLQUFY9EOddk"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNzBlMzkzZS00NGY1LTQ2ZWUtYTM4My1lZDUyZmE2ZTMzMjAiLCJzdWIiOiI3NDgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.L5BDdrMgFE561bjpEHxsVeuPPTSmyrRrR8mIjVKXAtY"
 ```
 ## Delete action item
 
@@ -87,9 +87,9 @@ curl "http://localhost:3000/api/v1/meetings/5518/action_items" -d '{"data":{"typ
 #### Endpoint
 
 ```plaintext
-DELETE /api/v1/meetings/5514/action_items/240
+DELETE /api/v1/meetings/182/action_items/22
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmOTgxOTJmNi1iNzA2LTQyNGYtOThhNS02NThlNTc1MjA3NzYiLCJzdWIiOiIxMjI4MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MywiZXhwIjoxNjA1ODA0OTYzfQ.S4Elb-me5x8eW8J4NGATRd6vCiLXB2L1rAGby-z9Xgo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNjhjZjRjYS1hOTFiLTQ2ZmEtOWQ1Yi05YzlmZTQ1NGI5MTIiLCJzdWIiOiI3NDEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTYsImV4cCI6MTYwNjA2NzExNn0.m6B3UtDZ6oNBnPJ634Z5uXbJ8gPxJQ5Ipql5VZTyqcU
 ```
 
 `DELETE /api/v1/meetings/:meeting_id/action_items/:id`
@@ -120,9 +120,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmOTgxOTJmNi1iNzA2LTQyNGYtO
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5514/action_items/240" -d '' -X DELETE \
+curl "http://localhost:3000/api/v1/meetings/182/action_items/22" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmOTgxOTJmNi1iNzA2LTQyNGYtOThhNS02NThlNTc1MjA3NzYiLCJzdWIiOiIxMjI4MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MywiZXhwIjoxNjA1ODA0OTYzfQ.S4Elb-me5x8eW8J4NGATRd6vCiLXB2L1rAGby-z9Xgo"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNjhjZjRjYS1hOTFiLTQ2ZmEtOWQ1Yi05YzlmZTQ1NGI5MTIiLCJzdWIiOiI3NDEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTYsImV4cCI6MTYwNjA2NzExNn0.m6B3UtDZ6oNBnPJ634Z5uXbJ8gPxJQ5Ipql5VZTyqcU"
 ```
 ## List action items
 
@@ -132,9 +132,9 @@ curl "http://localhost:3000/api/v1/meetings/5514/action_items/240" -d '' -X DELE
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5515/action_items
+GET /api/v1/meetings/184/action_items
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1MjNjMjAyZS05N2M3LTQ1ZGMtOTRkYS04MjQ1NTgzY2M2MTciLCJzdWIiOiIxMjI4MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MywiZXhwIjoxNjA1ODA0OTYzfQ.wteKfwdnbzwZsaQGW3NU5Q4IG8ZwwHMBE7L_h_ezvxs
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmYjEwMWRlOS05MGQ3LTQ1YmQtOThmNC1mOWFiM2Q0ZTJmNmUiLCJzdWIiOiI3NDciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.jyg_ns07x0Rs8MRhPCs_K6c_h-HYiu7cZu1TJM-M7ec
 ```
 
 `GET /api/v1/meetings/:meeting_id/action_items`
@@ -173,9 +173,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5515/action_items" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/184/action_items" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1MjNjMjAyZS05N2M3LTQ1ZGMtOTRkYS04MjQ1NTgzY2M2MTciLCJzdWIiOiIxMjI4MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MywiZXhwIjoxNjA1ODA0OTYzfQ.wteKfwdnbzwZsaQGW3NU5Q4IG8ZwwHMBE7L_h_ezvxs"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmYjEwMWRlOS05MGQ3LTQ1YmQtOThmNC1mOWFiM2Q0ZTJmNmUiLCJzdWIiOiI3NDciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.jyg_ns07x0Rs8MRhPCs_K6c_h-HYiu7cZu1TJM-M7ec"
 ```
 ## Show action item
 
@@ -185,9 +185,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5515/action_items" -X GET \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5516/action_items/241
+GET /api/v1/meetings/181/action_items/21
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2Y2MwODM4YS1jODE1LTQ3MzYtYTJiZi00YWI1MDYyNzU2OTQiLCJzdWIiOiIxMjI4NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MywiZXhwIjoxNjA1ODA0OTYzfQ.FYHlVrlhCwkIwQTU4oP2mdx4zXzz682C7JG_DF5fqYo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjZGJlOTVkNi00MGIzLTRhY2UtOGFmOS0xNWE2ZTJiN2NiN2QiLCJzdWIiOiI3MzgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTYsImV4cCI6MTYwNjA2NzExNn0.oGVuk8rl3UaFbm4uMjnHiOwp98YiKaH-18Pz64Cr1sU
 ```
 
 `GET /api/v1/meetings/:meeting_id/action_items/:id`
@@ -218,18 +218,18 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "241",
+    "id": "21",
     "type": "action_items",
     "attributes": {
-      "id": 241,
+      "id": 21,
       "category": "action_item",
-      "owner_name": "Bat Atom",
-      "owner_id": 12285,
-      "description": "Ugh ennui godard tofu street narwhal bushwick hoodie.",
-      "creator_id": 12286,
-      "due_by": "2020-10-27T16:56:03.700Z",
-      "position": 1,
-      "creator_name": "Aztar Illustrious Brainiac"
+      "owner_name": "Multiple Green Nina Theroux Dragon",
+      "owner_id": 739,
+      "description": "Heirloom tacos direct trade single-origin coffee wolf selvage.",
+      "creator_id": 740,
+      "due_by": "2020-10-30T17:45:16.561Z",
+      "position": null,
+      "creator_name": "Trickster General Doc Samson"
     }
   }
 }
@@ -238,9 +238,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5516/action_items/241" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/181/action_items/21" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2Y2MwODM4YS1jODE1LTQ3MzYtYTJiZi00YWI1MDYyNzU2OTQiLCJzdWIiOiIxMjI4NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MywiZXhwIjoxNjA1ODA0OTYzfQ.FYHlVrlhCwkIwQTU4oP2mdx4zXzz682C7JG_DF5fqYo"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjZGJlOTVkNi00MGIzLTRhY2UtOGFmOS0xNWE2ZTJiN2NiN2QiLCJzdWIiOiI3MzgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTYsImV4cCI6MTYwNjA2NzExNn0.oGVuk8rl3UaFbm4uMjnHiOwp98YiKaH-18Pz64Cr1sU"
 ```
 ## Update action item
 
@@ -250,9 +250,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5516/action_items/241" -X GET \
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/meetings/5517/action_items/242
+PUT /api/v1/meetings/183/action_items/23
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwYjM2YzMzOC1lM2I3LTQ5ZWMtODQ2NC0wMDFhZDc0YjkxMWIiLCJzdWIiOiIxMjI4NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.XJp8X9CLReCgi4wwhd9EOYP49AzkqLmnhEk6fTSVjmE
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmNGNlNWU4YS03MDNhLTRiM2ItOWU4ZS05OTgxMjM0YmFkMGEiLCJzdWIiOiI3NDQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.LqZya5HF4HCBHz_v8zYiKoWaZMp6Qomv_kgoPUcOWBE
 ```
 
 `PUT /api/v1/meetings/:meeting_id/action_items/:id`
@@ -261,7 +261,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwYjM2YzMzOC1lM2I3LTQ5ZWMtO
 
 
 ```json
-{"data":{"type":"action_item","attributes":{"description":"Talk.","owner_id":12287,"creator_id":12287,"category":"action_item","position":2,"due_by":"2020-10-26T16:56:03.827Z"}}}
+{"data":{"type":"action_item","attributes":{"description":"Talk.","owner_id":744,"creator_id":744,"category":"action_item","position":2,"due_by":"2020-10-29T17:45:17.022Z"}}}
 ```
 
 
@@ -287,18 +287,18 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "242",
+    "id": "23",
     "type": "action_items",
     "attributes": {
-      "id": 242,
+      "id": 23,
       "category": "action_item",
-      "owner_name": "General Wolverine Ivy The Cloak",
-      "owner_id": 12287,
+      "owner_name": "Doctor Kool-Aid Man Giant Jubilee",
+      "owner_id": 744,
       "description": "Talk.",
-      "creator_id": 12287,
-      "due_by": "2020-10-26T16:56:03.827Z",
+      "creator_id": 744,
+      "due_by": "2020-10-29T17:45:17.022Z",
       "position": 2,
-      "creator_name": "General Wolverine Ivy The Cloak"
+      "creator_name": "Doctor Kool-Aid Man Giant Jubilee"
     }
   }
 }
@@ -307,9 +307,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5517/action_items/242" -d '{"data":{"type":"action_item","attributes":{"description":"Talk.","owner_id":12287,"creator_id":12287,"category":"action_item","position":2,"due_by":"2020-10-26T16:56:03.827Z"}}}' -X PUT \
+curl "http://localhost:3000/api/v1/meetings/183/action_items/23" -d '{"data":{"type":"action_item","attributes":{"description":"Talk.","owner_id":744,"creator_id":744,"category":"action_item","position":2,"due_by":"2020-10-29T17:45:17.022Z"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwYjM2YzMzOC1lM2I3LTQ5ZWMtODQ2NC0wMDFhZDc0YjkxMWIiLCJzdWIiOiIxMjI4NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.XJp8X9CLReCgi4wwhd9EOYP49AzkqLmnhEk6fTSVjmE"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmNGNlNWU4YS03MDNhLTRiM2ItOWU4ZS05OTgxMjM0YmFkMGEiLCJzdWIiOiI3NDQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.LqZya5HF4HCBHz_v8zYiKoWaZMp6Qomv_kgoPUcOWBE"
 ```
 # Actions
 
@@ -323,9 +323,9 @@ curl "http://localhost:3000/api/v1/meetings/5517/action_items/242" -d '{"data":{
 #### Endpoint
 
 ```plaintext
-GET /api/v1/future_actions?by_period[starts_at]=2020-10-25+16%3A56%3A01+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A01+UTC
+GET /api/v1/future_actions?by_period[starts_at]=2020-10-28+17%3A45%3A12+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A12+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjMDI5MjVmYi0xYzY0LTRmNzYtOGY5My1mZWUxNThjOTEwMWMiLCJzdWIiOiIxMjI3NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MiwiZXhwIjoxNjA1ODA0OTYyfQ.GdEIOJ3oDTMitXlgla_P__VqzuybwCOwtm7A2rlybqU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkNGVhZTkxZS01M2EyLTQyNzQtYTc2NS0xMTFiMTM0OGQzOTQiLCJzdWIiOiI3MDkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.RLrg0X3euF5uGlwwCzcok4Xnw56QoxFprxUIMcBo_Fk
 ```
 
 `GET /api/v1/future_actions`
@@ -334,7 +334,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjMDI5MjVmYi0xYzY0LTRmNzYtO
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:01 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:01 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:12 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:12 UTC&quot;}
 ```
 
 
@@ -365,9 +365,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/future_actions?by_period[starts_at]=2020-10-25+16%3A56%3A01+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A01+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/future_actions?by_period[starts_at]=2020-10-28+17%3A45%3A12+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A12+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjMDI5MjVmYi0xYzY0LTRmNzYtOGY5My1mZWUxNThjOTEwMWMiLCJzdWIiOiIxMjI3NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MiwiZXhwIjoxNjA1ODA0OTYyfQ.GdEIOJ3oDTMitXlgla_P__VqzuybwCOwtm7A2rlybqU"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkNGVhZTkxZS01M2EyLTQyNzQtYTc2NS0xMTFiMTM0OGQzOTQiLCJzdWIiOiI3MDkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.RLrg0X3euF5uGlwwCzcok4Xnw56QoxFprxUIMcBo_Fk"
 ```
 ## List past actions
 
@@ -377,9 +377,9 @@ curl -g "http://localhost:3000/api/v1/future_actions?by_period[starts_at]=2020-1
 #### Endpoint
 
 ```plaintext
-GET /api/v1/past_actions?by_period[starts_at]=2020-10-25+16%3A56%3A05+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A05+UTC
+GET /api/v1/past_actions?by_period[starts_at]=2020-10-28+17%3A45%3A24+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A24+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0NmZlZGZkNC1mYWEyLTQ5ZjktOTE2Ni0wYjViNmI2ODc0MjkiLCJzdWIiOiIxMjMwMiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.iAl77Yl-6OLd2rzWmQyVqz3lnxRhkp2TVZj7dMZjQK8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2YjMxY2UwYS1hZTg2LTQxMWMtYTQwYS02ZjUzYTFlNDA4NWMiLCJzdWIiOiI3OTEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjQsImV4cCI6MTYwNjA2NzEyNH0.biaZ4PGzM3_pDUIMjdq-nl4HRvJoctJM4HL4KT8UJ0c
 ```
 
 `GET /api/v1/past_actions`
@@ -388,7 +388,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0NmZlZGZkNC1mYWEyLTQ5ZjktO
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:05 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:05 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:24 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:24 UTC&quot;}
 ```
 
 
@@ -419,9 +419,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/past_actions?by_period[starts_at]=2020-10-25+16%3A56%3A05+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A05+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/past_actions?by_period[starts_at]=2020-10-28+17%3A45%3A24+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A24+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0NmZlZGZkNC1mYWEyLTQ5ZjktOTE2Ni0wYjViNmI2ODc0MjkiLCJzdWIiOiIxMjMwMiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.iAl77Yl-6OLd2rzWmQyVqz3lnxRhkp2TVZj7dMZjQK8"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2YjMxY2UwYS1hZTg2LTQxMWMtYTQwYS02ZjUzYTFlNDA4NWMiLCJzdWIiOiI3OTEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjQsImV4cCI6MTYwNjA2NzEyNH0.biaZ4PGzM3_pDUIMjdq-nl4HRvJoctJM4HL4KT8UJ0c"
 ```
 # Agenda Items
 
@@ -435,9 +435,9 @@ curl -g "http://localhost:3000/api/v1/past_actions?by_period[starts_at]=2020-10-
 #### Endpoint
 
 ```plaintext
-POST /api/v1/meetings/5535/agenda_items
+POST /api/v1/meetings/199/agenda_items
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMWY3YmViYi1kODQyLTRjZGEtOGFkZC1lZTMzYWQ5NTgyOTkiLCJzdWIiOiIxMjM2MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NSwiZXhwIjoxNjA1ODA0OTc1fQ.rbD0a6ntaIR-xwzSC9nLPJR53vn_jElBN2aMnmGPFqw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxZGUxMDkwYy0xMGYwLTRkNmItYTU1Ny1jNzBkMGU1OTQ5MTMiLCJzdWIiOiI3ODUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjMsImV4cCI6MTYwNjA2NzEyM30.de6HFnXtdpcuZAaNMc4VOMMPiQyClG9tHiNHto1tS8E
 ```
 
 `POST /api/v1/meetings/:meeting_id/agenda_items`
@@ -446,7 +446,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMWY3YmViYi1kODQyLTRjZGEtO
 
 
 ```json
-{"data":{"type":"agenda_item","attributes":{"description":"Discuss reticulating the splines.","owner_id":12362,"position":3,"duration_in_mins":15,"started_at":"2020-10-25T16:54:15.011Z"}}}
+{"data":{"type":"agenda_item","attributes":{"description":"Discuss reticulating the splines.","owner_id":785,"position":3,"duration_in_mins":15,"started_at":"2020-10-28T17:43:23.113Z"}}}
 ```
 
 
@@ -471,18 +471,18 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "2618",
+    "id": "23",
     "type": "agenda_items",
     "attributes": {
-      "id": 2618,
-      "owner_name": "Cyborg Multiple Vibe",
-      "owner_id": 12362,
+      "id": 23,
+      "owner_name": "Buffy III Doctor Banshee",
+      "owner_id": 785,
       "description": "Discuss reticulating the splines.",
       "duration_in_mins": 15,
       "time_spent_in_secs": null,
-      "started_at": "2020-10-25T16:54:15.011Z",
+      "started_at": "2020-10-28T17:43:23.113Z",
       "ended_at": null,
-      "meeting_id": 5535,
+      "meeting_id": 199,
       "position": 3
     }
   }
@@ -492,9 +492,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5535/agenda_items" -d '{"data":{"type":"agenda_item","attributes":{"description":"Discuss reticulating the splines.","owner_id":12362,"position":3,"duration_in_mins":15,"started_at":"2020-10-25T16:54:15.011Z"}}}' -X POST \
+curl "http://localhost:3000/api/v1/meetings/199/agenda_items" -d '{"data":{"type":"agenda_item","attributes":{"description":"Discuss reticulating the splines.","owner_id":785,"position":3,"duration_in_mins":15,"started_at":"2020-10-28T17:43:23.113Z"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMWY3YmViYi1kODQyLTRjZGEtOGFkZC1lZTMzYWQ5NTgyOTkiLCJzdWIiOiIxMjM2MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NSwiZXhwIjoxNjA1ODA0OTc1fQ.rbD0a6ntaIR-xwzSC9nLPJR53vn_jElBN2aMnmGPFqw"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxZGUxMDkwYy0xMGYwLTRkNmItYTU1Ny1jNzBkMGU1OTQ5MTMiLCJzdWIiOiI3ODUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjMsImV4cCI6MTYwNjA2NzEyM30.de6HFnXtdpcuZAaNMc4VOMMPiQyClG9tHiNHto1tS8E"
 ```
 ## Delete agenda item
 
@@ -504,9 +504,9 @@ curl "http://localhost:3000/api/v1/meetings/5535/agenda_items" -d '{"data":{"typ
 #### Endpoint
 
 ```plaintext
-DELETE /api/v1/meetings/5534/agenda_items/2617
+DELETE /api/v1/meetings/200/agenda_items/24
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkNDQ4YjU2MC02NjhhLTRlMDktYmU0OS0zNjMzMDcwYjJhNjUiLCJzdWIiOiIxMjM2MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NCwiZXhwIjoxNjA1ODA0OTc0fQ.0d58LJlLhonSKHHoSCYoZQWJyRJPoiECRXP5zFV4TIE
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMjdiMzVlMi01NzFkLTQyOTItOGE5YS1kMDU1NzNkMjkxMzMiLCJzdWIiOiI3ODYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjMsImV4cCI6MTYwNjA2NzEyM30.gJZjtE3pzCJcSPEmlmS30q6KEcoOVIGCEVvlg707V-8
 ```
 
 `DELETE /api/v1/meetings/:meeting_id/agenda_items/:id`
@@ -536,9 +536,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkNDQ4YjU2MC02NjhhLTRlMDktY
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5534/agenda_items/2617" -d '' -X DELETE \
+curl "http://localhost:3000/api/v1/meetings/200/agenda_items/24" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkNDQ4YjU2MC02NjhhLTRlMDktYmU0OS0zNjMzMDcwYjJhNjUiLCJzdWIiOiIxMjM2MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NCwiZXhwIjoxNjA1ODA0OTc0fQ.0d58LJlLhonSKHHoSCYoZQWJyRJPoiECRXP5zFV4TIE"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMjdiMzVlMi01NzFkLTQyOTItOGE5YS1kMDU1NzNkMjkxMzMiLCJzdWIiOiI3ODYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjMsImV4cCI6MTYwNjA2NzEyM30.gJZjtE3pzCJcSPEmlmS30q6KEcoOVIGCEVvlg707V-8"
 ```
 ## List agenda items
 
@@ -548,9 +548,9 @@ curl "http://localhost:3000/api/v1/meetings/5534/agenda_items/2617" -d '' -X DEL
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5536/agenda_items
+GET /api/v1/meetings/198/agenda_items
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmODg3YTZlMC1kYmE0LTRkMDEtYjlmOC05ZjRiMWRlMjQ5ODAiLCJzdWIiOiIxMjM2MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NSwiZXhwIjoxNjA1ODA0OTc1fQ.smAr0Z6B5DvpE7O1Ung627X0k7zl31ngo4qtmpPBNRo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMTRmMzIwZi0yMGY3LTQwNzktYTY2NC0xMjg1NDZjNWVhNzEiLCJzdWIiOiI3ODQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjIsImV4cCI6MTYwNjA2NzEyMn0.HAdF8iT6bdyPNjazxyGKIgCgZx4NBFjBsQbcLJvhutM
 ```
 
 `GET /api/v1/meetings/:meeting_id/agenda_items`
@@ -588,9 +588,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5536/agenda_items" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/198/agenda_items" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmODg3YTZlMC1kYmE0LTRkMDEtYjlmOC05ZjRiMWRlMjQ5ODAiLCJzdWIiOiIxMjM2MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NSwiZXhwIjoxNjA1ODA0OTc1fQ.smAr0Z6B5DvpE7O1Ung627X0k7zl31ngo4qtmpPBNRo"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMTRmMzIwZi0yMGY3LTQwNzktYTY2NC0xMjg1NDZjNWVhNzEiLCJzdWIiOiI3ODQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjIsImV4cCI6MTYwNjA2NzEyMn0.HAdF8iT6bdyPNjazxyGKIgCgZx4NBFjBsQbcLJvhutM"
 ```
 ## Show agenda item
 
@@ -600,9 +600,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5536/agenda_items" -X GET \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5537/agenda_items/2619
+GET /api/v1/meetings/196/agenda_items/21
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NWM2ZGJkZi0xNWU5LTQwMDMtYTM0OS1hNzI5NzliNTE3ZjAiLCJzdWIiOiIxMjM2NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NSwiZXhwIjoxNjA1ODA0OTc1fQ.ilD_D-AcNHcJkFGAYJ4wYfWdjLm1UqZcC3XyKZs0UhA
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Yjk2YzUzMC1jNjg5LTQ5NDEtOTk1Mi1hMzZiNDUzMjU5YzAiLCJzdWIiOiI3ODAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjIsImV4cCI6MTYwNjA2NzEyMn0.XPkEx_7xBOPFY63BRlC9SvTLUT9UYXQhgZzNmmZcllI
 ```
 
 `GET /api/v1/meetings/:meeting_id/agenda_items/:id`
@@ -632,19 +632,19 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "2619",
+    "id": "21",
     "type": "agenda_items",
     "attributes": {
-      "id": 2619,
-      "owner_name": "Red Groot Mr Jigsaw",
-      "owner_id": 12365,
-      "description": "Vice bicycle rights cronut.",
+      "id": 21,
+      "owner_name": "Nina Theroux Gladiator",
+      "owner_id": 781,
+      "description": "Viral semiotics pbr&b.",
       "duration_in_mins": 70,
       "time_spent_in_secs": null,
       "started_at": null,
       "ended_at": null,
-      "meeting_id": 5537,
-      "position": 1
+      "meeting_id": 196,
+      "position": 2
     }
   }
 }
@@ -653,9 +653,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5537/agenda_items/2619" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/196/agenda_items/21" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NWM2ZGJkZi0xNWU5LTQwMDMtYTM0OS1hNzI5NzliNTE3ZjAiLCJzdWIiOiIxMjM2NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NSwiZXhwIjoxNjA1ODA0OTc1fQ.ilD_D-AcNHcJkFGAYJ4wYfWdjLm1UqZcC3XyKZs0UhA"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Yjk2YzUzMC1jNjg5LTQ5NDEtOTk1Mi1hMzZiNDUzMjU5YzAiLCJzdWIiOiI3ODAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjIsImV4cCI6MTYwNjA2NzEyMn0.XPkEx_7xBOPFY63BRlC9SvTLUT9UYXQhgZzNmmZcllI"
 ```
 ## Update agenda item
 
@@ -665,9 +665,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5537/agenda_items/2619" -X GET \
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/meetings/5538/agenda_items/2620
+PUT /api/v1/meetings/197/agenda_items/22
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjYWY3MjllZi02ZGFkLTRlYjctYjdhMy01YzA1OWYwMTc3NTEiLCJzdWIiOiIxMjM2NiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NSwiZXhwIjoxNjA1ODA0OTc1fQ.72AQwdEtXDe_r6cRWvoKGW3OZeofKTGLMK1laDPriwk
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5Nzg2ODc1My04ZjFhLTRjZTMtOTYyZC04MjZjYjY1ZWVlOWEiLCJzdWIiOiI3ODIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjIsImV4cCI6MTYwNjA2NzEyMn0.Qh-8Mm2tMt3QG3ct3FCk8nBhlZcPlMXrWx3AztTIHII
 ```
 
 `PUT /api/v1/meetings/:meeting_id/agenda_items/:id`
@@ -701,19 +701,19 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "2620",
+    "id": "22",
     "type": "agenda_items",
     "attributes": {
-      "id": 2620,
-      "owner_name": "Mystique General Abomination Brain",
-      "owner_id": 12367,
+      "id": 22,
+      "owner_name": "Giant Luna Spirit Bomb Queen",
+      "owner_id": 783,
       "description": "Talk about things",
-      "duration_in_mins": 16,
+      "duration_in_mins": 73,
       "time_spent_in_secs": null,
       "started_at": null,
       "ended_at": null,
-      "meeting_id": 5538,
-      "position": 1
+      "meeting_id": 197,
+      "position": 2
     }
   }
 }
@@ -722,9 +722,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5538/agenda_items/2620" -d '{"data":{"type":"agenda_item","attributes":{"description":"Talk about things"}}}' -X PUT \
+curl "http://localhost:3000/api/v1/meetings/197/agenda_items/22" -d '{"data":{"type":"agenda_item","attributes":{"description":"Talk about things"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjYWY3MjllZi02ZGFkLTRlYjctYjdhMy01YzA1OWYwMTc3NTEiLCJzdWIiOiIxMjM2NiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NSwiZXhwIjoxNjA1ODA0OTc1fQ.72AQwdEtXDe_r6cRWvoKGW3OZeofKTGLMK1laDPriwk"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5Nzg2ODc1My04ZjFhLTRjZTMtOTYyZC04MjZjYjY1ZWVlOWEiLCJzdWIiOiI3ODIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjIsImV4cCI6MTYwNjA2NzEyMn0.Qh-8Mm2tMt3QG3ct3FCk8nBhlZcPlMXrWx3AztTIHII"
 ```
 # Articles
 
@@ -740,7 +740,7 @@ curl "http://localhost:3000/api/v1/meetings/5538/agenda_items/2620" -d '{"data":
 ```plaintext
 POST /api/v1/articles
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0YzZmZTE2MS05ZWE5LTRiMDItYTZhMy0yMjZhZGI3NjM2ZTYiLCJzdWIiOiIxMjMzNCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.xacfgg0LjKAGJokr6mMQpjCCmVOmfPli5cBp4vZ5j9E
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4N2JhMjMzZS1kMzUyLTQ4YmEtOTkwMy04M2Y2NzdkOTFjM2UiLCJzdWIiOiI3MTkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.RV1Y8aviC-ULO4DFDwD6iOhmiz6Om3HzLj0CXZz8ZkM
 ```
 
 `POST /api/v1/articles`
@@ -778,16 +778,16 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "267",
+    "id": "27",
     "type": "articles",
     "attributes": {
-      "id": 267,
+      "id": 27,
       "title": "Testing",
       "url": "http://www.meetwell.app",
       "pull_quote": null,
       "description": null,
-      "position": 5,
-      "publish_on": "2020-10-25T16:56:10.195Z",
+      "position": null,
+      "publish_on": "2020-10-28T17:45:13.539Z",
       "tag_list": [
         "tesing",
         "fun"
@@ -802,7 +802,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl "http://localhost:3000/api/v1/articles" -d '{"data":{"type":"article","attributes":{"title":"Testing","url":"http://www.meetwell.app","tag_list":"tesing,fun"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0YzZmZTE2MS05ZWE5LTRiMDItYTZhMy0yMjZhZGI3NjM2ZTYiLCJzdWIiOiIxMjMzNCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.xacfgg0LjKAGJokr6mMQpjCCmVOmfPli5cBp4vZ5j9E"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4N2JhMjMzZS1kMzUyLTQ4YmEtOTkwMy04M2Y2NzdkOTFjM2UiLCJzdWIiOiI3MTkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.RV1Y8aviC-ULO4DFDwD6iOhmiz6Om3HzLj0CXZz8ZkM"
 ```
 ## Delete article
 
@@ -812,9 +812,9 @@ curl "http://localhost:3000/api/v1/articles" -d '{"data":{"type":"article","attr
 #### Endpoint
 
 ```plaintext
-DELETE /api/v1/articles/268
+DELETE /api/v1/articles/25
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmZDUzODkxYy01YmRmLTQ1MjEtYmRmMC1jYzVlOWY0ZjY2ZjAiLCJzdWIiOiIxMjMzNSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.yS797Y4olKy2-LMku6ChTRHbfC0gyRBU_7--KiI_0pc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmM2VjYmQ2Yy0yMTNiLTQ4MzEtOGNmMS1lM2M0NjZmNTAzYTgiLCJzdWIiOiI3MTciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.ZNfR4v0QOQbN6RjmKKVnb_OhlTx3shh0qW2nw-H3-NE
 ```
 
 `DELETE /api/v1/articles/:id`
@@ -842,9 +842,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmZDUzODkxYy01YmRmLTQ1MjEtY
 
 
 ```shell
-curl "http://localhost:3000/api/v1/articles/268" -d '' -X DELETE \
+curl "http://localhost:3000/api/v1/articles/25" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmZDUzODkxYy01YmRmLTQ1MjEtYmRmMC1jYzVlOWY0ZjY2ZjAiLCJzdWIiOiIxMjMzNSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.yS797Y4olKy2-LMku6ChTRHbfC0gyRBU_7--KiI_0pc"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmM2VjYmQ2Yy0yMTNiLTQ4MzEtOGNmMS1lM2M0NjZmNTAzYTgiLCJzdWIiOiI3MTciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.ZNfR4v0QOQbN6RjmKKVnb_OhlTx3shh0qW2nw-H3-NE"
 ```
 ## List articles
 
@@ -856,7 +856,7 @@ curl "http://localhost:3000/api/v1/articles/268" -d '' -X DELETE \
 ```plaintext
 GET /api/v1/articles
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhNTBhMzUzNS0wNmY0LTQ5MjEtYmE4MC0xODdhZDAwMDk0ZDUiLCJzdWIiOiIxMjMzOCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.Ed7iUDAtKCGPZvhxnL6FlSLcUkcd0RzNS_Dguo453YA
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NzkyMmEyZS01YjIzLTQyOTMtOTg0NC1iMDZmM2I4M2RmZWYiLCJzdWIiOiI3MTYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.bqa_-yPZ9-ANRD8v-RRKYHWhWOIHjnJOOW34kgge-gU
 ```
 
 `GET /api/v1/articles`
@@ -893,13 +893,13 @@ Content-Type: application/vnd.api+json; charset=utf-8
         "url": "http://www.paulgraham.com/makersschedule.html",
         "pull_quote": "When you're operating on the maker's schedule, meetings are a disaster. A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in. --Paul Graham",
         "description": null,
-        "position": 1,
-        "publish_on": "2020-10-24T00:24:29.144Z",
+        "position": null,
+        "publish_on": "2020-10-28T17:21:49.033Z",
         "tag_list": [
-          "paul-graham",
-          "makers-schedule",
           "defend",
-          "focus-block"
+          "focus-block",
+          "paul-graham",
+          "makers-schedule"
         ]
       }
     },
@@ -912,8 +912,8 @@ Content-Type: application/vnd.api+json; charset=utf-8
         "url": "https://www.ted.com/talks/jason_fried_why_work_doesn_t_happen_at_work",
         "pull_quote": "At the office, most of the interruptions and distractions that really cause people not to get work done are involuntary. ...[Managers and meetings]  keep interrupting you at the wrong time, while you're actually trying to do something they're paying you to do, they tend to interrupt you. That's kind of bad. --Jason Fried",
         "description": null,
-        "position": 2,
-        "publish_on": "2020-10-24T00:24:29.178Z",
+        "position": null,
+        "publish_on": "2020-10-28T17:21:49.071Z",
         "tag_list": [
           "defend",
           "focus-block",
@@ -930,8 +930,8 @@ Content-Type: application/vnd.api+json; charset=utf-8
         "url": "https://www.forbes.com/sites/victoriafine/2018/04/16/why-you-should-never-invite-more-than-7-people-to-your-meeting/#667f1fcd434c",
         "pull_quote": "You shouldn’t invite more than seven people in a meeting, ever. --Victoria Fine",
         "description": null,
-        "position": 3,
-        "publish_on": "2020-10-24T00:24:29.190Z",
+        "position": null,
+        "publish_on": "2020-10-28T17:21:49.083Z",
         "tag_list": [
           "max-attendees",
           "victoria-fine"
@@ -947,8 +947,8 @@ Content-Type: application/vnd.api+json; charset=utf-8
         "url": "https://www.themuse.com/advice/you-can-say-no-3-ways-to-turn-down-a-lastminute-meeting-request",
         "pull_quote": "It’s possible to say no to a last-minute meeting and still look like a team player. --Sara McCord",
         "description": null,
-        "position": 4,
-        "publish_on": "2020-10-24T00:24:29.201Z",
+        "position": null,
+        "publish_on": "2020-10-28T17:21:49.096Z",
         "tag_list": [
           "last-minute",
           "sara-mccord"
@@ -964,7 +964,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/articles" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhNTBhMzUzNS0wNmY0LTQ5MjEtYmE4MC0xODdhZDAwMDk0ZDUiLCJzdWIiOiIxMjMzOCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.Ed7iUDAtKCGPZvhxnL6FlSLcUkcd0RzNS_Dguo453YA"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NzkyMmEyZS01YjIzLTQyOTMtOTg0NC1iMDZmM2I4M2RmZWYiLCJzdWIiOiI3MTYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.bqa_-yPZ9-ANRD8v-RRKYHWhWOIHjnJOOW34kgge-gU"
 ```
 ## Show article
 
@@ -974,9 +974,9 @@ curl -g "http://localhost:3000/api/v1/articles" -X GET \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/articles/270
+GET /api/v1/articles/28
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5MzZhODI1Yy1lZTgzLTRhOTMtYWZlOS0wM2ZlNzgxM2U5NWIiLCJzdWIiOiIxMjMzNyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.o7hYKy1zqXGbtOOmoI4o5KNAecnpCEJMex8ll8E5NdY
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNzNhNTZkMS02NjhiLTQ1ZjItYWVjOC01YzQ4YmZlMDVmNDkiLCJzdWIiOiI3MjAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.HAqpkTe9FnJXhPM9ZNc06-dFxrV3m-I_lzIVVOShpUo
 ```
 
 `GET /api/v1/articles/:id`
@@ -1004,16 +1004,16 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "270",
+    "id": "28",
     "type": "articles",
     "attributes": {
-      "id": 270,
-      "title": "Fixie yuccie loko seitan vhs banjo ennui brooklyn.",
-      "url": "http://mayert-daniel.org/dylan.gerlach",
-      "pull_quote": "Williamsburg authentic goth 3 wolf moon listicle mustache next level locavore bespoke butcher xoxo.",
+      "id": 28,
+      "title": "3 wolf moon yuccie next level letterpress green juice truffaut.",
+      "url": "http://smith-nader.net/carol_rolfson",
+      "pull_quote": "Stumptown poutine raw denim locavore chartreuse fanny pack vegan kombucha heirloom jean shorts roof readymade.",
       "description": null,
-      "position": 5,
-      "publish_on": "2020-10-25T16:56:10.592Z",
+      "position": null,
+      "publish_on": "2020-10-28T17:45:13.646Z",
       "tag_list": [
         "tool-tip",
         "test"
@@ -1026,9 +1026,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/articles/270" -X GET \
+curl -g "http://localhost:3000/api/v1/articles/28" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5MzZhODI1Yy1lZTgzLTRhOTMtYWZlOS0wM2ZlNzgxM2U5NWIiLCJzdWIiOiIxMjMzNyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.o7hYKy1zqXGbtOOmoI4o5KNAecnpCEJMex8ll8E5NdY"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNzNhNTZkMS02NjhiLTQ1ZjItYWVjOC01YzQ4YmZlMDVmNDkiLCJzdWIiOiI3MjAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.HAqpkTe9FnJXhPM9ZNc06-dFxrV3m-I_lzIVVOShpUo"
 ```
 ## Update article
 
@@ -1038,9 +1038,9 @@ curl -g "http://localhost:3000/api/v1/articles/270" -X GET \
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/articles/269
+PUT /api/v1/articles/26
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmODJmMjg2ZS1kNjM4LTRjZDAtODgyMC01NGIxYWJjMWQ1NmQiLCJzdWIiOiIxMjMzNiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.NgXAfOJ86SGtfTv-nwbLfpq_Udg2uHNCBYuYch4OYEc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlMDc0ZDg5NC01MzFiLTQ4NzgtOTI5MC03OTdjMmM2NGQxZGEiLCJzdWIiOiI3MTgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.0WWyWCd45c4e8LaXykkt9ISI7BlMAHjmvXFTs3FZuX8
 ```
 
 `PUT /api/v1/articles/:id`
@@ -1072,16 +1072,16 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "269",
+    "id": "26",
     "type": "articles",
     "attributes": {
-      "id": 269,
+      "id": 26,
       "title": "Testing again",
-      "url": "http://hilll.info/rudolph",
-      "pull_quote": "Cred hella jean shorts readymade lo-fi sartorial knausgaard tofu health trust fund chartreuse diy meditation.",
+      "url": "http://frami.io/magdalena_damore",
+      "pull_quote": "Blue bottle tousled cleanse synth austin twee swag venmo fashion axe tote bag marfa you probably haven't heard of them goth.",
       "description": null,
-      "position": 5,
-      "publish_on": "2020-10-25T16:56:10.461Z",
+      "position": null,
+      "publish_on": "2020-10-28T17:45:13.410Z",
       "tag_list": [
         "tool-tip",
         "test"
@@ -1094,9 +1094,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/articles/269" -d '{"data":{"type":"article","attributes":{"title":"Testing again"}}}' -X PUT \
+curl "http://localhost:3000/api/v1/articles/26" -d '{"data":{"type":"article","attributes":{"title":"Testing again"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmODJmMjg2ZS1kNjM4LTRjZDAtODgyMC01NGIxYWJjMWQ1NmQiLCJzdWIiOiIxMjMzNiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.NgXAfOJ86SGtfTv-nwbLfpq_Udg2uHNCBYuYch4OYEc"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlMDc0ZDg5NC01MzFiLTQ4NzgtOTI5MC03OTdjMmM2NGQxZGEiLCJzdWIiOiI3MTgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.0WWyWCd45c4e8LaXykkt9ISI7BlMAHjmvXFTs3FZuX8"
 ```
 # Attendees
 
@@ -1110,9 +1110,9 @@ curl "http://localhost:3000/api/v1/articles/269" -d '{"data":{"type":"article","
 #### Endpoint
 
 ```plaintext
-POST /api/v1/meetings/5540/attendees
+POST /api/v1/meetings/188/attendees
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MjM1ODFkMi1iYmU2LTRjMGYtYWVmNS0zOTc2MzJiMjI4MzkiLCJzdWIiOiIxMjM3NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.MULKihyEUC23Uvg9WkWn-HDIBUjUgZm39-byI8ehCdE
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmMmNjMmIwZi0yODNmLTRlMmYtYTdhNi1jZmE0MzUwNTczNGMiLCJzdWIiOiI3NjUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.9-joxWhomla_n49On1joOBKBQu7Ohg6ZWqRAKhiZ97Q
 ```
 
 `POST /api/v1/meetings/:meeting_id/attendees`
@@ -1146,10 +1146,10 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "5663",
+    "id": "97",
     "type": "attendees",
     "attributes": {
-      "id": 5663,
+      "id": 97,
       "email": "test@test.com",
       "status": "confirmed",
       "role": null,
@@ -1162,9 +1162,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5540/attendees" -d '{"data":{"type":"attendee","attributes":{"email":"test@test.com","attendee_name":"Test","status":"confirmed"}}}' -X POST \
+curl "http://localhost:3000/api/v1/meetings/188/attendees" -d '{"data":{"type":"attendee","attributes":{"email":"test@test.com","attendee_name":"Test","status":"confirmed"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MjM1ODFkMi1iYmU2LTRjMGYtYWVmNS0zOTc2MzJiMjI4MzkiLCJzdWIiOiIxMjM3NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.MULKihyEUC23Uvg9WkWn-HDIBUjUgZm39-byI8ehCdE"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmMmNjMmIwZi0yODNmLTRlMmYtYTdhNi1jZmE0MzUwNTczNGMiLCJzdWIiOiI3NjUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.9-joxWhomla_n49On1joOBKBQu7Ohg6ZWqRAKhiZ97Q"
 ```
 ## Delete agenda item
 
@@ -1174,9 +1174,9 @@ curl "http://localhost:3000/api/v1/meetings/5540/attendees" -d '{"data":{"type":
 #### Endpoint
 
 ```plaintext
-DELETE /api/v1/meetings/5539/attendees/5662
+DELETE /api/v1/meetings/186/attendees/96
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmNzZkOGY5NC1iN2IwLTRiYTktYTc0MS03MzM0ZTY3NTc4N2QiLCJzdWIiOiIxMjM3MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NiwiZXhwIjoxNjA1ODA0OTc2fQ.BaXPJR99bOEqMyWitSZdcajfd2Z1xoR9tik0DE1oelM
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOGZmYWM4Ny1hODNhLTQ1MDItYWMwMy1jZTkzMTY4MWZlNmMiLCJzdWIiOiI3NjIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.LgbWpo4mcRergsC1hdiiaZ7dVXTc3KrZmKQlZ_oIUJo
 ```
 
 `DELETE /api/v1/meetings/:meeting_id/attendees/:id`
@@ -1206,9 +1206,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmNzZkOGY5NC1iN2IwLTRiYTktY
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5539/attendees/5662" -d '' -X DELETE \
+curl "http://localhost:3000/api/v1/meetings/186/attendees/96" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmNzZkOGY5NC1iN2IwLTRiYTktYTc0MS03MzM0ZTY3NTc4N2QiLCJzdWIiOiIxMjM3MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NiwiZXhwIjoxNjA1ODA0OTc2fQ.BaXPJR99bOEqMyWitSZdcajfd2Z1xoR9tik0DE1oelM"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOGZmYWM4Ny1hODNhLTQ1MDItYWMwMy1jZTkzMTY4MWZlNmMiLCJzdWIiOiI3NjIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.LgbWpo4mcRergsC1hdiiaZ7dVXTc3KrZmKQlZ_oIUJo"
 ```
 ## List attendees
 
@@ -1218,9 +1218,9 @@ curl "http://localhost:3000/api/v1/meetings/5539/attendees/5662" -d '' -X DELETE
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5542/attendees
+GET /api/v1/meetings/187/attendees
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMTZmNDMzYi0xMjA4LTRiNGUtOWU3MS1iNDEzYmVkMjE3ZDEiLCJzdWIiOiIxMjM3NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.cncBwh8xlxoRkAvlib8xeW7QmZQTvdBl3EyM9aFMdzk
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiY2Y3ZTBmYy1jY2NmLTQ2NzEtYjYxMi1mNTc1YjAwOGI4MjciLCJzdWIiOiI3NjQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.V6q9qEoXtsjtfJFtsro969M9018G_6oIRC4GcLYTkjY
 ```
 
 `GET /api/v1/meetings/:meeting_id/attendees`
@@ -1258,9 +1258,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5542/attendees" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/187/attendees" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMTZmNDMzYi0xMjA4LTRiNGUtOWU3MS1iNDEzYmVkMjE3ZDEiLCJzdWIiOiIxMjM3NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.cncBwh8xlxoRkAvlib8xeW7QmZQTvdBl3EyM9aFMdzk"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiY2Y3ZTBmYy1jY2NmLTQ2NzEtYjYxMi1mNTc1YjAwOGI4MjciLCJzdWIiOiI3NjQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.V6q9qEoXtsjtfJFtsro969M9018G_6oIRC4GcLYTkjY"
 ```
 ## Show attendee
 
@@ -1270,9 +1270,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5542/attendees" -X GET \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5541/attendees/5664
+GET /api/v1/meetings/189/attendees/98
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMGFiZDZkYi04YTZhLTQyYmEtYmIzYi1kZjRjYmI0ODRmZjciLCJzdWIiOiIxMjM3NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.2AZ5gpkm2YkLWD6S6nj6uXEOwWZmGbQ5gKqbJ_iaZes
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiNjFhYTQ0Mi0xYTQyLTQxY2MtYjA0ZS1kZjUxNTBhMDdiZWMiLCJzdWIiOiI3NjYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjAsImV4cCI6MTYwNjA2NzEyMH0.IUCGmxGCLCgESfZdoRDfv-2RevvT5YWkGVaeo8XfmSY
 ```
 
 `GET /api/v1/meetings/:meeting_id/attendees/:id`
@@ -1302,11 +1302,11 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "5664",
+    "id": "98",
     "type": "attendees",
     "attributes": {
-      "id": 5664,
-      "email": "raelene.marquardt@heathcote-connelly.com",
+      "id": 98,
+      "email": "lorraine.fritsch@mosciski-hilpert.info",
       "status": "confirmed",
       "role": "subject_matter_expert",
       "attendee_name": null
@@ -1318,9 +1318,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5541/attendees/5664" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/189/attendees/98" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMGFiZDZkYi04YTZhLTQyYmEtYmIzYi1kZjRjYmI0ODRmZjciLCJzdWIiOiIxMjM3NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.2AZ5gpkm2YkLWD6S6nj6uXEOwWZmGbQ5gKqbJ_iaZes"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiNjFhYTQ0Mi0xYTQyLTQxY2MtYjA0ZS1kZjUxNTBhMDdiZWMiLCJzdWIiOiI3NjYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjAsImV4cCI6MTYwNjA2NzEyMH0.IUCGmxGCLCgESfZdoRDfv-2RevvT5YWkGVaeo8XfmSY"
 ```
 ## Update attendee
 
@@ -1330,9 +1330,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5541/attendees/5664" -X GET \
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/meetings/5543/attendees/5665
+PUT /api/v1/meetings/190/attendees/99
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYjVhMWE0My03ODljLTQ4ZTYtOGVlYy01YTZhODczYWRkNjYiLCJzdWIiOiIxMjM3OCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.gEIK004sMo70BSNPcp9CtOIxgH9NdOZQdzPS_XbYuE4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0M2MyNjQwMC1mZmFmLTQxMDgtODk5ZS0zMjI2ZjI2NTVjNzgiLCJzdWIiOiI3NjgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjAsImV4cCI6MTYwNjA2NzEyMH0.e1QNAPKmfNtDtdSC4baDxDY6W3lFv-HzB2b5CQUtSiE
 ```
 
 `PUT /api/v1/meetings/:meeting_id/attendees/:id`
@@ -1366,11 +1366,11 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "5665",
+    "id": "99",
     "type": "attendees",
     "attributes": {
-      "id": 5665,
-      "email": "nettie@kulas-conroy.net",
+      "id": 99,
+      "email": "erik.cormier@nicolas-corkery.co",
       "status": "confirmed",
       "role": "subject_matter_expert",
       "attendee_name": null
@@ -1382,9 +1382,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5543/attendees/5665" -d '{"data":{"type":"attendee","attributes":{"attendee_name":"Test 2"}}}' -X PUT \
+curl "http://localhost:3000/api/v1/meetings/190/attendees/99" -d '{"data":{"type":"attendee","attributes":{"attendee_name":"Test 2"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYjVhMWE0My03ODljLTQ4ZTYtOGVlYy01YTZhODczYWRkNjYiLCJzdWIiOiIxMjM3OCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.gEIK004sMo70BSNPcp9CtOIxgH9NdOZQdzPS_XbYuE4"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0M2MyNjQwMC1mZmFmLTQxMDgtODk5ZS0zMjI2ZjI2NTVjNzgiLCJzdWIiOiI3NjgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjAsImV4cCI6MTYwNjA2NzEyMH0.e1QNAPKmfNtDtdSC4baDxDY6W3lFv-HzB2b5CQUtSiE"
 ```
 # Calendars
 
@@ -1400,7 +1400,7 @@ curl "http://localhost:3000/api/v1/meetings/5543/attendees/5665" -d '{"data":{"t
 ```plaintext
 GET /api/v1/calendars
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYTAyMjkxYS00ZDI2LTRjMTAtYTA4Yi0zN2VlM2YxOTllYWYiLCJzdWIiOiIxMjM4MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OCwiZXhwIjoxNjA1ODA0OTc4fQ.pp6zl_Olqtj3eeUume5llmivZaURKC3CP-TiOwowvOo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZjM5OTRkMC01YWUzLTQ4NzctYmQzZi00MzRlOWYyNzc3ZjkiLCJzdWIiOiI3MjgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.J2w986S-cT-6sh3uiPKolAgogr-YLJ5-H3vNGzSAN_Q
 ```
 
 `GET /api/v1/calendars`
@@ -1423,13 +1423,13 @@ Content-Type: application/vnd.api+json; charset=utf-8
 {
   "data": [
     {
-      "id": "14118",
+      "id": "755",
       "type": "calendars",
       "attributes": {
-        "name": "General Wasp",
+        "name": "Stacy X Dragon",
         "primary": false,
         "source": "google",
-        "uuid": "29a9ff62-75f9-4f55-a117-c328bf7c55d2",
+        "uuid": "e17213da-014d-4ac1-b180-ac85f000f511",
         "watching": false
       }
     }
@@ -1442,7 +1442,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/calendars" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYTAyMjkxYS00ZDI2LTRjMTAtYTA4Yi0zN2VlM2YxOTllYWYiLCJzdWIiOiIxMjM4MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OCwiZXhwIjoxNjA1ODA0OTc4fQ.pp6zl_Olqtj3eeUume5llmivZaURKC3CP-TiOwowvOo"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZjM5OTRkMC01YWUzLTQ4NzctYmQzZi00MzRlOWYyNzc3ZjkiLCJzdWIiOiI3MjgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.J2w986S-cT-6sh3uiPKolAgogr-YLJ5-H3vNGzSAN_Q"
 ```
 # Communication Preferences
 
@@ -1680,7 +1680,7 @@ curl -g "http://localhost:3000/api/v1/communications/email/opted-out?email=test%
 ```plaintext
 GET /api/v1/goals
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiM2ZkZGViNi01N2JmLTQwZmQtODQ3OC0xMGJiYTQ1NDZlYjYiLCJzdWIiOiIxMjMwMCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.qedT7fJD_0vnCNjmtDwih13c1HC_qAORV0rbPNXoQ1w
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1ODc1NTQ1MC0zMWFlLTQxOTEtYjFjNS05NGI2OTc3OWQ1YmYiLCJzdWIiOiI3MzciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTYsImV4cCI6MTYwNjA2NzExNn0.BnCElPgtHx9e3wJ7AWkZisJejxUCUo46N1rIDnYp3HU
 ```
 
 `GET /api/v1/goals`
@@ -1708,7 +1708,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "backpack",
         "name": "🎒 Go backpacking",
-        "position": 11
+        "position": null
       }
     },
     {
@@ -1717,7 +1717,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "be_creative",
         "name": "🎨 Be creative",
-        "position": 1
+        "position": null
       }
     },
     {
@@ -1726,7 +1726,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "be_strategic",
         "name": "📆 Be more strategic",
-        "position": 6
+        "position": null
       }
     },
     {
@@ -1735,7 +1735,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "exercise",
         "name": "💪 Exercise",
-        "position": 8
+        "position": null
       }
     },
     {
@@ -1744,7 +1744,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "get_things_done",
         "name": "🖋 Get things done",
-        "position": 5
+        "position": null
       }
     },
     {
@@ -1753,7 +1753,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "hang_with_kids",
         "name": "😎 Hang with the kids",
-        "position": 3
+        "position": null
       }
     },
     {
@@ -1762,7 +1762,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "learn_something",
         "name": "🏄 Learn something new",
-        "position": 2
+        "position": null
       }
     },
     {
@@ -1771,7 +1771,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "meditate",
         "name": "😌 Meditate",
-        "position": 9
+        "position": null
       }
     },
     {
@@ -1780,7 +1780,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "sleep",
         "name": "😪 Sleep",
-        "position": 10
+        "position": null
       }
     },
     {
@@ -1789,7 +1789,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "sports",
         "name": "⚾️ Watch sports",
-        "position": 12
+        "position": null
       }
     },
     {
@@ -1798,7 +1798,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "take_time_off",
         "name": "⏱ Take some time off",
-        "position": 7
+        "position": null
       }
     },
     {
@@ -1807,7 +1807,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "attributes": {
         "key": "time_with_spouse",
         "name": "😘 Spend time with your partner",
-        "position": 4
+        "position": null
       }
     }
   ]
@@ -1819,7 +1819,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/goals" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiM2ZkZGViNi01N2JmLTQwZmQtODQ3OC0xMGJiYTQ1NDZlYjYiLCJzdWIiOiIxMjMwMCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.qedT7fJD_0vnCNjmtDwih13c1HC_qAORV0rbPNXoQ1w"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1ODc1NTQ1MC0zMWFlLTQxOTEtYjFjNS05NGI2OTc3OWQ1YmYiLCJzdWIiOiI3MzciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTYsImV4cCI6MTYwNjA2NzExNn0.BnCElPgtHx9e3wJ7AWkZisJejxUCUo46N1rIDnYp3HU"
 ```
 # Google Calendar
 
@@ -1835,7 +1835,7 @@ curl -g "http://localhost:3000/api/v1/goals" -X GET \
 ```plaintext
 GET /api/v1/google_calendar/list
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNjAwYzY4OC01OWI0LTQ0ZTctYmVjNS1mZDgwZjlmMzJmMWMiLCJzdWIiOiIxMjI3MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MSwiZXhwIjoxNjA1ODA0OTYxfQ.wfQXsLZY54RnrxJ233fTM3KGJRm1ZXFxRjLNFDUQH0I
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNzU1ZGMzYS1jOTUxLTRhODItODIxNS02YTU0ZTIwMWM1NTAiLCJzdWIiOiI3MzUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.WTjAtroHWa1GGHqiSdnQQEjFAiA282kO2S25hk4bkDw
 ```
 
 `GET /api/v1/google_calendar/list`
@@ -1888,7 +1888,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/google_calendar/list" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNjAwYzY4OC01OWI0LTQ0ZTctYmVjNS1mZDgwZjlmMzJmMWMiLCJzdWIiOiIxMjI3MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MSwiZXhwIjoxNjA1ODA0OTYxfQ.wfQXsLZY54RnrxJ233fTM3KGJRm1ZXFxRjLNFDUQH0I"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNzU1ZGMzYS1jOTUxLTRhODItODIxNS02YTU0ZTIwMWM1NTAiLCJzdWIiOiI3MzUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.WTjAtroHWa1GGHqiSdnQQEjFAiA282kO2S25hk4bkDw"
 ```
 ## Setup Google Webhook
 
@@ -1900,7 +1900,7 @@ curl -g "http://localhost:3000/api/v1/google_calendar/list" -X GET \
 ```plaintext
 POST /api/v1/google_calendar/webhooks_setup
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YzA5YzJmYS0wM2RlLTQ2ZjQtYTZhNy1hMWQ2NTE3NTBjMmMiLCJzdWIiOiIxMjM2OSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NiwiZXhwIjoxNjA1ODA0OTc2fQ.FlAyOIGWzMvF5ghh4z7WyA8aoV9DwwXZMgB82iZKzQU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzNzY1MWQzZS0yNTMyLTRmNmYtODU2NC03YTE0ODIzZmNlNmYiLCJzdWIiOiI3MTMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.lGDrP_aMODgnXQnpf-_KmsorsyOIsD7Yft-d8nSowRU
 ```
 
 `POST /api/v1/google_calendar/webhooks_setup`
@@ -1932,7 +1932,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YzA5YzJmYS0wM2RlLTQ2ZjQtY
 ```shell
 curl "http://localhost:3000/api/v1/google_calendar/webhooks_setup" -d '{"calendar_uuid":"test@test.com","data":{"type":"calendars","attributes":{"calendar_uuid":"test@test.com"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YzA5YzJmYS0wM2RlLTQ2ZjQtYTZhNy1hMWQ2NTE3NTBjMmMiLCJzdWIiOiIxMjM2OSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NiwiZXhwIjoxNjA1ODA0OTc2fQ.FlAyOIGWzMvF5ghh4z7WyA8aoV9DwwXZMgB82iZKzQU"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzNzY1MWQzZS0yNTMyLTRmNmYtODU2NC03YTE0ODIzZmNlNmYiLCJzdWIiOiI3MTMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.lGDrP_aMODgnXQnpf-_KmsorsyOIsD7Yft-d8nSowRU"
 ```
 ## Stop Google Webhook
 
@@ -1944,7 +1944,7 @@ curl "http://localhost:3000/api/v1/google_calendar/webhooks_setup" -d '{"calenda
 ```plaintext
 POST /api/v1/google_calendar/webhooks_stop
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4YmVmZjlhNC0wM2I1LTQ1ZTEtYjBkNy05MDNmMDVlNTVjOGYiLCJzdWIiOiIxMjM2OCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NiwiZXhwIjoxNjA1ODA0OTc2fQ.jocxASdNTyc2uVpFQUAInQuOLxbPfWmLYim9NiM7Zjs
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5ODUwNDI4NS00MTNhLTRkMmMtODY3Ni00MmQ4ZjQxNmY1M2UiLCJzdWIiOiI3MTIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.X4d25C7vcu8RESQbX169qWRproBEIMek2AIWyDosWuE
 ```
 
 `POST /api/v1/google_calendar/webhooks_stop`
@@ -1976,7 +1976,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4YmVmZjlhNC0wM2I1LTQ1ZTEtY
 ```shell
 curl "http://localhost:3000/api/v1/google_calendar/webhooks_stop" -d '{"calendar_uuid":"test@test.com","data":{"type":"calendars","attributes":{"calendar_uuid":"test@test.com"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4YmVmZjlhNC0wM2I1LTQ1ZTEtYjBkNy05MDNmMDVlNTVjOGYiLCJzdWIiOiIxMjM2OCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NiwiZXhwIjoxNjA1ODA0OTc2fQ.jocxASdNTyc2uVpFQUAInQuOLxbPfWmLYim9NiM7Zjs"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5ODUwNDI4NS00MTNhLTRkMmMtODY3Ni00MmQ4ZjQxNmY1M2UiLCJzdWIiOiI3MTIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.X4d25C7vcu8RESQbX169qWRproBEIMek2AIWyDosWuE"
 ```
 ## Watch Google Webhook
 
@@ -1988,7 +1988,7 @@ curl "http://localhost:3000/api/v1/google_calendar/webhooks_stop" -d '{"calendar
 ```plaintext
 POST /api/v1/google_calendar/events/watch
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiODc2MTA4Ny0zOTNjLTQwZmEtYTEzNS1iOWE2Yjc5ODAwNWUiLCJzdWIiOiIxMjM3MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NiwiZXhwIjoxNjA1ODA0OTc2fQ.o_QK56uuAtbd9CHLWqyuW0aGZwAjvKZUNf3wSOLTIsE
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjOGNiMDE1MC0zYTUxLTRjMzYtODMxOC01ODlkMmQwZmNmYjEiLCJzdWIiOiI3MTQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.mVZuzutKkkJoGGJTaGfvjx9zFzUr5NwB-cvi_dn4Mrc
 ```
 
 `POST /api/v1/google_calendar/events/watch`
@@ -2016,9 +2016,9 @@ Content-Type: text/plain; charset=utf-8
 ```shell
 curl "http://localhost:3000/api/v1/google_calendar/events/watch" -d '' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiODc2MTA4Ny0zOTNjLTQwZmEtYTEzNS1iOWE2Yjc5ODAwNWUiLCJzdWIiOiIxMjM3MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NiwiZXhwIjoxNjA1ODA0OTc2fQ.o_QK56uuAtbd9CHLWqyuW0aGZwAjvKZUNf3wSOLTIsE" \
-	-H "X-Goog-Channel: f8ed7692-4865-4240-81f4-c0d82677f51b" \
-	-H "X-Goog-Resource: c3f3224c-36a3-4888-afd2-6e950a9a957b"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjOGNiMDE1MC0zYTUxLTRjMzYtODMxOC01ODlkMmQwZmNmYjEiLCJzdWIiOiI3MTQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.mVZuzutKkkJoGGJTaGfvjx9zFzUr5NwB-cvi_dn4Mrc" \
+	-H "X-Goog-Channel: 0451a650-d138-4016-a432-cea9a13cec89" \
+	-H "X-Goog-Resource: 7d20862b-d17d-4728-b8dd-b6aa84816297"
 ```
 # Invoices
 
@@ -2034,7 +2034,7 @@ curl "http://localhost:3000/api/v1/google_calendar/events/watch" -d '' -X POST \
 ```plaintext
 GET /api/v1/invoices
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhNGRkYTc0Zi03NzQ3LTQ2M2UtOTdmOS05ZTNiNTJiMTg2NjgiLCJzdWIiOiIxMjMzOSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.cXDT3qrV3I0PUpTTN_EnZzSN7NpDeCmO0dLgEEEaJlc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3N2UzYTVmZS1lYzljLTQ4OTUtYjAzMC1lYTRlNWIyZDkxZGEiLCJzdWIiOiI3MTAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.A89_boiWJF8S9DAdxz7EqlJmS7cc2NTovHkhYM8Znno
 ```
 
 `GET /api/v1/invoices`
@@ -2066,7 +2066,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/invoices" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhNGRkYTc0Zi03NzQ3LTQ2M2UtOTdmOS05ZTNiNTJiMTg2NjgiLCJzdWIiOiIxMjMzOSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.cXDT3qrV3I0PUpTTN_EnZzSN7NpDeCmO0dLgEEEaJlc"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3N2UzYTVmZS1lYzljLTQ4OTUtYjAzMC1lYTRlNWIyZDkxZGEiLCJzdWIiOiI3MTAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.A89_boiWJF8S9DAdxz7EqlJmS7cc2NTovHkhYM8Znno"
 ```
 # Meeting Categories
 
@@ -2082,7 +2082,7 @@ curl -g "http://localhost:3000/api/v1/invoices" -X GET \
 ```plaintext
 GET /api/v1/meeting_categories
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0YzIzNDI2Ni1iODg2LTQ1Y2ItOThjZi1jYTYxYWVmNDI4NzMiLCJzdWIiOiIxMjMwMSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.-2A_Du1g9L4l_BBv7B6_-jrGO1vX_snk0C_Q_F998rs
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwODQyYmExYy02MDI0LTQ0YmQtYmY2NS04YTlmMWMwOGYwMTgiLCJzdWIiOiI3MzIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.U7QTNUOc-e8AHXsgGfwkRPlMzeeP0eE5huamrf18tt0
 ```
 
 `GET /api/v1/meeting_categories`
@@ -2104,7 +2104,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "a2eed570-7979-4d18-968d-ce2091b53453",
+    "id": "d2e474ed-0812-411d-8cf4-6bff859d4e1a",
     "type": "meeting_categories",
     "attributes": {
       "labels": {
@@ -2124,7 +2124,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/meeting_categories" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0YzIzNDI2Ni1iODg2LTQ1Y2ItOThjZi1jYTYxYWVmNDI4NzMiLCJzdWIiOiIxMjMwMSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.-2A_Du1g9L4l_BBv7B6_-jrGO1vX_snk0C_Q_F998rs"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwODQyYmExYy02MDI0LTQ0YmQtYmY2NS04YTlmMWMwOGYwMTgiLCJzdWIiOiI3MzIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.U7QTNUOc-e8AHXsgGfwkRPlMzeeP0eE5huamrf18tt0"
 ```
 # Meeting Intentions
 
@@ -2140,7 +2140,7 @@ curl -g "http://localhost:3000/api/v1/meeting_categories" -X GET \
 ```plaintext
 GET /api/v1/meeting_intentions
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzN2VkNjAyYy04MWMzLTRkOTktODEyYi00OGJjM2ZlOWUwOTYiLCJzdWIiOiIxMjQwOSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.h8i6fdUvDLZoG3tqGWGTHkqBi-C8Y3MwazSD0aOqD3Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNzQzMTRmYy0wYjc3LTRjMDItYTE0Ny1iYTk5ZWE3N2NlZWIiLCJzdWIiOiI4MTMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.G1na5L63WqH_Z8tjjZMktmRm-f_-Cl_APc8sVeWAkPg
 ```
 
 `GET /api/v1/meeting_intentions`
@@ -2162,7 +2162,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "02ca5dd2-05ab-4def-a880-9eff1032c476",
+    "id": "04a2b60e-996d-4df0-8c5f-013adcb5beae",
     "type": "meeting_intentions",
     "attributes": {
       "labels": {
@@ -2186,7 +2186,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/meeting_intentions" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzN2VkNjAyYy04MWMzLTRkOTktODEyYi00OGJjM2ZlOWUwOTYiLCJzdWIiOiIxMjQwOSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.h8i6fdUvDLZoG3tqGWGTHkqBi-C8Y3MwazSD0aOqD3Q"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNzQzMTRmYy0wYjc3LTRjMDItYTE0Ny1iYTk5ZWE3N2NlZWIiLCJzdWIiOiI4MTMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.G1na5L63WqH_Z8tjjZMktmRm-f_-Cl_APc8sVeWAkPg"
 ```
 # Meetings
 
@@ -2200,9 +2200,9 @@ curl -g "http://localhost:3000/api/v1/meeting_intentions" -X GET \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/users/meetings/accept/5548
+GET /api/v1/users/meetings/accept/203
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlYWYzMGRlYy1lZmQ5LTRmNTQtOTE1NS0zZjhlZTYxNzM0MWUiLCJzdWIiOiIxMjM5OSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MCwiZXhwIjoxNjA1ODA0OTgwfQ.0WFt0RXIWJ6Z7JHITCyHsra5JGpXOtwmrXdnPO7J2Uc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhY2U4OWZiYi03ODI2LTQ1OWUtYjUxOC1hODhiOWZmMGIyZGUiLCJzdWIiOiI3OTgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjUsImV4cCI6MTYwNjA2NzEyNX0.8uA7lyDtNNXqZYquo1S3yUNQxGcJVZKAqzyY3cPXRq0
 ```
 
 `GET /api/v1/users/meetings/accept/:id`
@@ -2224,14 +2224,14 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "3796",
+    "id": "203",
     "type": "user_meetings",
     "attributes": {
       "non_compliance_action": null,
       "organizer_notes": null,
-      "meeting_id": 5548,
-      "user_id": 12399,
-      "token": "pWKBHVMbqBuRgNANmCwYNKVF"
+      "meeting_id": 203,
+      "user_id": 798,
+      "token": "844D87LX21QmDogK6BtJy1xB"
     }
   }
 }
@@ -2240,9 +2240,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/users/meetings/accept/5548" -X GET \
+curl -g "http://localhost:3000/api/v1/users/meetings/accept/203" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlYWYzMGRlYy1lZmQ5LTRmNTQtOTE1NS0zZjhlZTYxNzM0MWUiLCJzdWIiOiIxMjM5OSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MCwiZXhwIjoxNjA1ODA0OTgwfQ.0WFt0RXIWJ6Z7JHITCyHsra5JGpXOtwmrXdnPO7J2Uc"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhY2U4OWZiYi03ODI2LTQ1OWUtYjUxOC1hODhiOWZmMGIyZGUiLCJzdWIiOiI3OTgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjUsImV4cCI6MTYwNjA2NzEyNX0.8uA7lyDtNNXqZYquo1S3yUNQxGcJVZKAqzyY3cPXRq0"
 ```
 ## Convert meeting to focus block
 
@@ -2252,9 +2252,9 @@ curl -g "http://localhost:3000/api/v1/users/meetings/accept/5548" -X GET \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5531/make_focus_block?by_period[starts_at]=2020-10-25+16%3A56%3A13+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A13+UTC
+GET /api/v1/meetings/193/make_focus_block?by_period[starts_at]=2020-10-28+17%3A45%3A21+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A21+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMzVjZWNlZS02MGU2LTQxM2UtYjhhNS0zOWZiZjY0NzY0MTEiLCJzdWIiOiIxMjM1MSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MywiZXhwIjoxNjA1ODA0OTczfQ.sA6uAOg-37QuHSwcZlNxNNIEerS73kRlECkFlFKEuxo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkYmY0ZDlmZC1iZTdiLTRiZTMtOGM3ZC0zMjE0ZjY1NGM4MWEiLCJzdWIiOiI3NzQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjEsImV4cCI6MTYwNjA2NzEyMX0.LMc3s-b9XjfFetaT14lVGvnLyGePeu6j3MNzhCiVTE4
 ```
 
 `GET /api/v1/meetings/:id/make_focus_block`
@@ -2263,7 +2263,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMzVjZWNlZS02MGU2LTQxM2UtY
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:13 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:13 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:21 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:21 UTC&quot;}
 ```
 
 
@@ -2286,16 +2286,16 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "454",
+    "id": "41",
     "type": "focus_blocks",
     "attributes": {
       "label": "Coding",
       "category": "focus",
-      "calendar_id": 14084,
+      "calendar_id": 801,
       "recurring_meeting_uuid": "6vkb5i9kqmu36jr1t0v48lkcrk",
       "duration": 3600,
-      "starts_at": "2020-10-19T22:03:00.000Z",
-      "ends_at": "2020-10-19T23:03:00.000Z",
+      "starts_at": "2020-10-26T22:03:00.000Z",
+      "ends_at": "2020-10-26T23:03:00.000Z",
       "rrule": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA",
       "recurring": true
     }
@@ -2306,9 +2306,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5531/make_focus_block?by_period[starts_at]=2020-10-25+16%3A56%3A13+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A13+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/193/make_focus_block?by_period[starts_at]=2020-10-28+17%3A45%3A21+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A21+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMzVjZWNlZS02MGU2LTQxM2UtYjhhNS0zOWZiZjY0NzY0MTEiLCJzdWIiOiIxMjM1MSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MywiZXhwIjoxNjA1ODA0OTczfQ.sA6uAOg-37QuHSwcZlNxNNIEerS73kRlECkFlFKEuxo"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkYmY0ZDlmZC1iZTdiLTRiZTMtOGM3ZC0zMjE0ZjY1NGM4MWEiLCJzdWIiOiI3NzQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjEsImV4cCI6MTYwNjA2NzEyMX0.LMc3s-b9XjfFetaT14lVGvnLyGePeu6j3MNzhCiVTE4"
 ```
 ## Convert meeting to life block
 
@@ -2318,9 +2318,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5531/make_focus_block?by_period[s
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5533/make_life_block?by_period[starts_at]=2020-10-25+16%3A56%3A14+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A14+UTC
+GET /api/v1/meetings/194/make_life_block?by_period[starts_at]=2020-10-28+17%3A45%3A21+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A21+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyYjA1M2I5Yy02OWVjLTRlNjEtODM2Yi05NzViZGY0OTk5M2EiLCJzdWIiOiIxMjM1NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NCwiZXhwIjoxNjA1ODA0OTc0fQ.XEUk7FwP3YiHy-DuQ9ukl2XKboYsIMNraygY1RzPPrE
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNTlkNTIyYi1jNTU2LTRiNzgtYTQxMS1iOGU2NTM1MjQ1YmIiLCJzdWIiOiI3NzYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjEsImV4cCI6MTYwNjA2NzEyMX0.6lgy4qEDsjOBNs9sXKpvK1wFbNDYUXfBf5PAL5HxWos
 ```
 
 `GET /api/v1/meetings/:id/make_life_block`
@@ -2329,7 +2329,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyYjA1M2I5Yy02OWVjLTRlNjEtO
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:14 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:14 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:21 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:21 UTC&quot;}
 ```
 
 
@@ -2352,16 +2352,16 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "455",
+    "id": "42",
     "type": "focus_blocks",
     "attributes": {
       "label": "Coding",
       "category": "life",
-      "calendar_id": 14088,
+      "calendar_id": 803,
       "recurring_meeting_uuid": "6vkb5i9kqmu36jr1t0v48lkcrk",
       "duration": 3600,
-      "starts_at": "2020-10-19T22:03:00.000Z",
-      "ends_at": "2020-10-19T23:03:00.000Z",
+      "starts_at": "2020-10-26T22:03:00.000Z",
+      "ends_at": "2020-10-26T23:03:00.000Z",
       "rrule": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA",
       "recurring": true
     }
@@ -2372,9 +2372,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5533/make_life_block?by_period[starts_at]=2020-10-25+16%3A56%3A14+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A14+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/194/make_life_block?by_period[starts_at]=2020-10-28+17%3A45%3A21+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A21+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyYjA1M2I5Yy02OWVjLTRlNjEtODM2Yi05NzViZGY0OTk5M2EiLCJzdWIiOiIxMjM1NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NCwiZXhwIjoxNjA1ODA0OTc0fQ.XEUk7FwP3YiHy-DuQ9ukl2XKboYsIMNraygY1RzPPrE"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNTlkNTIyYi1jNTU2LTRiNzgtYTQxMS1iOGU2NTM1MjQ1YmIiLCJzdWIiOiI3NzYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjEsImV4cCI6MTYwNjA2NzEyMX0.6lgy4qEDsjOBNs9sXKpvK1wFbNDYUXfBf5PAL5HxWos"
 ```
 ## List meetings
 
@@ -2384,9 +2384,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5533/make_life_block?by_period[st
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings?by_period[starts_at]=2020-10-25+16%3A56%3A12+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A12+UTC
+GET /api/v1/meetings?by_period[starts_at]=2020-10-28+17%3A45%3A21+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A21+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZWJjMTA2Yi02ZDBjLTQwY2EtYTAzMi0yZWZlNDY3YmQwNDgiLCJzdWIiOiIxMjM0NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MiwiZXhwIjoxNjA1ODA0OTcyfQ.nbbZsBPrc32yyjYgoIbrUEHORWQdlvE73oB9DIFqK3I
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMTBmNDdiMS1iYTVhLTQ1MGUtYmIyOS0xMWVkYmFkYWI2NjAiLCJzdWIiOiI3NzIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjEsImV4cCI6MTYwNjA2NzEyMX0.kN8FkPoXWGYs0MCc6pRrdX_8tDXKouXxaPEFSzojDEg
 ```
 
 `GET /api/v1/meetings`
@@ -2395,7 +2395,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZWJjMTA2Yi02ZDBjLTQwY2EtY
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:12 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:12 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:21 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:21 UTC&quot;}
 ```
 
 
@@ -2419,17 +2419,17 @@ Content-Type: application/vnd.api+json; charset=utf-8
 {
   "data": [
     {
-      "id": "5529",
+      "id": "192",
       "type": "meetings",
       "attributes": {
-        "summary": "Cleanse kombucha locavore dreamcatcher taxidermy umami heirloom keytar.",
-        "description": "Voluptatem dolorum commodi. Necessitatibus exercitationem quia. Quisquam ad nesciunt. Consequuntur non et.",
-        "starts_at": "2020-10-25T17:01:12.177Z",
-        "ends_at": "2020-10-25T18:01:12.177Z",
+        "summary": "Authentic mlkshk pop-up cardigan normcore.",
+        "description": "Ullam soluta ut. Et quia ullam. Iure enim sint. Officia sunt et.",
+        "starts_at": "2020-10-28T17:50:20.969Z",
+        "ends_at": "2020-10-28T18:50:20.969Z",
         "category_list": [
 
         ],
-        "location": "46137 Ayanna Brooks, Port Raphaelton, WY 19283",
+        "location": "3641 Schaefer Flat, Lake Brunilda, OR 77325-3794",
         "duration": 3600,
         "status": null,
         "wellness_block_id": null,
@@ -2461,9 +2461,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings?by_period[starts_at]=2020-10-25+16%3A56%3A12+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A12+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings?by_period[starts_at]=2020-10-28+17%3A45%3A21+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A21+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZWJjMTA2Yi02ZDBjLTQwY2EtYTAzMi0yZWZlNDY3YmQwNDgiLCJzdWIiOiIxMjM0NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MiwiZXhwIjoxNjA1ODA0OTcyfQ.nbbZsBPrc32yyjYgoIbrUEHORWQdlvE73oB9DIFqK3I"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMTBmNDdiMS1iYTVhLTQ1MGUtYmIyOS0xMWVkYmFkYWI2NjAiLCJzdWIiOiI3NzIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjEsImV4cCI6MTYwNjA2NzEyMX0.kN8FkPoXWGYs0MCc6pRrdX_8tDXKouXxaPEFSzojDEg"
 ```
 ## Meeting details for unauthenticated organizer
 
@@ -2473,9 +2473,9 @@ curl -g "http://localhost:3000/api/v1/meetings?by_period[starts_at]=2020-10-25+1
 #### Endpoint
 
 ```plaintext
-GET /api/v1/users/meetings/details/RsTqbtbaFJSMxXbyoxcLQutj
+GET /api/v1/users/meetings/details/JGujWF8wKfaa76TuDt5budFs
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjODM4MzFhYi1jM2UwLTQ4NWMtOGNkYi00MDNjN2I3YThmYTIiLCJzdWIiOiIxMjM5MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OSwiZXhwIjoxNjA1ODA0OTc5fQ.er12kv_8UBXEp6CsNd2QGKRzJ2T90JxaZaZEEdykiEo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkYTgxYTg0Yy1lODQ2LTRjY2YtOTkxYi04YWE5ODUyMjU4ZWQiLCJzdWIiOiI4MDEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjUsImV4cCI6MTYwNjA2NzEyNX0.D-oFbT1Fcc6INctTXwqMtsWg9Di5-RMJjb7ifIBTYds
 ```
 
 `GET /api/v1/users/meetings/details/:user_meeting_token`
@@ -2497,18 +2497,18 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "5546",
+    "id": "204",
     "type": "meetings",
     "attributes": {
-      "summary": "Helvetica brunch tousled wes anderson.",
-      "description": "Sit eum autem. Commodi facere ea. Recusandae aliquid est. Illo perspiciatis saepe.",
-      "starts_at": "2020-10-25T17:01:19.670Z",
-      "ends_at": "2020-10-25T18:01:19.670Z",
+      "summary": "Brooklyn butcher banh mi yolo squid irony cleanse swag.",
+      "description": "Error est deserunt. Dolorem iste incidunt. Id qui rerum. Libero rerum ut.",
+      "starts_at": "2020-10-28T17:50:25.597Z",
+      "ends_at": "2020-10-28T18:50:25.597Z",
       "category_list": [
 
       ],
       "intention": null,
-      "location": "8392 Brekke Estates, Rathhaven, NE 79268-0407",
+      "location": "74292 Luz Camp, West Rosalie, TN 20854-8428",
       "duration": 3600,
       "maybe_focus_block": false,
       "maybe_life_block": false,
@@ -2516,7 +2516,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "edit_permission": true,
       "wellness_block_id": null,
       "event_report_card_id": null,
-      "compliance_deadline": "2020-10-25T11:01:19.670Z",
+      "compliance_deadline": "2020-10-28T11:50:25.597Z",
       "wellness_block_category": null,
       "details_negative": {
         "required_agenda": "This meeting needs an agenda",
@@ -2533,13 +2533,13 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "life_blockable": true,
       "attendees": [
         {
-          "email": "harlan.littel@bosco.name",
-          "domain": "bosco.name",
+          "email": "brittany@leuschke-monahan.info",
+          "domain": "leuschke-monahan.info",
           "role": "subject_matter_expert"
         },
         {
-          "email": "anisa.cormier@stanton.biz",
-          "domain": "stanton.biz",
+          "email": "tess.huels@buckridge.biz",
+          "domain": "buckridge.biz",
           "role": "subject_matter_expert"
         }
       ],
@@ -2548,7 +2548,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "recurring_meeting": false,
       "score": 34,
       "results": null,
-      "quality_label": "An F? Is that what you feel your time is worth?",
+      "quality_label": "Now ask yourself, 'Is this a good use of my time?'",
       "agenda_items": {
         "data": [
 
@@ -2572,9 +2572,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/users/meetings/details/RsTqbtbaFJSMxXbyoxcLQutj" -X GET \
+curl -g "http://localhost:3000/api/v1/users/meetings/details/JGujWF8wKfaa76TuDt5budFs" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjODM4MzFhYi1jM2UwLTQ4NWMtOGNkYi00MDNjN2I3YThmYTIiLCJzdWIiOiIxMjM5MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OSwiZXhwIjoxNjA1ODA0OTc5fQ.er12kv_8UBXEp6CsNd2QGKRzJ2T90JxaZaZEEdykiEo"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkYTgxYTg0Yy1lODQ2LTRjY2YtOTkxYi04YWE5ODUyMjU4ZWQiLCJzdWIiOiI4MDEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjUsImV4cCI6MTYwNjA2NzEyNX0.D-oFbT1Fcc6INctTXwqMtsWg9Di5-RMJjb7ifIBTYds"
 ```
 ## Organizer prevents a decline
 
@@ -2584,9 +2584,9 @@ curl -g "http://localhost:3000/api/v1/users/meetings/details/RsTqbtbaFJSMxXbyoxc
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/users/meetings/prevent_decline/DipnT2yUX5A7RCR94yUzHwRU
+PUT /api/v1/users/meetings/prevent_decline/tqpCbHb1YJt3DR2pF31wV9Wy
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NDk3MTcyYy03Nzk4LTQ2MzYtOWNiOC1lNThiYzVlNzJmNTgiLCJzdWIiOiIxMjM5NiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MCwiZXhwIjoxNjA1ODA0OTgwfQ.hnl6nCjXDMHKxT5ByaVXHGDxznopFDDzp3_y81RvP48
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiNTU1MDZlOS01NzRjLTQ1M2ItOGYxNy01ZDI3NTA2YTMzMTEiLCJzdWIiOiI4MDQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjYsImV4cCI6MTYwNjA2NzEyNn0.2gnjQufmcgEOzVpLzEk9PIROU89lq-FAeV5FsvfPE4A
 ```
 
 `PUT /api/v1/users/meetings/prevent_decline/:user_meeting_token`
@@ -2612,14 +2612,14 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "3795",
+    "id": "205",
     "type": "user_meetings",
     "attributes": {
       "non_compliance_action": "do nothing",
       "organizer_notes": "Testing!",
-      "meeting_id": 5547,
-      "user_id": 12396,
-      "token": "DipnT2yUX5A7RCR94yUzHwRU"
+      "meeting_id": 205,
+      "user_id": 804,
+      "token": "tqpCbHb1YJt3DR2pF31wV9Wy"
     }
   }
 }
@@ -2628,9 +2628,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/users/meetings/prevent_decline/DipnT2yUX5A7RCR94yUzHwRU" -d '{"data":{"type":"user_meeting","attributes":{"organizer_notes":"Testing!"}}}' -X PUT \
+curl "http://localhost:3000/api/v1/users/meetings/prevent_decline/tqpCbHb1YJt3DR2pF31wV9Wy" -d '{"data":{"type":"user_meeting","attributes":{"organizer_notes":"Testing!"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NDk3MTcyYy03Nzk4LTQ2MzYtOWNiOC1lNThiYzVlNzJmNTgiLCJzdWIiOiIxMjM5NiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MCwiZXhwIjoxNjA1ODA0OTgwfQ.hnl6nCjXDMHKxT5ByaVXHGDxznopFDDzp3_y81RvP48"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiNTU1MDZlOS01NzRjLTQ1M2ItOGYxNy01ZDI3NTA2YTMzMTEiLCJzdWIiOiI4MDQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjYsImV4cCI6MTYwNjA2NzEyNn0.2gnjQufmcgEOzVpLzEk9PIROU89lq-FAeV5FsvfPE4A"
 ```
 ## Show meeting evaluation
 
@@ -2640,9 +2640,9 @@ curl "http://localhost:3000/api/v1/users/meetings/prevent_decline/DipnT2yUX5A7RC
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5530/evaluate?by_period[starts_at]=2020-10-25+16%3A56%3A12+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A12+UTC
+GET /api/v1/meetings/191/evaluate?by_period[starts_at]=2020-10-28+17%3A45%3A20+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A20+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOTAzMWFhZi0yZTQzLTQ2NGYtYTNmMi0wZjgwMWI3NmY3MjMiLCJzdWIiOiIxMjM0OSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MiwiZXhwIjoxNjA1ODA0OTcyfQ.89faTvhmud9dnPaUtgtU6AMGcfH5g1tB13gdGcRyX2A
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjN2FiOWM2NS1iMzI3LTQ2MTItYjAyYi1jMDZmYzMwMmVhY2MiLCJzdWIiOiI3NzAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjAsImV4cCI6MTYwNjA2NzEyMH0.VJd3-Q50gfROmUVgjflPS5jzoCSCMrw_a4JaakcwhCE
 ```
 
 `GET /api/v1/meetings/:id/evaluate`
@@ -2651,7 +2651,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOTAzMWFhZi0yZTQzLTQ2NGYtY
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:12 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:12 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:20 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:20 UTC&quot;}
 ```
 
 
@@ -2674,18 +2674,18 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "5530",
+    "id": "191",
     "type": "meetings",
     "attributes": {
-      "summary": "Brunch hella occupy celiac.",
-      "description": "Impedit voluptates consequuntur. Aut qui sapiente. Voluptatem eos perferendis. Nisi ut officia.",
-      "starts_at": "2020-10-25T17:01:12.521Z",
-      "ends_at": "2020-10-25T18:01:12.521Z",
+      "summary": "Mlkshk keytar yolo vinyl blog selvage austin.",
+      "description": "Autem est rerum. Illo doloremque tempore. Voluptas corporis eos. Sed et est.",
+      "starts_at": "2020-10-28T17:50:20.606Z",
+      "ends_at": "2020-10-28T18:50:20.606Z",
       "category_list": [
 
       ],
       "intention": null,
-      "location": "Suite 369 297 George Field, Monikachester, MA 50141-6704",
+      "location": "6177 Nicholas Divide, Muellerburgh, KS 85212",
       "duration": 3600,
       "maybe_focus_block": false,
       "maybe_life_block": false,
@@ -2701,8 +2701,8 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "life_blockable": true,
       "attendees": [
         {
-          "email": "napoleon_mohr@borer.co",
-          "domain": "borer.co",
+          "email": "darrin_koch@murphy.org",
+          "domain": "murphy.org",
           "role": "subject_matter_expert"
         }
       ],
@@ -2735,9 +2735,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5530/evaluate?by_period[starts_at]=2020-10-25+16%3A56%3A12+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A12+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/191/evaluate?by_period[starts_at]=2020-10-28+17%3A45%3A20+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A20+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOTAzMWFhZi0yZTQzLTQ2NGYtYTNmMi0wZjgwMWI3NmY3MjMiLCJzdWIiOiIxMjM0OSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MiwiZXhwIjoxNjA1ODA0OTcyfQ.89faTvhmud9dnPaUtgtU6AMGcfH5g1tB13gdGcRyX2A"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjN2FiOWM2NS1iMzI3LTQ2MTItYjAyYi1jMDZmYzMwMmVhY2MiLCJzdWIiOiI3NzAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjAsImV4cCI6MTYwNjA2NzEyMH0.VJd3-Q50gfROmUVgjflPS5jzoCSCMrw_a4JaakcwhCE"
 ```
 ## Show user meeting
 
@@ -2747,9 +2747,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5530/evaluate?by_period[starts_at
 #### Endpoint
 
 ```plaintext
-GET /api/v1/users/meetings/5544
+GET /api/v1/users/meetings/202
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyZThiN2U1My01NDVkLTQ2OTItODE5Zi1jNzM0MWQ2OGExODAiLCJzdWIiOiIxMjM4NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OSwiZXhwIjoxNjA1ODA0OTc5fQ.HDFWD6DcGXlc0xMu1reqXJZrAQ95PleXYI0YRfIUShw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNWJlNGRjNi04MDBjLTRiYTItODBkZC0zOGFjNDE2YjU1ZjAiLCJzdWIiOiI3OTUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjUsImV4cCI6MTYwNjA2NzEyNX0.7iqtAm4AgS8s2kCvvC8LT4tY_hlvKXtcg3qKg_RanHc
 ```
 
 `GET /api/v1/users/meetings/:id`
@@ -2771,14 +2771,14 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "3792",
+    "id": "202",
     "type": "user_meetings",
     "attributes": {
       "non_compliance_action": null,
       "organizer_notes": null,
-      "meeting_id": 5544,
-      "user_id": 12387,
-      "token": "uvjc6DtcgnzSfXE6twKjoKmE"
+      "meeting_id": 202,
+      "user_id": 795,
+      "token": "uH7YNsRAD4JitU53agKkk4AU"
     }
   }
 }
@@ -2787,9 +2787,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/users/meetings/5544" -X GET \
+curl -g "http://localhost:3000/api/v1/users/meetings/202" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyZThiN2U1My01NDVkLTQ2OTItODE5Zi1jNzM0MWQ2OGExODAiLCJzdWIiOiIxMjM4NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OSwiZXhwIjoxNjA1ODA0OTc5fQ.HDFWD6DcGXlc0xMu1reqXJZrAQ95PleXYI0YRfIUShw"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNWJlNGRjNi04MDBjLTRiYTItODBkZC0zOGFjNDE2YjU1ZjAiLCJzdWIiOiI3OTUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjUsImV4cCI6MTYwNjA2NzEyNX0.7iqtAm4AgS8s2kCvvC8LT4tY_hlvKXtcg3qKg_RanHc"
 ```
 ## Update meeting
 
@@ -2799,9 +2799,9 @@ curl -g "http://localhost:3000/api/v1/users/meetings/5544" -X GET \
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/meetings/5532
+PUT /api/v1/meetings/195
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3MjBmZmE0ZS1lZTNkLTQ0ZmMtYWJhYi1jN2ExODE1NDhiYTUiLCJzdWIiOiIxMjM1MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MywiZXhwIjoxNjA1ODA0OTczfQ.kUju2KGY3uwmwGnbu5oawSl-NKH6UufEBioBrS1ya9w
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzZTkxYzg2OC1iMjQ3LTQ3N2ItYTI5Mi03ZWIyMzI5OTg2YzkiLCJzdWIiOiI3NzgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjIsImV4cCI6MTYwNjA2NzEyMn0.RGmWQih-I4mQ4nN_J9N05Xlyu40Q8rhgMbvYYUlQias
 ```
 
 `PUT /api/v1/meetings/:id`
@@ -2810,7 +2810,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3MjBmZmE0ZS1lZTNkLTQ0ZmMtY
 
 
 ```json
-{"by_period":{"starts_at":"2020-10-25T16:56:13.807Z","ends_at":"2020-11-01T16:56:13.807Z"},"data":{"type":"agenda_item","attributes":{"started_at":"2020-10-25T16:36:13.807Z","ended_at":"2020-10-25T16:56:13.807Z"}}}
+{"by_period":{"starts_at":"2020-10-28T17:45:22.161Z","ends_at":"2020-11-04T17:45:22.161Z"},"data":{"type":"agenda_item","attributes":{"started_at":"2020-10-28T17:25:22.161Z","ended_at":"2020-10-28T17:45:22.161Z"}}}
 ```
 
 
@@ -2836,18 +2836,18 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "5532",
+    "id": "195",
     "type": "meetings",
     "attributes": {
-      "summary": "Kogi cleanse raw denim.",
-      "description": "Velit delectus fugit. Nihil repellendus aut. Cum eum qui. Eius in quidem.",
-      "starts_at": "2020-10-25T17:01:13.654Z",
-      "ends_at": "2020-10-25T18:01:13.654Z",
+      "summary": "Vhs fashion axe biodiesel post-ironic.",
+      "description": "Et sit autem. Doloribus eum et. Qui perferendis cumque. Sint ad illum.",
+      "starts_at": "2020-10-28T17:50:22.002Z",
+      "ends_at": "2020-10-28T18:50:22.002Z",
       "category_list": [
 
       ],
       "intention": null,
-      "location": "Suite 268 115 Heike Summit, Sherrylhaven, NJ 57169",
+      "location": "Apt. 177 76340 Gusikowski Prairie, Lake Nevilleburgh, VA 50087-8468",
       "duration": 3600,
       "maybe_focus_block": false,
       "maybe_life_block": false,
@@ -2863,8 +2863,8 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "life_blockable": true,
       "attendees": [
         {
-          "email": "claudie.rowe@weber-gusikowski.biz",
-          "domain": "weber-gusikowski.biz",
+          "email": "jestine_kohler@zboncak-thompson.biz",
+          "domain": "zboncak-thompson.biz",
           "role": "subject_matter_expert"
         }
       ],
@@ -2897,9 +2897,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5532" -d '{"by_period":{"starts_at":"2020-10-25T16:56:13.807Z","ends_at":"2020-11-01T16:56:13.807Z"},"data":{"type":"agenda_item","attributes":{"started_at":"2020-10-25T16:36:13.807Z","ended_at":"2020-10-25T16:56:13.807Z"}}}' -X PUT \
+curl "http://localhost:3000/api/v1/meetings/195" -d '{"by_period":{"starts_at":"2020-10-28T17:45:22.161Z","ends_at":"2020-11-04T17:45:22.161Z"},"data":{"type":"agenda_item","attributes":{"started_at":"2020-10-28T17:25:22.161Z","ended_at":"2020-10-28T17:45:22.161Z"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3MjBmZmE0ZS1lZTNkLTQ0ZmMtYWJhYi1jN2ExODE1NDhiYTUiLCJzdWIiOiIxMjM1MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MywiZXhwIjoxNjA1ODA0OTczfQ.kUju2KGY3uwmwGnbu5oawSl-NKH6UufEBioBrS1ya9w"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzZTkxYzg2OC1iMjQ3LTQ3N2ItYTI5Mi03ZWIyMzI5OTg2YzkiLCJzdWIiOiI3NzgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjIsImV4cCI6MTYwNjA2NzEyMn0.RGmWQih-I4mQ4nN_J9N05Xlyu40Q8rhgMbvYYUlQias"
 ```
 ## Update user meeting
 
@@ -2909,9 +2909,9 @@ curl "http://localhost:3000/api/v1/meetings/5532" -d '{"by_period":{"starts_at":
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/users/meetings/5545
+PUT /api/v1/users/meetings/201
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5ODZkZjEzYi1iNDVmLTRjOWYtYjZkNy1mMTA3NzdhOWI2YWMiLCJzdWIiOiIxMjM5MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OSwiZXhwIjoxNjA1ODA0OTc5fQ.RIBieqyeYfa_VE5zF-VbqwPtiHr6IQ79BfX3zPesmcs
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5OTYxMmNmZS1jNDAwLTQ2ZDMtYWI4NC05N2RiZDYwMGU4NjQiLCJzdWIiOiI3OTIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjQsImV4cCI6MTYwNjA2NzEyNH0.sSrzOrzE6TyKVOfSTSqLniV4x_iTmHNWKQvMUDbKGXM
 ```
 
 `PUT /api/v1/users/meetings/:id`
@@ -2941,14 +2941,14 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "3793",
+    "id": "201",
     "type": "user_meetings",
     "attributes": {
       "non_compliance_action": "decline",
       "organizer_notes": null,
-      "meeting_id": 5545,
-      "user_id": 12390,
-      "token": "9nH1S5GUtkLUYffoLrHYEmHF"
+      "meeting_id": 201,
+      "user_id": 792,
+      "token": "EHbgFhvYi3Wyz76MZVLWbP3v"
     }
   }
 }
@@ -2957,9 +2957,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/users/meetings/5545" -d '{"data":{"type":"user_meeting","attributes":{"non_compliance_action":"decline"}}}' -X PUT \
+curl "http://localhost:3000/api/v1/users/meetings/201" -d '{"data":{"type":"user_meeting","attributes":{"non_compliance_action":"decline"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5ODZkZjEzYi1iNDVmLTRjOWYtYjZkNy1mMTA3NzdhOWI2YWMiLCJzdWIiOiIxMjM5MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OSwiZXhwIjoxNjA1ODA0OTc5fQ.RIBieqyeYfa_VE5zF-VbqwPtiHr6IQ79BfX3zPesmcs"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5OTYxMmNmZS1jNDAwLTQ2ZDMtYWI4NC05N2RiZDYwMGU4NjQiLCJzdWIiOiI3OTIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjQsImV4cCI6MTYwNjA2NzEyNH0.sSrzOrzE6TyKVOfSTSqLniV4x_iTmHNWKQvMUDbKGXM"
 ```
 # Microsoft Outlook
 
@@ -2975,7 +2975,7 @@ curl "http://localhost:3000/api/v1/users/meetings/5545" -d '{"data":{"type":"use
 ```plaintext
 GET /api/v1/microsoft_outlook/list
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NjMzOWE4Mi0xODJmLTRmMTktODEyNS0wZGVhMzgwNjkzNjYiLCJzdWIiOiIxMjQwOCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.mqfiVkBOpTboxlLfUk1EtzXDE5TNOFxEl-75BTNqgHc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkOTZkYjI1MC0yM2JlLTQxZmEtOWQ1NC1iZDBiOThhODUzYjQiLCJzdWIiOiI4MTQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.wob8HWRfOrv5FVsmj_dK7OW73t5ezxnRSjZa-852TTM
 ```
 
 `GET /api/v1/microsoft_outlook/list`
@@ -3033,7 +3033,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/microsoft_outlook/list" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NjMzOWE4Mi0xODJmLTRmMTktODEyNS0wZGVhMzgwNjkzNjYiLCJzdWIiOiIxMjQwOCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.mqfiVkBOpTboxlLfUk1EtzXDE5TNOFxEl-75BTNqgHc"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkOTZkYjI1MC0yM2JlLTQxZmEtOWQ1NC1iZDBiOThhODUzYjQiLCJzdWIiOiI4MTQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.wob8HWRfOrv5FVsmj_dK7OW73t5ezxnRSjZa-852TTM"
 ```
 ## Setup Outlook Webhook
 
@@ -3045,7 +3045,7 @@ curl -g "http://localhost:3000/api/v1/microsoft_outlook/list" -X GET \
 ```plaintext
 POST /api/v1/microsoft_outlook/webhooks_setup
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMGJhOGZkZi0yOGNhLTQ1OWEtODhmMy1lZjA1MTNmZTljNDciLCJzdWIiOiIxMjMzMiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OSwiZXhwIjoxNjA1ODA0OTY5fQ._xT-nqkUykVUcusuZXOGNaCEHLsrHRLectD8hC55ncY
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOTJmZTljMS1iNzBiLTQ3NWMtODk4Mi1iY2IxNWI1NmY1YTAiLCJzdWIiOiI4MjQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjgsImV4cCI6MTYwNjA2NzEyOH0.iB0WNz1EYIHAZGMZczN74C_vJQ4RtElSz0P13b6gAOQ
 ```
 
 `POST /api/v1/microsoft_outlook/webhooks_setup`
@@ -3077,7 +3077,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMGJhOGZkZi0yOGNhLTQ1OWEtO
 ```shell
 curl "http://localhost:3000/api/v1/microsoft_outlook/webhooks_setup" -d '{"calendar_uuid":"test@test.com","data":{"type":"calendars","attributes":{"calendar_uuid":"test@test.com"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMGJhOGZkZi0yOGNhLTQ1OWEtODhmMy1lZjA1MTNmZTljNDciLCJzdWIiOiIxMjMzMiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OSwiZXhwIjoxNjA1ODA0OTY5fQ._xT-nqkUykVUcusuZXOGNaCEHLsrHRLectD8hC55ncY"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOTJmZTljMS1iNzBiLTQ3NWMtODk4Mi1iY2IxNWI1NmY1YTAiLCJzdWIiOiI4MjQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjgsImV4cCI6MTYwNjA2NzEyOH0.iB0WNz1EYIHAZGMZczN74C_vJQ4RtElSz0P13b6gAOQ"
 ```
 ## Stop Outlook Webhook
 
@@ -3089,7 +3089,7 @@ curl "http://localhost:3000/api/v1/microsoft_outlook/webhooks_setup" -d '{"calen
 ```plaintext
 POST /api/v1/microsoft_outlook/webhooks_stop
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2N2RmZmEzMC01Y2U4LTQ1ZDMtYTYyZi1hMzc2YjliZGNjY2UiLCJzdWIiOiIxMjMzMyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.ibzIRJuqP2rQK-gDzB1l7EDafa_Nvdtwf4OuPZqZvrM
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ODg3ZjQ3Mi1mNmM0LTQxMGMtOGI0MS01NzJjMmM4YWNkYzciLCJzdWIiOiI4MjciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.tS1Hxihss7t1L3eW05X_Mbt2nTlejvzlpwE-YwjJBxU
 ```
 
 `POST /api/v1/microsoft_outlook/webhooks_stop`
@@ -3121,7 +3121,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2N2RmZmEzMC01Y2U4LTQ1ZDMtY
 ```shell
 curl "http://localhost:3000/api/v1/microsoft_outlook/webhooks_stop" -d '{"calendar_uuid":"test@test.com","data":{"type":"calendars","attributes":{"calendar_uuid":"test@test.com"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2N2RmZmEzMC01Y2U4LTQ1ZDMtYTYyZi1hMzc2YjliZGNjY2UiLCJzdWIiOiIxMjMzMyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.ibzIRJuqP2rQK-gDzB1l7EDafa_Nvdtwf4OuPZqZvrM"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ODg3ZjQ3Mi1mNmM0LTQxMGMtOGI0MS01NzJjMmM4YWNkYzciLCJzdWIiOiI4MjciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.tS1Hxihss7t1L3eW05X_Mbt2nTlejvzlpwE-YwjJBxU"
 ```
 ## Watch Outlook Webhook
 
@@ -3133,7 +3133,7 @@ curl "http://localhost:3000/api/v1/microsoft_outlook/webhooks_stop" -d '{"calend
 ```plaintext
 POST /api/v1/microsoft_outlook/events/watch
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlODFkMWNlOC1mODIyLTQ2YTktOWViYS0zYThjNTMwZDYyZTQiLCJzdWIiOiIxMjMzMCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OSwiZXhwIjoxNjA1ODA0OTY5fQ.ZEN7Qg-jzsk15oH_DxeiDrM7Xl78xbGOEYswfJ4exzA
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNjgzNWM0Ny1hMmEyLTRhMzQtYjcxOC1lNzBhNTkxMmNmNjQiLCJzdWIiOiI4MjUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.4fE6zhcdxS9ptMsLMoG20NZsHsU4oe2-ezXkfYrEkTw
 ```
 
 `POST /api/v1/microsoft_outlook/events/watch`
@@ -3142,7 +3142,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlODFkMWNlOC1mODIyLTQ2YTktO
 
 
 ```json
-{"value":[{"clientState":"0886e225-c62a-42cc-93d3-8de8c4dda89f","subscriptionId":"738a45fd-7980-403d-b574-4b08a9942325"}]}
+{"value":[{"clientState":"ad37d01b-f6de-4f93-b7a3-279d83a463f9","subscriptionId":"eedb1ff5-2fd8-4b45-a2cc-59a06cfdbe59"}]}
 ```
 
 
@@ -3167,9 +3167,9 @@ Content-Type: text/plain; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/microsoft_outlook/events/watch" -d '{"value":[{"clientState":"0886e225-c62a-42cc-93d3-8de8c4dda89f","subscriptionId":"738a45fd-7980-403d-b574-4b08a9942325"}]}' -X POST \
+curl "http://localhost:3000/api/v1/microsoft_outlook/events/watch" -d '{"value":[{"clientState":"ad37d01b-f6de-4f93-b7a3-279d83a463f9","subscriptionId":"eedb1ff5-2fd8-4b45-a2cc-59a06cfdbe59"}]}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlODFkMWNlOC1mODIyLTQ2YTktOWViYS0zYThjNTMwZDYyZTQiLCJzdWIiOiIxMjMzMCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OSwiZXhwIjoxNjA1ODA0OTY5fQ.ZEN7Qg-jzsk15oH_DxeiDrM7Xl78xbGOEYswfJ4exzA"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNjgzNWM0Ny1hMmEyLTRhMzQtYjcxOC1lNzBhNTkxMmNmNjQiLCJzdWIiOiI4MjUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.4fE6zhcdxS9ptMsLMoG20NZsHsU4oe2-ezXkfYrEkTw"
 ```
 ## Watch Outlook Webhook Lifecycle
 
@@ -3181,7 +3181,7 @@ curl "http://localhost:3000/api/v1/microsoft_outlook/events/watch" -d '{"value":
 ```plaintext
 POST /api/v1/microsoft_outlook/events/lifecycle
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5YjkyNTY5NC00MGIyLTRkM2YtYjA5OC0zMmYzMWM2OTE4Y2QiLCJzdWIiOiIxMjMyOCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OSwiZXhwIjoxNjA1ODA0OTY5fQ.hiP7mLa7GYrJbL68hsCImtgTqGKJEPyb_vtJdmfsuhk
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0OTg1NGM3Ny03MmYyLTRmMGYtYmU2My02MzBhY2RiY2JkMjUiLCJzdWIiOiI4MjIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjgsImV4cCI6MTYwNjA2NzEyOH0.MYWyWWk9Hty1YVFik04A24SBPVAuoAQ2yXr1ZFV1p9g
 ```
 
 `POST /api/v1/microsoft_outlook/events/lifecycle`
@@ -3190,7 +3190,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5YjkyNTY5NC00MGIyLTRkM2YtY
 
 
 ```json
-{"value":[{"clientState":"bca67577-0e09-4390-9eef-509d4767ca40","subscriptionId":"650f4840-1487-4e14-b9b5-64415974e65a"}]}
+{"value":[{"clientState":"6a387ff0-dbac-4612-bd71-c30603034837","subscriptionId":"ae2ee49c-c1cc-4bb4-af06-61d65dae7da8"}]}
 ```
 
 
@@ -3212,9 +3212,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5YjkyNTY5NC00MGIyLTRkM2YtY
 
 
 ```shell
-curl "http://localhost:3000/api/v1/microsoft_outlook/events/lifecycle" -d '{"value":[{"clientState":"bca67577-0e09-4390-9eef-509d4767ca40","subscriptionId":"650f4840-1487-4e14-b9b5-64415974e65a"}]}' -X POST \
+curl "http://localhost:3000/api/v1/microsoft_outlook/events/lifecycle" -d '{"value":[{"clientState":"6a387ff0-dbac-4612-bd71-c30603034837","subscriptionId":"ae2ee49c-c1cc-4bb4-af06-61d65dae7da8"}]}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5YjkyNTY5NC00MGIyLTRkM2YtYjA5OC0zMmYzMWM2OTE4Y2QiLCJzdWIiOiIxMjMyOCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OSwiZXhwIjoxNjA1ODA0OTY5fQ.hiP7mLa7GYrJbL68hsCImtgTqGKJEPyb_vtJdmfsuhk"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0OTg1NGM3Ny03MmYyLTRmMGYtYmU2My02MzBhY2RiY2JkMjUiLCJzdWIiOiI4MjIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjgsImV4cCI6MTYwNjA2NzEyOH0.MYWyWWk9Hty1YVFik04A24SBPVAuoAQ2yXr1ZFV1p9g"
 ```
 # Objectives
 
@@ -3228,9 +3228,9 @@ curl "http://localhost:3000/api/v1/microsoft_outlook/events/lifecycle" -d '{"val
 #### Endpoint
 
 ```plaintext
-POST /api/v1/meetings/5523/objectives
+POST /api/v1/meetings/180/objectives
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MGE4MGEyMi1kMzQ4LTQ1ODgtOTI3YS04YmYxMWM2YTZjZTgiLCJzdWIiOiIxMjMxNiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.NlHwAv_oiSX4Z-6a0bO01KMf8lC9wqMIK3BYPmS8R00
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4ZTk4ZTM2NC05ZWUwLTRkMjctODNkYi0yYWU3OTU2YTkxY2EiLCJzdWIiOiI3MjUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0._qIAYIkx5sI3jLz90N53OvWx9_zHbWTHTNwqEiBGDrc
 ```
 
 `POST /api/v1/meetings/:meeting_id/objectives`
@@ -3261,10 +3261,10 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "320",
+    "id": "36",
     "type": "objectives",
     "attributes": {
-      "meeting_id": 5523,
+      "meeting_id": 180,
       "description": "Figure something out",
       "position": 3
     }
@@ -3275,9 +3275,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5523/objectives" -d '{"data":{"type":"objective","attributes":{"description":"Figure something out","position":3}}}' -X POST \
+curl "http://localhost:3000/api/v1/meetings/180/objectives" -d '{"data":{"type":"objective","attributes":{"description":"Figure something out","position":3}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MGE4MGEyMi1kMzQ4LTQ1ODgtOTI3YS04YmYxMWM2YTZjZTgiLCJzdWIiOiIxMjMxNiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.NlHwAv_oiSX4Z-6a0bO01KMf8lC9wqMIK3BYPmS8R00"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4ZTk4ZTM2NC05ZWUwLTRkMjctODNkYi0yYWU3OTU2YTkxY2EiLCJzdWIiOiI3MjUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0._qIAYIkx5sI3jLz90N53OvWx9_zHbWTHTNwqEiBGDrc"
 ```
 ## Delete objective
 
@@ -3287,9 +3287,9 @@ curl "http://localhost:3000/api/v1/meetings/5523/objectives" -d '{"data":{"type"
 #### Endpoint
 
 ```plaintext
-DELETE /api/v1/meetings/5519/objectives/315
+DELETE /api/v1/meetings/179/objectives/34
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YzAwY2RmMy00YmY2LTQyZjAtYWZlYy1kYjA0YjQyOWZkYjMiLCJzdWIiOiIxMjMxMiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.LxS1lbgNomw5GOUdhoET6z56WsOB14UrGttCkDeszpc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZTc2MTYwMi03MjM1LTRkODEtYWU2YS04NTJlOTEzNGI4NDciLCJzdWIiOiI3MjQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0.5g9STtn3u7C7V1d820e6RcQCn03aoQllzEcE5YZyoF8
 ```
 
 `DELETE /api/v1/meetings/:meeting_id/objectives/:id`
@@ -3316,9 +3316,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YzAwY2RmMy00YmY2LTQyZjAtY
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5519/objectives/315" -d '' -X DELETE \
+curl "http://localhost:3000/api/v1/meetings/179/objectives/34" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YzAwY2RmMy00YmY2LTQyZjAtYWZlYy1kYjA0YjQyOWZkYjMiLCJzdWIiOiIxMjMxMiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.LxS1lbgNomw5GOUdhoET6z56WsOB14UrGttCkDeszpc"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZTc2MTYwMi03MjM1LTRkODEtYWU2YS04NTJlOTEzNGI4NDciLCJzdWIiOiI3MjQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0.5g9STtn3u7C7V1d820e6RcQCn03aoQllzEcE5YZyoF8"
 ```
 ## List objectives
 
@@ -3328,9 +3328,9 @@ curl "http://localhost:3000/api/v1/meetings/5519/objectives/315" -d '' -X DELETE
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5522/objectives
+GET /api/v1/meetings/177/objectives
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0OWI1OTIxZC00YzkzLTQyODMtYTZlYy00NWI1YzhhNTNlNTYiLCJzdWIiOiIxMjMxNSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.5cfWLHK4v83a3HUzMNJ4mTSAgEPQyTPP4IupxrRzNHQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMzdhN2RlOS0xZGM3LTRhYjgtYjY1Ni1iMDAwMTZlZTE0Y2UiLCJzdWIiOiI3MjIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0.h2HNXWwvMtn0IxMpQD65sgNyUkyP9HomJtjUh59ShVA
 ```
 
 `GET /api/v1/meetings/:meeting_id/objectives`
@@ -3358,12 +3358,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 {
   "data": [
     {
-      "id": "318",
+      "id": "32",
       "type": "objectives",
       "attributes": {
-        "meeting_id": 5522,
-        "description": "Deep v try-hard 3 wolf moon wayfarers cornhole plaid marfa distillery cold-pressed aesthetic drinking.",
-        "position": 1
+        "meeting_id": 177,
+        "description": "Cliche banjo semiotics thundercats next level tattooed single-origin coffee selvage messenger bag pabst.",
+        "position": null
       }
     }
   ]
@@ -3373,9 +3373,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5522/objectives" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/177/objectives" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0OWI1OTIxZC00YzkzLTQyODMtYTZlYy00NWI1YzhhNTNlNTYiLCJzdWIiOiIxMjMxNSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.5cfWLHK4v83a3HUzMNJ4mTSAgEPQyTPP4IupxrRzNHQ"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMzdhN2RlOS0xZGM3LTRhYjgtYjY1Ni1iMDAwMTZlZTE0Y2UiLCJzdWIiOiI3MjIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0.h2HNXWwvMtn0IxMpQD65sgNyUkyP9HomJtjUh59ShVA"
 ```
 ## Show objective
 
@@ -3385,9 +3385,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5522/objectives" -X GET \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5521/objectives/317
+GET /api/v1/meetings/178/objectives/33
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NzljYTU1YS03ZmU0LTRiOTAtOTQ0Ny04M2VhZWViNTM1OTciLCJzdWIiOiIxMjMxNCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.YKLVG79yN4bTA-xOetj7-cwa_rMvNY1UVLjT0Bz6ZpI
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5ODcyYTg2OS00ZDY3LTQyZjgtYmE1YS0zOTJlNzUyMGQyOTYiLCJzdWIiOiI3MjMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0.yqWtwj9Zn9VBRojVfUbaf4Alikc3xG1bSaNt-dkwO1Q
 ```
 
 `GET /api/v1/meetings/:meeting_id/objectives/:id`
@@ -3414,12 +3414,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "317",
+    "id": "33",
     "type": "objectives",
     "attributes": {
-      "meeting_id": 5521,
-      "description": "Stumptown tousled vegan meh asymmetrical hammock tacos.",
-      "position": 1
+      "meeting_id": 178,
+      "description": "Viral ennui retro dreamcatcher readymade messenger bag etsy cold-pressed.",
+      "position": null
     }
   }
 }
@@ -3428,9 +3428,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5521/objectives/317" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/178/objectives/33" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NzljYTU1YS03ZmU0LTRiOTAtOTQ0Ny04M2VhZWViNTM1OTciLCJzdWIiOiIxMjMxNCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.YKLVG79yN4bTA-xOetj7-cwa_rMvNY1UVLjT0Bz6ZpI"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5ODcyYTg2OS00ZDY3LTQyZjgtYmE1YS0zOTJlNzUyMGQyOTYiLCJzdWIiOiI3MjMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0.yqWtwj9Zn9VBRojVfUbaf4Alikc3xG1bSaNt-dkwO1Q"
 ```
 ## Update objective
 
@@ -3440,9 +3440,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5521/objectives/317" -X GET \
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/meetings/5520/objectives/316
+PUT /api/v1/meetings/176/objectives/31
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZjI5Njc2ZS02NjFkLTQxN2MtOThjYi0zMDI4NzcyYzY4ODgiLCJzdWIiOiIxMjMxMyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.ztT0gUnafKjzeoNRkds9Esj9uby7TLTZFTaALeBtSzo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4OGQ2ZWI1MC01NTZhLTQ4Y2EtOTVkMS1jZjZlNTVkZmYxZDUiLCJzdWIiOiI3MjEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.m4zgalSOJiBt2xTs-AilFsF7b7nG3AMz_Ts0JSQFtxM
 ```
 
 `PUT /api/v1/meetings/:meeting_id/objectives/:id`
@@ -3473,12 +3473,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "316",
+    "id": "31",
     "type": "objectives",
     "attributes": {
-      "meeting_id": 5520,
+      "meeting_id": 176,
       "description": "Figure it all out",
-      "position": 1
+      "position": null
     }
   }
 }
@@ -3487,9 +3487,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5520/objectives/316" -d '{"data":{"type":"objective","attributes":{"description":"Figure it all out"}}}' -X PUT \
+curl "http://localhost:3000/api/v1/meetings/176/objectives/31" -d '{"data":{"type":"objective","attributes":{"description":"Figure it all out"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZjI5Njc2ZS02NjFkLTQxN2MtOThjYi0zMDI4NzcyYzY4ODgiLCJzdWIiOiIxMjMxMyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.ztT0gUnafKjzeoNRkds9Esj9uby7TLTZFTaALeBtSzo"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4OGQ2ZWI1MC01NTZhLTQ4Y2EtOTVkMS1jZjZlNTVkZmYxZDUiLCJzdWIiOiI3MjEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTMsImV4cCI6MTYwNjA2NzExM30.m4zgalSOJiBt2xTs-AilFsF7b7nG3AMz_Ts0JSQFtxM"
 ```
 # Organizer Deny-List
 
@@ -3505,7 +3505,7 @@ curl "http://localhost:3000/api/v1/meetings/5520/objectives/316" -d '{"data":{"t
 ```plaintext
 POST /api/v1/users/blacklist_organizers/bulk
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ZTEwMjRmNi0zZGUyLTRkNjktODgxZC01Njc1MGY5MTZlNmEiLCJzdWIiOiIxMjMxOSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.P8JvmEPYwYBF8xU8ZGd17TDoKgNGBUwcAkJiOmF_n_U
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhYjIyMGZiZC0yMDY4LTRjM2ItODViYS03NmEzMjBjMzZkZmUiLCJzdWIiOiI3NTkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.Wdv3jvA3Zs4u1ik4vru_ONSyyY6Fu_f_FmBHa5CWOKE
 ```
 
 `POST /api/v1/users/blacklist_organizers/bulk`
@@ -3536,14 +3536,14 @@ Content-Type: application/vnd.api+json; charset=utf-8
 {
   "data": [
     {
-      "id": "206",
+      "id": "22",
       "type": "blacklist_organizers",
       "attributes": {
         "email": "test@test.com"
       }
     },
     {
-      "id": "207",
+      "id": "23",
       "type": "blacklist_organizers",
       "attributes": {
         "email": "test2@test.com"
@@ -3558,7 +3558,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl "http://localhost:3000/api/v1/users/blacklist_organizers/bulk" -d '{"data":{"type":"attendee","attributes":{"email_list":"test@test.com,test2@test.com"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ZTEwMjRmNi0zZGUyLTRkNjktODgxZC01Njc1MGY5MTZlNmEiLCJzdWIiOiIxMjMxOSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.P8JvmEPYwYBF8xU8ZGd17TDoKgNGBUwcAkJiOmF_n_U"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhYjIyMGZiZC0yMDY4LTRjM2ItODViYS03NmEzMjBjMzZkZmUiLCJzdWIiOiI3NTkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.Wdv3jvA3Zs4u1ik4vru_ONSyyY6Fu_f_FmBHa5CWOKE"
 ```
 ## Create deny-list entry
 
@@ -3570,7 +3570,7 @@ curl "http://localhost:3000/api/v1/users/blacklist_organizers/bulk" -d '{"data":
 ```plaintext
 POST /api/v1/users/blacklist_organizers
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlYzlmZTUzZi0xZGY2LTQ2ZTQtODE3Zi04MWRjNjZkMjBmMDUiLCJzdWIiOiIxMjMyMCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.pUkXFN3qvrgLQw21PpGQpSRSvI_i23VxNHd4A7k6wkM
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ZWI3ZWJkMy1jZWMzLTQ2NjUtOGM3Yy0xN2U5YzY1ZGJkNGIiLCJzdWIiOiI3NjEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.su1Q1ps527SJrjr0jBoDCi7z8f1fW_XmKWSOhQPSNh8
 ```
 
 `POST /api/v1/users/blacklist_organizers`
@@ -3600,7 +3600,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "208",
+    "id": "24",
     "type": "blacklist_organizers",
     "attributes": {
       "email": "test@test.com"
@@ -3614,7 +3614,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl "http://localhost:3000/api/v1/users/blacklist_organizers" -d '{"data":{"type":"attendee","attributes":{"email":"test@test.com"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlYzlmZTUzZi0xZGY2LTQ2ZTQtODE3Zi04MWRjNjZkMjBmMDUiLCJzdWIiOiIxMjMyMCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.pUkXFN3qvrgLQw21PpGQpSRSvI_i23VxNHd4A7k6wkM"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ZWI3ZWJkMy1jZWMzLTQ2NjUtOGM3Yy0xN2U5YzY1ZGJkNGIiLCJzdWIiOiI3NjEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.su1Q1ps527SJrjr0jBoDCi7z8f1fW_XmKWSOhQPSNh8"
 ```
 ## List denied organizers
 
@@ -3626,7 +3626,7 @@ curl "http://localhost:3000/api/v1/users/blacklist_organizers" -d '{"data":{"typ
 ```plaintext
 GET /api/v1/users/blacklist_organizers
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3MjhhMTJjNi01NzVjLTQ3OTEtYmVhZS0xYjI1Zjg2NzdmMjEiLCJzdWIiOiIxMjMxNyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.iz39V_JtHFFgD1_iyiBG5zsawwNbfpJpeS3lKsWjK-s
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzOWZkODUxZS03ZTRjLTRjOWUtOWUzZi1mMTdmOThkZTZkZjEiLCJzdWIiOiI3NjAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.wDYqJAHo8JBz3IdYDnX-sIAO8hCPuGEa0HCc6njXaW0
 ```
 
 `GET /api/v1/users/blacklist_organizers`
@@ -3658,7 +3658,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/users/blacklist_organizers" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3MjhhMTJjNi01NzVjLTQ3OTEtYmVhZS0xYjI1Zjg2NzdmMjEiLCJzdWIiOiIxMjMxNyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NywiZXhwIjoxNjA1ODA0OTY3fQ.iz39V_JtHFFgD1_iyiBG5zsawwNbfpJpeS3lKsWjK-s"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzOWZkODUxZS03ZTRjLTRjOWUtOWUzZi1mMTdmOThkZTZkZjEiLCJzdWIiOiI3NjAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTksImV4cCI6MTYwNjA2NzExOX0.wDYqJAHo8JBz3IdYDnX-sIAO8hCPuGEa0HCc6njXaW0"
 ```
 ## Remove denied organizer
 
@@ -3668,9 +3668,9 @@ curl -g "http://localhost:3000/api/v1/users/blacklist_organizers" -X GET \
 #### Endpoint
 
 ```plaintext
-DELETE /api/v1/users/blacklist_organizers/205
+DELETE /api/v1/users/blacklist_organizers/21
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NjVjMDJlZi0wYjhhLTQ2MzAtOTczZS01N2RlYTIwNTJhN2QiLCJzdWIiOiIxMjMxOCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.oi6Xai4rA5lgBgouquguAFFwOQiR61m4fhdixd9c3X4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiNGY3ZWQyOS02OTEyLTQ1YWQtOGI2Yi03MTg4MjMyZGNhNGIiLCJzdWIiOiI3NTgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.gGm-1eXBbqm_BA4fK9wq15e7MaszXWOnIk1WktPqC0g
 ```
 
 `DELETE /api/v1/users/blacklist_organizers/:id`
@@ -3692,9 +3692,9 @@ None known.
 
 
 ```shell
-curl "http://localhost:3000/api/v1/users/blacklist_organizers/205" -d '' -X DELETE \
+curl "http://localhost:3000/api/v1/users/blacklist_organizers/21" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NjVjMDJlZi0wYjhhLTQ2MzAtOTczZS01N2RlYTIwNTJhN2QiLCJzdWIiOiIxMjMxOCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.oi6Xai4rA5lgBgouquguAFFwOQiR61m4fhdixd9c3X4"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiNGY3ZWQyOS02OTEyLTQ1YWQtOGI2Yi03MTg4MjMyZGNhNGIiLCJzdWIiOiI3NTgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.gGm-1eXBbqm_BA4fK9wq15e7MaszXWOnIk1WktPqC0g"
 ```
 # Ping
 
@@ -3710,7 +3710,7 @@ curl "http://localhost:3000/api/v1/users/blacklist_organizers/205" -d '' -X DELE
 ```plaintext
 GET /api/v1/ping
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1MGU2Y2Y4Mi1iMjU3LTQzYTktYjM3Yy0yNTQ5MTZjZjNkOGMiLCJzdWIiOiIxMjM0MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.rJTDHxuKxL6SDuJPKzUXMyf-WjLB_PTZ185aAqaOSPU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NWVhZDM3MS1kYzkxLTQxYWUtYmVjNC03YmEyYzJmOTM3ZGYiLCJzdWIiOiI3MjciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0.p5tbXofxGMAtLe5SCVXuxSimbKQrg2wnXXhSQ_q5NxE
 ```
 
 `GET /api/v1/ping`
@@ -3732,11 +3732,11 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "5e9be841-bb45-4516-a73e-f49f5375b5bf",
+    "id": "157db283-2d33-443e-b1dc-46af22e1a66d",
     "type": "pings",
     "attributes": {
-      "id": "5e9be841-bb45-4516-a73e-f49f5375b5bf",
-      "date": "2020-10-25T16:56:10.989Z"
+      "id": "157db283-2d33-443e-b1dc-46af22e1a66d",
+      "date": "2020-10-28T17:45:14.917Z"
     }
   }
 }
@@ -3747,7 +3747,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/ping" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1MGU2Y2Y4Mi1iMjU3LTQzYTktYjM3Yy0yNTQ5MTZjZjNkOGMiLCJzdWIiOiIxMjM0MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MCwiZXhwIjoxNjA1ODA0OTcwfQ.rJTDHxuKxL6SDuJPKzUXMyf-WjLB_PTZ185aAqaOSPU"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NWVhZDM3MS1kYzkxLTQxYWUtYmVjNC03YmEyYzJmOTM3ZGYiLCJzdWIiOiI3MjciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0.p5tbXofxGMAtLe5SCVXuxSimbKQrg2wnXXhSQ_q5NxE"
 ```
 # Pre-Work Items
 
@@ -3761,9 +3761,9 @@ curl -g "http://localhost:3000/api/v1/ping" -X GET \
 #### Endpoint
 
 ```plaintext
-POST /api/v1/meetings/5527/prework_items
+POST /api/v1/meetings/210/prework_items
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MjkyNGM2Mi0zYWEwLTRmMDYtYTdlOS04YjczYTI3YTVlOTgiLCJzdWIiOiIxMjM0NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MSwiZXhwIjoxNjA1ODA0OTcxfQ.6OO4qbXVwRm46KXTBYptA_FP0XGZmoaye9GzTtkDUDw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2MjIzNzU2YS1iYTA1LTQ0OWItOWMzYS1hNTZmYjY3NmM0ZjMiLCJzdWIiOiI4MTEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.TwThKHk4pj1Al0rcygziY6dYvWa4IMytHiOWeUukJ6I
 ```
 
 `POST /api/v1/meetings/:meeting_id/prework_items`
@@ -3795,10 +3795,10 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "215",
+    "id": "24",
     "type": "prework_items",
     "attributes": {
-      "id": 215,
+      "id": 24,
       "description": "Review the sales report",
       "url": "https://www.locationtofile.com/salesreport.xls",
       "timebox": 3600
@@ -3810,9 +3810,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5527/prework_items" -d '{"data":{"type":"prework_item","attributes":{"description":"Review the sales report","url":"https://www.locationtofile.com/salesreport.xls","timebox":3600}}}' -X POST \
+curl "http://localhost:3000/api/v1/meetings/210/prework_items" -d '{"data":{"type":"prework_item","attributes":{"description":"Review the sales report","url":"https://www.locationtofile.com/salesreport.xls","timebox":3600}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MjkyNGM2Mi0zYWEwLTRmMDYtYTdlOS04YjczYTI3YTVlOTgiLCJzdWIiOiIxMjM0NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MSwiZXhwIjoxNjA1ODA0OTcxfQ.6OO4qbXVwRm46KXTBYptA_FP0XGZmoaye9GzTtkDUDw"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2MjIzNzU2YS1iYTA1LTQ0OWItOWMzYS1hNTZmYjY3NmM0ZjMiLCJzdWIiOiI4MTEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.TwThKHk4pj1Al0rcygziY6dYvWa4IMytHiOWeUukJ6I"
 ```
 ## Delete prework item
 
@@ -3822,9 +3822,9 @@ curl "http://localhost:3000/api/v1/meetings/5527/prework_items" -d '{"data":{"ty
 #### Endpoint
 
 ```plaintext
-DELETE /api/v1/meetings/5528/prework_items/216
+DELETE /api/v1/meetings/206/prework_items/21
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOWNlYWMyNS1hNDMzLTQ4M2ItYTc0Yy02YmFlMmRlYmE3NzUiLCJzdWIiOiIxMjM0NiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MiwiZXhwIjoxNjA1ODA0OTcyfQ.hIeERTv4NDQ_F5vnVwZpMJ5lpS4bLG_f5bEs1xmITOg
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmMGQ3ZDM3Zi1jNzVmLTRmZTAtODk1MC0zZmY4YzhjMzBhNzgiLCJzdWIiOiI4MDciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjYsImV4cCI6MTYwNjA2NzEyNn0.4s5zJbpYcQTIfD722vmvKWpHqJCPR3kt1k36cR3XMhY
 ```
 
 `DELETE /api/v1/meetings/:meeting_id/prework_items/:id`
@@ -3852,9 +3852,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOWNlYWMyNS1hNDMzLTQ4M2ItY
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5528/prework_items/216" -d '' -X DELETE \
+curl "http://localhost:3000/api/v1/meetings/206/prework_items/21" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOWNlYWMyNS1hNDMzLTQ4M2ItYTc0Yy02YmFlMmRlYmE3NzUiLCJzdWIiOiIxMjM0NiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MiwiZXhwIjoxNjA1ODA0OTcyfQ.hIeERTv4NDQ_F5vnVwZpMJ5lpS4bLG_f5bEs1xmITOg"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmMGQ3ZDM3Zi1jNzVmLTRmZTAtODk1MC0zZmY4YzhjMzBhNzgiLCJzdWIiOiI4MDciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjYsImV4cCI6MTYwNjA2NzEyNn0.4s5zJbpYcQTIfD722vmvKWpHqJCPR3kt1k36cR3XMhY"
 ```
 ## List prework items
 
@@ -3864,9 +3864,9 @@ curl "http://localhost:3000/api/v1/meetings/5528/prework_items/216" -d '' -X DEL
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5526/prework_items
+GET /api/v1/meetings/208/prework_items
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Y2FhOTQ4NS1lZjU0LTRhODMtYTExNi04ZTI3MjdkZjMzNjIiLCJzdWIiOiIxMjM0NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MSwiZXhwIjoxNjA1ODA0OTcxfQ.Nj-y1HP1DHzR-n9DYQUmdt3mcGCakdtD9lyhNJJq2VM
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjMDliMmI5My1mNmQwLTRlZjYtOTIxZC1mY2U1MzU0YTQ1MTUiLCJzdWIiOiI4MDkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjYsImV4cCI6MTYwNjA2NzEyNn0.CmxomoVNoUA0_f_jMbBUShMlDFOS4xjf4_eQM4DaxVA
 ```
 
 `GET /api/v1/meetings/:meeting_id/prework_items`
@@ -3902,9 +3902,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5526/prework_items" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/208/prework_items" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Y2FhOTQ4NS1lZjU0LTRhODMtYTExNi04ZTI3MjdkZjMzNjIiLCJzdWIiOiIxMjM0NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MSwiZXhwIjoxNjA1ODA0OTcxfQ.Nj-y1HP1DHzR-n9DYQUmdt3mcGCakdtD9lyhNJJq2VM"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjMDliMmI5My1mNmQwLTRlZjYtOTIxZC1mY2U1MzU0YTQ1MTUiLCJzdWIiOiI4MDkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjYsImV4cCI6MTYwNjA2NzEyNn0.CmxomoVNoUA0_f_jMbBUShMlDFOS4xjf4_eQM4DaxVA"
 ```
 ## Show prework item
 
@@ -3914,9 +3914,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5526/prework_items" -X GET \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/meetings/5524/prework_items/213
+GET /api/v1/meetings/209/prework_items/23
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZjE2OTA1OC0zNDhhLTQ1NWQtOTU2Yy0wOTEyMTNjNGJmOWEiLCJzdWIiOiIxMjM0MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MSwiZXhwIjoxNjA1ODA0OTcxfQ.3ok46qKs5QwiXgorjqxA9pq9CP3mssx5EU-_Ep-xQOg
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkY2YzNDExNC1jMjU5LTQ0NTUtODU1Ni03Nzk5YjI2OTE5ODgiLCJzdWIiOiI4MTAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.nUpsjuXmNlBKow1jZEitO_zFUVmvVZWISBWt-1wV1BA
 ```
 
 `GET /api/v1/meetings/:meeting_id/prework_items/:id`
@@ -3944,12 +3944,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "213",
+    "id": "23",
     "type": "prework_items",
     "attributes": {
-      "id": 213,
-      "description": "Tumblr chia readymade mustache.",
-      "url": "http://beier.org/cameron.kris",
+      "id": 23,
+      "description": "Muggle magic shoreditch schlitz brooklyn waistcoat trust fund tofu.",
+      "url": "http://gleason-bosco.org/jeffrey_oberbrunner",
       "timebox": 3600
     }
   }
@@ -3959,9 +3959,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/meetings/5524/prework_items/213" -X GET \
+curl -g "http://localhost:3000/api/v1/meetings/209/prework_items/23" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZjE2OTA1OC0zNDhhLTQ1NWQtOTU2Yy0wOTEyMTNjNGJmOWEiLCJzdWIiOiIxMjM0MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MSwiZXhwIjoxNjA1ODA0OTcxfQ.3ok46qKs5QwiXgorjqxA9pq9CP3mssx5EU-_Ep-xQOg"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkY2YzNDExNC1jMjU5LTQ0NTUtODU1Ni03Nzk5YjI2OTE5ODgiLCJzdWIiOiI4MTAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.nUpsjuXmNlBKow1jZEitO_zFUVmvVZWISBWt-1wV1BA"
 ```
 ## Update prework item
 
@@ -3971,9 +3971,9 @@ curl -g "http://localhost:3000/api/v1/meetings/5524/prework_items/213" -X GET \
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/meetings/5525/prework_items/214
+PUT /api/v1/meetings/207/prework_items/22
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkYWMxMjNhNy0xMzk1LTQxMmItYjExMy0yZmY4ZmNiZjRkYzkiLCJzdWIiOiIxMjM0MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MSwiZXhwIjoxNjA1ODA0OTcxfQ.8gfZVF17kBzHST-w4QkQugeJqA79BaJjkPJHJX2jopU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NmEyZWZlNy0xZTYzLTRhZWEtODlhMy0xMjFjN2E5NjcxYzciLCJzdWIiOiI4MDgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjYsImV4cCI6MTYwNjA2NzEyNn0.OeHqMwiuzY-nc5v_9yULPy-tNL10BFfeMgCpCz0VnkA
 ```
 
 `PUT /api/v1/meetings/:meeting_id/prework_items/:id`
@@ -4005,12 +4005,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "214",
+    "id": "22",
     "type": "prework_items",
     "attributes": {
-      "id": 214,
+      "id": 22,
       "description": "Review the sales report dude",
-      "url": "http://schowalter-ferry.org/renay",
+      "url": "http://stiedemann-abernathy.co/ethan",
       "timebox": 3600
     }
   }
@@ -4020,9 +4020,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/meetings/5525/prework_items/214" -d '{"data":{"type":"prework_item","attributes":{"description":"Review the sales report dude"}}}' -X PUT \
+curl "http://localhost:3000/api/v1/meetings/207/prework_items/22" -d '{"data":{"type":"prework_item","attributes":{"description":"Review the sales report dude"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkYWMxMjNhNy0xMzk1LTQxMmItYjExMy0yZmY4ZmNiZjRkYzkiLCJzdWIiOiIxMjM0MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MSwiZXhwIjoxNjA1ODA0OTcxfQ.8gfZVF17kBzHST-w4QkQugeJqA79BaJjkPJHJX2jopU"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NmEyZWZlNy0xZTYzLTRhZWEtODlhMy0xMjFjN2E5NjcxYzciLCJzdWIiOiI4MDgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjYsImV4cCI6MTYwNjA2NzEyNn0.OeHqMwiuzY-nc5v_9yULPy-tNL10BFfeMgCpCz0VnkA"
 ```
 # Reporting
 
@@ -4036,9 +4036,9 @@ Meeting Evaluation Reporting
 #### Endpoint
 
 ```plaintext
-GET /api/v1/reporting/user/evaluations/average_attendees?by_period[starts_at]=2020-10-25+16%3A56%3A09+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A09+UTC
+GET /api/v1/reporting/user/evaluations/average_attendees?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1ODdkN2IzNC01N2NkLTQxYmEtYTg4Zi1mNmQ4YWE2MTdhZmMiLCJzdWIiOiIxMjMyNyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OSwiZXhwIjoxNjA1ODA0OTY5fQ.L3zupva_FSHQoxmUxoOc_ihpSFyHTCXuDKN_uVxNduU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjNTdmMjhlMi00ZTMwLTQ5ZGMtYWJiYS0xNDc5YzUwMTI0ZWUiLCJzdWIiOiI4MzMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.ljh4_ceD6NlqUSlmYEYb9hxxR4Po2Il5_JQb9GERQZo
 ```
 
 `GET /api/v1/reporting/user/evaluations/average_attendees`
@@ -4047,7 +4047,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1ODdkN2IzNC01N2NkLTQxYmEtY
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:09 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:09 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:29 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:29 UTC&quot;}
 ```
 
 
@@ -4072,12 +4072,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "b62d6eb9-ca7c-40ad-a690-56872fd97f1d",
+    "id": "548f2319-0cc7-4494-abff-a4e0a2fe17fb",
     "type": "reports",
     "attributes": {
       "name": "Attendees",
-      "starts_at": "2020-10-25T00:00:00.000Z",
-      "ends_at": "2020-11-01T23:59:59.999Z",
+      "starts_at": "2020-10-28T00:00:00.000Z",
+      "ends_at": "2020-11-04T23:59:59.999Z",
       "spans_days": 8,
       "rows": {
       },
@@ -4092,9 +4092,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/average_attendees?by_period[starts_at]=2020-10-25+16%3A56%3A09+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A09+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/average_attendees?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1ODdkN2IzNC01N2NkLTQxYmEtYTg4Zi1mNmQ4YWE2MTdhZmMiLCJzdWIiOiIxMjMyNyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OSwiZXhwIjoxNjA1ODA0OTY5fQ.L3zupva_FSHQoxmUxoOc_ihpSFyHTCXuDKN_uVxNduU"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjNTdmMjhlMi00ZTMwLTQ5ZGMtYWJiYS0xNDc5YzUwMTI0ZWUiLCJzdWIiOiI4MzMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.ljh4_ceD6NlqUSlmYEYb9hxxR4Po2Il5_JQb9GERQZo"
 ```
 ## Average scores per evaluator
 
@@ -4104,9 +4104,9 @@ curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/average_attende
 #### Endpoint
 
 ```plaintext
-GET /api/v1/reporting/user/evaluations/averages?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC
+GET /api/v1/reporting/user/evaluations/averages?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjM2FmMzE1YS1mMDQxLTQwOWUtYWRmNC02ODljZTc2ZWVhMmEiLCJzdWIiOiIxMjMyNSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.6NtnQaaJiAAXFV0ADx-Cjd7phygijyrKz4cpA2J-5Og
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZmY0NDE1MC02MmQ2LTQ4YWUtOGQ2YS1kOTAwM2VjMTMxYTciLCJzdWIiOiI4MjkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.BEcWD3OcS2_lqOYny2_9AkWONk1PvyBzhzRDIQCbuPU
 ```
 
 `GET /api/v1/reporting/user/evaluations/averages`
@@ -4115,7 +4115,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjM2FmMzE1YS1mMDQxLTQwOWUtY
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:08 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:08 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:29 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:29 UTC&quot;}
 ```
 
 
@@ -4140,12 +4140,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "ddbdc610-80c1-4fef-80a1-c90bc9aad54f",
+    "id": "ca0f9385-e8f8-4f36-a177-d2592963889d",
     "type": "reports",
     "attributes": {
       "name": "Evaluation averages and totals",
-      "starts_at": "2020-10-25T00:00:00.000Z",
-      "ends_at": "2020-11-01T23:59:59.999Z",
+      "starts_at": "2020-10-28T00:00:00.000Z",
+      "ends_at": "2020-11-04T23:59:59.999Z",
       "spans_days": 8,
       "rows": {
         "totals": {
@@ -4159,7 +4159,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
           "bad": {
           }
         },
-        "quality_label": "What would make these meetings more effective?"
+        "quality_label": "When it comes to your time - you deserve much better than this."
       },
       "trends": null,
       "average": 0.0,
@@ -4172,9 +4172,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/averages?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/averages?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjM2FmMzE1YS1mMDQxLTQwOWUtYWRmNC02ODljZTc2ZWVhMmEiLCJzdWIiOiIxMjMyNSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.6NtnQaaJiAAXFV0ADx-Cjd7phygijyrKz4cpA2J-5Og"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZmY0NDE1MC02MmQ2LTQ4YWUtOGQ2YS1kOTAwM2VjMTMxYTciLCJzdWIiOiI4MjkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.BEcWD3OcS2_lqOYny2_9AkWONk1PvyBzhzRDIQCbuPU"
 ```
 ## Company User Counts
 
@@ -4184,9 +4184,9 @@ curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/averages?by_per
 #### Endpoint
 
 ```plaintext
-GET /api/v1/reporting/team/evaluations/user_counts?by_period[starts_at]=2020-10-25+16%3A56%3A10+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A10+UTC
+GET /api/v1/reporting/team/evaluations/user_counts?by_period[starts_at]=2020-10-28+17%3A45%3A14+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A14+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMDI2MDEyYi1mY2M4LTRjNTctOTZlYi01ZGUzNmZlMWI3MGEiLCJzdWIiOiIxMjM0MSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MSwiZXhwIjoxNjA1ODA0OTcxfQ.9KR2M88SKzdSWTgCxqHwrmaCrDZDcC6hNDXOcLFieBk
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiMTdiNzZkNS0wMWQ1LTQxYjEtOWE5OS0yNzVlYTY3MDMyMmYiLCJzdWIiOiI3MjYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0.r0gpY8CQIpi4mrac5CaG_yiKJ1WhBLnbfX_435_HAL8
 ```
 
 `GET /api/v1/reporting/team/evaluations/user_counts`
@@ -4195,7 +4195,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMDI2MDEyYi1mY2M4LTRjNTctO
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:10 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:10 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:14 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:14 UTC&quot;}
 ```
 
 
@@ -4220,12 +4220,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "93fe03ba-f190-4066-9ffc-6a9c669bfb27",
+    "id": "b76b5cc0-bffa-48a0-8747-9d7f7227c322",
     "type": "reports",
     "attributes": {
       "name": "Team User Count",
-      "starts_at": "2020-10-25T00:00:00.000Z",
-      "ends_at": "2020-11-01T23:59:59.999Z",
+      "starts_at": "2020-10-28T00:00:00.000Z",
+      "ends_at": "2020-11-04T23:59:59.999Z",
       "spans_days": 8,
       "rows": {
         "evaluatable_users": 0,
@@ -4242,9 +4242,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/reporting/team/evaluations/user_counts?by_period[starts_at]=2020-10-25+16%3A56%3A10+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A10+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/reporting/team/evaluations/user_counts?by_period[starts_at]=2020-10-28+17%3A45%3A14+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A14+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMDI2MDEyYi1mY2M4LTRjNTctOTZlYi01ZGUzNmZlMWI3MGEiLCJzdWIiOiIxMjM0MSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3MSwiZXhwIjoxNjA1ODA0OTcxfQ.9KR2M88SKzdSWTgCxqHwrmaCrDZDcC6hNDXOcLFieBk"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiMTdiNzZkNS0wMWQ1LTQxYjEtOWE5OS0yNzVlYTY3MDMyMmYiLCJzdWIiOiI3MjYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTQsImV4cCI6MTYwNjA2NzExNH0.r0gpY8CQIpi4mrac5CaG_yiKJ1WhBLnbfX_435_HAL8"
 ```
 ## Duration and Cost Details
 
@@ -4254,9 +4254,9 @@ curl -g "http://localhost:3000/api/v1/reporting/team/evaluations/user_counts?by_
 #### Endpoint
 
 ```plaintext
-GET /api/v1/reporting/user/evaluations/duration_and_cost_details?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC
+GET /api/v1/reporting/user/evaluations/duration_and_cost_details?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3MmQ3ZTRjOC0wMDc2LTQ3MzQtODgyNi0zMWYxNWE4NTU2MTgiLCJzdWIiOiIxMjMyMSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.wKVmH0rLEb08bkmpUVS78mYnO1TILzVZrSTON1Dei-M
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjYTczODJhNy1mNDhmLTQwY2QtYjM0Ny1jMjExMWJiOWYyNDciLCJzdWIiOiI4MjgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.cslUuU09WUMnb3mbu662TaISLu1LOWIrAiVaWHf0lBw
 ```
 
 `GET /api/v1/reporting/user/evaluations/duration_and_cost_details`
@@ -4265,7 +4265,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3MmQ3ZTRjOC0wMDc2LTQ3MzQtO
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:08 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:08 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:29 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:29 UTC&quot;}
 ```
 
 
@@ -4290,12 +4290,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "0fb81053-058c-4658-89be-783e0dfe88f3",
+    "id": "77f06301-c807-4bdf-96d2-a6b355871506",
     "type": "reports",
     "attributes": {
       "name": "Duration and Costs Details",
-      "starts_at": "2020-10-25T00:00:00.000Z",
-      "ends_at": "2020-11-01T23:59:59.999Z",
+      "starts_at": "2020-10-28T00:00:00.000Z",
+      "ends_at": "2020-11-04T23:59:59.999Z",
       "spans_days": 8,
       "rows": {
         "categories": {
@@ -4314,9 +4314,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/duration_and_cost_details?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/duration_and_cost_details?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3MmQ3ZTRjOC0wMDc2LTQ3MzQtODgyNi0zMWYxNWE4NTU2MTgiLCJzdWIiOiIxMjMyMSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.wKVmH0rLEb08bkmpUVS78mYnO1TILzVZrSTON1Dei-M"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjYTczODJhNy1mNDhmLTQwY2QtYjM0Ny1jMjExMWJiOWYyNDciLCJzdWIiOiI4MjgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.cslUuU09WUMnb3mbu662TaISLu1LOWIrAiVaWHf0lBw"
 ```
 ## Duration and Costs
 
@@ -4326,9 +4326,9 @@ curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/duration_and_co
 #### Endpoint
 
 ```plaintext
-GET /api/v1/reporting/user/evaluations/duration_and_costs?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC
+GET /api/v1/reporting/user/evaluations/duration_and_costs?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMThjYmFmZi00NTRkLTRhYTYtYTllMi1jZTQxNTJhZDY2NWQiLCJzdWIiOiIxMjMyMiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.Gh6wfxWHjC4mTRC7mdE6uFadFNrAUhHhLKUttFEQKVA
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5YjY5ZTcwMi1kMTljLTRiMjktOGI2MS03ZWVhYmZlYmQ1YTkiLCJzdWIiOiI4MzAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.brhDI7M78nPYW4GW_r1XZ1vmf5AXQX5YxU83M-67UtQ
 ```
 
 `GET /api/v1/reporting/user/evaluations/duration_and_costs`
@@ -4337,7 +4337,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMThjYmFmZi00NTRkLTRhYTYtY
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:08 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:08 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:29 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:29 UTC&quot;}
 ```
 
 
@@ -4362,12 +4362,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "f68d6d8a-6865-4b2d-b83f-1ebdf4e405d9",
+    "id": "80fe5704-1fb8-4eac-9282-d70208a6808e",
     "type": "reports",
     "attributes": {
       "name": "Duration and Costs Summary",
-      "starts_at": "2020-10-25T00:00:00.000Z",
-      "ends_at": "2020-11-01T23:59:59.999Z",
+      "starts_at": "2020-10-28T00:00:00.000Z",
+      "ends_at": "2020-11-04T23:59:59.999Z",
       "spans_days": 8,
       "rows": {
         "annual_salary": 75000,
@@ -4399,7 +4399,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
           "meeting_cost_total": 0.0,
           "meeting_cost_per_hour": null,
           "ave_cost_per_meeting": null,
-          "work_hours": 40.0,
+          "work_hours": 48.0,
           "work_hours_spent": {
             "spent_hours": 0.0,
             "percent_of_time": 0.0
@@ -4417,9 +4417,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/duration_and_costs?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/duration_and_costs?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMThjYmFmZi00NTRkLTRhYTYtYTllMi1jZTQxNTJhZDY2NWQiLCJzdWIiOiIxMjMyMiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.Gh6wfxWHjC4mTRC7mdE6uFadFNrAUhHhLKUttFEQKVA"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5YjY5ZTcwMi1kMTljLTRiMjktOGI2MS03ZWVhYmZlYmQ1YTkiLCJzdWIiOiI4MzAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.brhDI7M78nPYW4GW_r1XZ1vmf5AXQX5YxU83M-67UtQ"
 ```
 ## Late Scheduled Meetings
 
@@ -4429,9 +4429,9 @@ curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/duration_and_co
 #### Endpoint
 
 ```plaintext
-GET /api/v1/reporting/user/evaluations/scheduled_late?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC
+GET /api/v1/reporting/user/evaluations/scheduled_late?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMmYzODcxOC0yNDAyLTRhMGMtOWRlNy1hMGUwMWUwZDkxMDgiLCJzdWIiOiIxMjMyNiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OSwiZXhwIjoxNjA1ODA0OTY5fQ.mxTbU99L2g_FYzZvdfONWSCO6MuSaOp7UUTo8YCFWZA
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjNzA1ZTJiZC00Y2E0LTQ4OGEtYTllMy0yM2U5MjlhYjc5ZjUiLCJzdWIiOiI4MzIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.kmkdFyVpugpO-Fog-Ipylb-ci8iIio-gGaA8bGDy_NI
 ```
 
 `GET /api/v1/reporting/user/evaluations/scheduled_late`
@@ -4440,7 +4440,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMmYzODcxOC0yNDAyLTRhMGMtO
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:08 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:08 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:29 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:29 UTC&quot;}
 ```
 
 
@@ -4465,12 +4465,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "c2a2db9d-ceaa-486c-b882-6178aefd7ff7",
+    "id": "13a49bbf-10d8-4b3b-a433-225e37d9b530",
     "type": "reports",
     "attributes": {
       "name": "Scheduled late",
-      "starts_at": "2020-10-25T00:00:00.000Z",
-      "ends_at": "2020-11-01T23:59:59.999Z",
+      "starts_at": "2020-10-28T00:00:00.000Z",
+      "ends_at": "2020-11-04T23:59:59.999Z",
       "spans_days": 8,
       "rows": {
       },
@@ -4485,9 +4485,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/scheduled_late?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/scheduled_late?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMmYzODcxOC0yNDAyLTRhMGMtOWRlNy1hMGUwMWUwZDkxMDgiLCJzdWIiOiIxMjMyNiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OSwiZXhwIjoxNjA1ODA0OTY5fQ.mxTbU99L2g_FYzZvdfONWSCO6MuSaOp7UUTo8YCFWZA"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjNzA1ZTJiZC00Y2E0LTQ4OGEtYTllMy0yM2U5MjlhYjc5ZjUiLCJzdWIiOiI4MzIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.kmkdFyVpugpO-Fog-Ipylb-ci8iIio-gGaA8bGDy_NI"
 ```
 ## Overtime Meeting Hours
 
@@ -4497,9 +4497,9 @@ curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/scheduled_late?
 #### Endpoint
 
 ```plaintext
-GET /api/v1/reporting/user/evaluations/overtime?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC
+GET /api/v1/reporting/user/evaluations/overtime?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxOWEwMjliMy02NjU3LTQ3NjEtODA3OC1jZTdlYmI4MDk2MGEiLCJzdWIiOiIxMjMyNCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.qSnRYNvK05hn2bHMHYx4DMZ7HeneZQY3_3Swb20Uk2Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MDM4ZDgxNy1jM2Y3LTQ5Y2MtOGUxYy1jZTRkNWQ3NWRlZGMiLCJzdWIiOiI4MzQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMzAsImV4cCI6MTYwNjA2NzEzMH0.OSu2glAQehe67_PgmoeH21FubZI6w3I9PM0LM1MwMCU
 ```
 
 `GET /api/v1/reporting/user/evaluations/overtime`
@@ -4508,7 +4508,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxOWEwMjliMy02NjU3LTQ3NjEtO
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:08 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:08 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:29 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:29 UTC&quot;}
 ```
 
 
@@ -4533,12 +4533,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "0e401136-06bf-4a19-a59d-e9e468778168",
+    "id": "5fee3d16-b267-4aed-97cb-e65146e3f569",
     "type": "reports",
     "attributes": {
       "name": "Overtime",
-      "starts_at": "2020-10-25T00:00:00.000Z",
-      "ends_at": "2020-11-01T23:59:59.999Z",
+      "starts_at": "2020-10-28T00:00:00.000Z",
+      "ends_at": "2020-11-04T23:59:59.999Z",
       "spans_days": 8,
       "rows": {
       },
@@ -4553,9 +4553,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/overtime?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/overtime?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxOWEwMjliMy02NjU3LTQ3NjEtODA3OC1jZTdlYmI4MDk2MGEiLCJzdWIiOiIxMjMyNCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.qSnRYNvK05hn2bHMHYx4DMZ7HeneZQY3_3Swb20Uk2Q"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MDM4ZDgxNy1jM2Y3LTQ5Y2MtOGUxYy1jZTRkNWQ3NWRlZGMiLCJzdWIiOiI4MzQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMzAsImV4cCI6MTYwNjA2NzEzMH0.OSu2glAQehe67_PgmoeH21FubZI6w3I9PM0LM1MwMCU"
 ```
 ## Wellness Block Conflicts
 
@@ -4565,9 +4565,9 @@ curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/overtime?by_per
 #### Endpoint
 
 ```plaintext
-GET /api/v1/reporting/user/evaluations/focus_block_conflict?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&amp;by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC
+GET /api/v1/reporting/user/evaluations/focus_block_conflict?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&amp;by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlMjcwMWRiMi1lMTRhLTQ2MTMtODJjZC0wNWYyODBlZWE1ZWUiLCJzdWIiOiIxMjMyMyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.mHfdFz_PH2gBP5qx0ZdipxvWJIqzbkuGxEaNVMyloNY
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlYmY4ZDM1NS1iYzMyLTQzZWUtODFlMi05MDExZGZiODdhMWQiLCJzdWIiOiI4MzEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.tDCJqN4qN5ME6sIi_3IlbmYlxFM-cpOW4pSpdPPFnTs
 ```
 
 `GET /api/v1/reporting/user/evaluations/focus_block_conflict`
@@ -4576,7 +4576,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlMjcwMWRiMi1lMTRhLTQ2MTMtO
 
 
 ```json
-by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-25 16:56:08 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-01 16:56:08 UTC&quot;}
+by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:45:29 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:45:29 UTC&quot;}
 ```
 
 
@@ -4601,12 +4601,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "42821731-6f51-478f-a365-602b99231922",
+    "id": "6b4205bf-e5a4-4ac4-ae0a-e0c9a6e78bca",
     "type": "reports",
     "attributes": {
       "name": "Focus block conflict",
-      "starts_at": "2020-10-25T00:00:00.000Z",
-      "ends_at": "2020-11-01T23:59:59.999Z",
+      "starts_at": "2020-10-28T00:00:00.000Z",
+      "ends_at": "2020-11-04T23:59:59.999Z",
       "spans_days": 8,
       "rows": {
       },
@@ -4621,9 +4621,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/focus_block_conflict?by_period[starts_at]=2020-10-25+16%3A56%3A08+UTC&by_period[ends_at]=2020-11-01+16%3A56%3A08+UTC" -X GET \
+curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/focus_block_conflict?by_period[starts_at]=2020-10-28+17%3A45%3A29+UTC&by_period[ends_at]=2020-11-04+17%3A45%3A29+UTC" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlMjcwMWRiMi1lMTRhLTQ2MTMtODJjZC0wNWYyODBlZWE1ZWUiLCJzdWIiOiIxMjMyMyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2OCwiZXhwIjoxNjA1ODA0OTY4fQ.mHfdFz_PH2gBP5qx0ZdipxvWJIqzbkuGxEaNVMyloNY"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlYmY4ZDM1NS1iYzMyLTQzZWUtODFlMi05MDExZGZiODdhMWQiLCJzdWIiOiI4MzEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjksImV4cCI6MTYwNjA2NzEyOX0.tDCJqN4qN5ME6sIi_3IlbmYlxFM-cpOW4pSpdPPFnTs"
 ```
 # Settings Labels
 
@@ -4639,7 +4639,7 @@ curl -g "http://localhost:3000/api/v1/reporting/user/evaluations/focus_block_con
 ```plaintext
 GET /api/v1/settings_labels
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwYTJlMjdjOS0xODJmLTRkYTAtYWIyMi03N2IwODk5ZWUxNmQiLCJzdWIiOiIxMjI5NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.yKgrnrBReSfb5XotI-W40HYxRg6LxWwW2vfqCtmoPBQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyM2JkODJjYy0yYmFhLTRkZTctOGEzMC0wODU4ZDQyNjYzNTEiLCJzdWIiOiI3MTEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.MWOLcesXdbGFv5SgOxFAPZhozHD3Jgcg5Gf-NURe3ik
 ```
 
 `GET /api/v1/settings_labels`
@@ -4661,7 +4661,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "5e92a9f8-af83-4bae-8c1c-7e6d884bfdfe",
+    "id": "2a9275d8-6cbd-426f-899a-01fa17a5378a",
     "type": "settings_labels",
     "attributes": {
       "list": {
@@ -4803,7 +4803,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/settings_labels" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwYTJlMjdjOS0xODJmLTRkYTAtYWIyMi03N2IwODk5ZWUxNmQiLCJzdWIiOiIxMjI5NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.yKgrnrBReSfb5XotI-W40HYxRg6LxWwW2vfqCtmoPBQ"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyM2JkODJjYy0yYmFhLTRkZTctOGEzMC0wODU4ZDQyNjYzNTEiLCJzdWIiOiI3MTEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.MWOLcesXdbGFv5SgOxFAPZhozHD3Jgcg5Gf-NURe3ik"
 ```
 # Stripe
 
@@ -4819,7 +4819,7 @@ Stripe Subscriptions
 ```plaintext
 POST /api/v1/stripe_checkout/sessions
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyZGNlYTM5Ny1iNzQ2LTQwNjEtOTJjZi00MTU3ZDNlNTdhYTMiLCJzdWIiOiIxMjM4MSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.97eY2ht-aFYiiTHAhmnDupB_6_GY1D47u7sC83VkdV8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4ODQ3MTk5OS1iZTEwLTRiNTMtODY3OC0xMjFlMWQxOGZhYWEiLCJzdWIiOiI4MTUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.mytv7grc9oZFBnLKg-GWtms1wsXN3QxINhfPlYxwoGQ
 ```
 
 `POST /api/v1/stripe_checkout/sessions`
@@ -4863,7 +4863,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl "http://localhost:3000/api/v1/stripe_checkout/sessions" -d '{"data":{"type":"stripe_sessions","attributes":{"key":"team-400"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyZGNlYTM5Ny1iNzQ2LTQwNjEtOTJjZi00MTU3ZDNlNTdhYTMiLCJzdWIiOiIxMjM4MSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.97eY2ht-aFYiiTHAhmnDupB_6_GY1D47u7sC83VkdV8"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4ODQ3MTk5OS1iZTEwLTRiNTMtODY3OC0xMjFlMWQxOGZhYWEiLCJzdWIiOiI4MTUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.mytv7grc9oZFBnLKg-GWtms1wsXN3QxINhfPlYxwoGQ"
 ```
 ## Delete Stripe Subscription
 
@@ -4875,7 +4875,7 @@ curl "http://localhost:3000/api/v1/stripe_checkout/sessions" -d '{"data":{"type"
 ```plaintext
 DELETE /api/v1/subscription
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyZDc1YWJmZC05MzI4LTQ2NDktODBiMC1hODg3NzdiMjA3NTYiLCJzdWIiOiIxMjI5MSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.29Q3E58qDqZD6NsuDuCYmxIeHcIxUAgx5hhHI4a4T3Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmN2M2NzZjYS1lMTk2LTQyYWUtYjA2OC0zYTJhYzA5ZjBmZmIiLCJzdWIiOiI3MzQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.aymBcDIaa43rDfsFjWQ2BidW1VqshAx_NFWVGGby-zY
 ```
 
 `DELETE /api/v1/subscription`
@@ -4897,15 +4897,15 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "627",
+    "id": "67",
     "type": "subscriptions",
     "attributes": {
       "stripe_id": "test_su_4",
       "active": false,
-      "created_at": "2020-10-25T16:56:04.442Z",
-      "current_period_start": "2020-10-25T16:56:04.000Z",
-      "current_period_end": "2020-11-25T16:56:04.000Z",
-      "amount": 438,
+      "created_at": "2020-10-28T17:45:15.738Z",
+      "current_period_start": "2020-10-28T17:45:15.000Z",
+      "current_period_end": "2020-11-28T17:45:15.000Z",
+      "amount": 193,
       "category": "team",
       "plan": "pro",
       "product_id": "team"
@@ -4919,7 +4919,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl "http://localhost:3000/api/v1/subscription" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyZDc1YWJmZC05MzI4LTQ2NDktODBiMC1hODg3NzdiMjA3NTYiLCJzdWIiOiIxMjI5MSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.29Q3E58qDqZD6NsuDuCYmxIeHcIxUAgx5hhHI4a4T3Y"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmN2M2NzZjYS1lMTk2LTQyYWUtYjA2OC0zYTJhYzA5ZjBmZmIiLCJzdWIiOiI3MzQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.aymBcDIaa43rDfsFjWQ2BidW1VqshAx_NFWVGGby-zY"
 ```
 ## Update Stripe Session
 
@@ -4931,7 +4931,7 @@ curl "http://localhost:3000/api/v1/subscription" -d '' -X DELETE \
 ```plaintext
 PUT /api/v1/stripe_checkout/sessions
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwOWZiN2ZmNy1lMmIwLTQ2YTYtODM4OC05YzdhMzg2MjQ3MjQiLCJzdWIiOiIxMjM4MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.c-NG3XSwJ0GDF64l-bo80qA6j-1iZ4m2AiiPEZjkuy0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkOWRlM2Y4Zi1kNjNkLTQzMzEtYmZhOC03MTZmM2I2YWQ3MTUiLCJzdWIiOiI4MTYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.8yBqEX3Ng6R5A0i9R8BIvM2A6Oofons0pvG_S080DmE
 ```
 
 `PUT /api/v1/stripe_checkout/sessions`
@@ -4972,7 +4972,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl "http://localhost:3000/api/v1/stripe_checkout/sessions" -d '{"data":{"type":"stripe_sessions","attributes":{"key":"team-400"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwOWZiN2ZmNy1lMmIwLTQ2YTYtODM4OC05YzdhMzg2MjQ3MjQiLCJzdWIiOiIxMjM4MCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NywiZXhwIjoxNjA1ODA0OTc3fQ.c-NG3XSwJ0GDF64l-bo80qA6j-1iZ4m2AiiPEZjkuy0"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkOWRlM2Y4Zi1kNjNkLTQzMzEtYmZhOC03MTZmM2I2YWQ3MTUiLCJzdWIiOiI4MTYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.8yBqEX3Ng6R5A0i9R8BIvM2A6Oofons0pvG_S080DmE"
 ```
 ## Update Stripe Subscription
 
@@ -4984,7 +4984,7 @@ curl "http://localhost:3000/api/v1/stripe_checkout/sessions" -d '{"data":{"type"
 ```plaintext
 PUT /api/v1/subscription
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxZWQ4Yzk0Yy03MTBlLTQ0YWQtOWFhZi04MTc5ZGE4OTk1MDYiLCJzdWIiOiIxMjI5MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.8s7dyXZPg-8SH-0flJRB1PQeLzx4HMyPD3W5ycvfj-4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjNzg0ZDQyMi03NzhmLTQ5YWMtYWVlOC0yNDE2ZTE3Mjk3OGIiLCJzdWIiOiI3MzMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.5HxBNJGIOOu6Cr4aFoUcyycYCHWUOuI6smLV-pTmzlM
 ```
 
 `PUT /api/v1/subscription`
@@ -5010,15 +5010,15 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "628",
+    "id": "66",
     "type": "subscriptions",
     "attributes": {
       "stripe_id": "test_txn_default",
       "active": true,
-      "created_at": "2020-10-25T16:56:04.604Z",
-      "current_period_start": "2020-10-25T16:56:04.000Z",
-      "current_period_end": "2020-11-25T16:56:04.000Z",
-      "amount": 438,
+      "created_at": "2020-10-28T17:45:15.600Z",
+      "current_period_start": "2020-10-28T17:45:15.000Z",
+      "current_period_end": "2020-11-28T17:45:15.000Z",
+      "amount": 193,
       "category": "team",
       "plan": "pro",
       "product_id": "team"
@@ -5032,7 +5032,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl "http://localhost:3000/api/v1/subscription" -d '{"data":{"type":"subscriptions","attributes":{"key":"pro"}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxZWQ4Yzk0Yy03MTBlLTQ0YWQtOWFhZi04MTc5ZGE4OTk1MDYiLCJzdWIiOiIxMjI5MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.8s7dyXZPg-8SH-0flJRB1PQeLzx4HMyPD3W5ycvfj-4"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjNzg0ZDQyMi03NzhmLTQ5YWMtYWVlOC0yNDE2ZTE3Mjk3OGIiLCJzdWIiOiI3MzMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.5HxBNJGIOOu6Cr4aFoUcyycYCHWUOuI6smLV-pTmzlM"
 ```
 # Subscription
 
@@ -5048,7 +5048,7 @@ curl "http://localhost:3000/api/v1/subscription" -d '{"data":{"type":"subscripti
 ```plaintext
 GET /api/v1/subscription
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlY2IyMThhMS0wYzc2LTQzM2ItODJjOS1kNmIyZTBmOGQwMWUiLCJzdWIiOiIxMjM4MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OCwiZXhwIjoxNjA1ODA0OTc4fQ.x_zH8whnCx1ndtZ5x6lMUCxT6fpTtX7xBK7o5Thkt7M
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4YjQ3OWI1Yy0yMjlhLTRmYjUtYTI4NS0zM2M0OTVjYmMxNWQiLCJzdWIiOiI3NTciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.HWvLYP7CinjIW1xgutUUHxiAE4su5fHXdrUixFtSyY4
 ```
 
 `GET /api/v1/subscription`
@@ -5070,17 +5070,17 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "635",
+    "id": "68",
     "type": "subscriptions",
     "attributes": {
-      "stripe_id": "tok_jcb",
+      "stripe_id": "tok_mastercard",
       "active": true,
-      "created_at": "2020-10-25T16:56:18.091Z",
+      "created_at": "2020-10-28T17:45:18.817Z",
       "current_period_start": null,
       "current_period_end": null,
-      "amount": 438,
+      "amount": 193,
       "category": "user",
-      "plan": "team-438",
+      "plan": "team-193",
       "product_id": "team-400"
     }
   }
@@ -5092,7 +5092,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/subscription" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlY2IyMThhMS0wYzc2LTQzM2ItODJjOS1kNmIyZTBmOGQwMWUiLCJzdWIiOiIxMjM4MiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OCwiZXhwIjoxNjA1ODA0OTc4fQ.x_zH8whnCx1ndtZ5x6lMUCxT6fpTtX7xBK7o5Thkt7M"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4YjQ3OWI1Yy0yMjlhLTRmYjUtYTI4NS0zM2M0OTVjYmMxNWQiLCJzdWIiOiI3NTciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.HWvLYP7CinjIW1xgutUUHxiAE4su5fHXdrUixFtSyY4"
 ```
 # Subscription Plans
 
@@ -5108,7 +5108,7 @@ curl -g "http://localhost:3000/api/v1/subscription" -X GET \
 ```plaintext
 GET /api/v1/subscription_plans
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyODk1ZjdiZC03Y2MzLTQ3MmYtYmFjMC1jM2YzNWQ2YzZhOGYiLCJzdWIiOiIxMjI5MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.iCZtBxSYmMCwtYphKT3spN2ZisXnefl_QbwIWpEXTr0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YmNiMjUxYi05NjBiLTRkZjMtYjIwOC0xNDJiYjY5Yjc1N2YiLCJzdWIiOiI4MTIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.K5NHTAy9ibPiHdk_QKQKGzFrQGPol0XSkJwxXPSIEgY
 ```
 
 `GET /api/v1/subscription_plans`
@@ -5140,7 +5140,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/subscription_plans" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyODk1ZjdiZC03Y2MzLTQ3MmYtYmFjMC1jM2YzNWQ2YzZhOGYiLCJzdWIiOiIxMjI5MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NCwiZXhwIjoxNjA1ODA0OTY0fQ.iCZtBxSYmMCwtYphKT3spN2ZisXnefl_QbwIWpEXTr0"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YmNiMjUxYi05NjBiLTRkZjMtYjIwOC0xNDJiYjY5Yjc1N2YiLCJzdWIiOiI4MTIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjcsImV4cCI6MTYwNjA2NzEyN30.K5NHTAy9ibPiHdk_QKQKGzFrQGPol0XSkJwxXPSIEgY"
 ```
 # Team Invites
 
@@ -5156,7 +5156,7 @@ curl -g "http://localhost:3000/api/v1/subscription_plans" -X GET \
 ```plaintext
 POST /api/v1/invites
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyODBmNzg3NC0yZTdlLTQyMzItOTVkNS05NzU1YjUzNTY3YjAiLCJzdWIiOiIxMjI5OCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.sJkM94hH0MUX8KE60ph1r88MBSMqS8m9EVQXah47kFI
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhOGIzY2EwOS1iNTg5LTQ2OTUtYTk5Ny1kMGQwYWJhZDAzODkiLCJzdWIiOiI4MTkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjgsImV4cCI6MTYwNjA2NzEyOH0.z7gp2hzip7SfRyeCxwnQA6AN2WdHa2zuNhNeZVmObeQ
 ```
 
 `POST /api/v1/invites`
@@ -5165,7 +5165,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyODBmNzg3NC0yZTdlLTQyMzItO
 
 
 ```json
-{"data":{"type":"agenda_item","attributes":{"email":"theodore_treutel@lueilwitz.org"}}}
+{"data":{"type":"agenda_item","attributes":{"email":"michale.tremblay@lebsack.biz"}}}
 ```
 
 
@@ -5186,14 +5186,14 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "94",
+    "id": "12",
     "type": "invites",
     "attributes": {
-      "team_id": 12594,
-      "user_id": 12299,
-      "email": "theodore_treutel@lueilwitz.org",
-      "created_at": "2020-10-25T16:56:05.479Z",
-      "accepted_at": "2020-10-25T16:56:05.538Z"
+      "team_id": 831,
+      "user_id": 820,
+      "email": "michale.tremblay@lebsack.biz",
+      "created_at": "2020-10-28T17:45:28.287Z",
+      "accepted_at": "2020-10-28T17:45:28.365Z"
     }
   }
 }
@@ -5202,9 +5202,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/invites" -d '{"data":{"type":"agenda_item","attributes":{"email":"theodore_treutel@lueilwitz.org"}}}' -X POST \
+curl "http://localhost:3000/api/v1/invites" -d '{"data":{"type":"agenda_item","attributes":{"email":"michale.tremblay@lebsack.biz"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyODBmNzg3NC0yZTdlLTQyMzItOTVkNS05NzU1YjUzNTY3YjAiLCJzdWIiOiIxMjI5OCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.sJkM94hH0MUX8KE60ph1r88MBSMqS8m9EVQXah47kFI"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhOGIzY2EwOS1iNTg5LTQ2OTUtYTk5Ny1kMGQwYWJhZDAzODkiLCJzdWIiOiI4MTkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjgsImV4cCI6MTYwNjA2NzEyOH0.z7gp2hzip7SfRyeCxwnQA6AN2WdHa2zuNhNeZVmObeQ"
 ```
 ## Delete invite
 
@@ -5214,9 +5214,9 @@ curl "http://localhost:3000/api/v1/invites" -d '{"data":{"type":"agenda_item","a
 #### Endpoint
 
 ```plaintext
-DELETE /api/v1/invites/93
+DELETE /api/v1/invites/11
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3YWMxZDNkMi05OGFlLTRjZmYtOWE5Yy1lYzU0ZDlhZTAwMDQiLCJzdWIiOiIxMjI5NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.JS9_f450sJoJCzDgCwtRq_XZehQigEHkFu0PU_Vs4Lw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkNzBiN2ZhOS03MTM4LTRmMjEtOWU0MS1kMTM4YzM2ZWRiNjUiLCJzdWIiOiI4MTciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjgsImV4cCI6MTYwNjA2NzEyOH0.v1p411ux5WfbUpbTOtL23257d1_ZUcj39BkZ633l9Kc
 ```
 
 `DELETE /api/v1/invites/:id`
@@ -5242,9 +5242,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3YWMxZDNkMi05OGFlLTRjZmYtO
 
 
 ```shell
-curl "http://localhost:3000/api/v1/invites/93" -d '' -X DELETE \
+curl "http://localhost:3000/api/v1/invites/11" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3YWMxZDNkMi05OGFlLTRjZmYtOWE5Yy1lYzU0ZDlhZTAwMDQiLCJzdWIiOiIxMjI5NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.JS9_f450sJoJCzDgCwtRq_XZehQigEHkFu0PU_Vs4Lw"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkNzBiN2ZhOS03MTM4LTRmMjEtOWU0MS1kMTM4YzM2ZWRiNjUiLCJzdWIiOiI4MTciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjgsImV4cCI6MTYwNjA2NzEyOH0.v1p411ux5WfbUpbTOtL23257d1_ZUcj39BkZ633l9Kc"
 ```
 ## List invites
 
@@ -5256,7 +5256,7 @@ curl "http://localhost:3000/api/v1/invites/93" -d '' -X DELETE \
 ```plaintext
 GET /api/v1/invites
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNTNmOGM2MC1iNjdhLTRiNzQtYTk4NS00ODhiZGI4MDVjMzUiLCJzdWIiOiIxMjI5NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.sldak4GVbMsw9DWoXB0m1ajTuAdxfb74jjTbPEfOrkc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNzkxZDg0My05NjdmLTQ5ZjEtODA0ZC1lNWNlYjYxMWY4ZDgiLCJzdWIiOiI4MjEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjgsImV4cCI6MTYwNjA2NzEyOH0.-rZ6IsWzdbiBiJhsDKVDQEQRC4D2mlK8eKpjaHcUIjk
 ```
 
 `GET /api/v1/invites`
@@ -5292,7 +5292,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/invites" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNTNmOGM2MC1iNjdhLTRiNzQtYTk4NS00ODhiZGI4MDVjMzUiLCJzdWIiOiIxMjI5NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NSwiZXhwIjoxNjA1ODA0OTY1fQ.sldak4GVbMsw9DWoXB0m1ajTuAdxfb74jjTbPEfOrkc"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNzkxZDg0My05NjdmLTQ5ZjEtODA0ZC1lNWNlYjYxMWY4ZDgiLCJzdWIiOiI4MjEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjgsImV4cCI6MTYwNjA2NzEyOH0.-rZ6IsWzdbiBiJhsDKVDQEQRC4D2mlK8eKpjaHcUIjk"
 ```
 # Team Members
 
@@ -5306,9 +5306,9 @@ curl -g "http://localhost:3000/api/v1/invites" -X GET \
 #### Endpoint
 
 ```plaintext
-POST /api/v1/teams/12599/members
+POST /api/v1/teams/707/members
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYTM2YzY5Mi1lNjg3LTRhMzAtODU0OS02MTQ2MTUzMGU3YTkiLCJzdWIiOiIxMjMwMyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NiwiZXhwIjoxNjA1ODA0OTY2fQ.lKXEdGjdywf4NxRn5MYFwwJs7qf9Oz4yjhBoF83ckwg
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YTg0MTM0Mi0xOTI0LTRjNjYtOGFiMC0yMzkzOTZhMDM4YTMiLCJzdWIiOiI2OTciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.QqYYnBX9Ih-nMsHECaiuedg4jwPBQb_9QEFoZ2sXM7w
 ```
 
 `POST /api/v1/teams/:id/members`
@@ -5317,7 +5317,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYTM2YzY5Mi1lNjg3LTRhMzAtO
 
 
 ```json
-{"data":{"type":"team","attributes":{"user_id":12305,"role":"billing_admin"}}}
+{"data":{"type":"team","attributes":{"user_id":699,"role":"billing_admin"}}}
 ```
 
 
@@ -5340,15 +5340,15 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "12482",
+    "id": "731",
     "type": "memberships",
     "attributes": {
-      "user_id": 12305,
+      "user_id": 699,
       "role": "billing_admin",
-      "name": "Giant Phoenix Cheetah XI",
+      "name": "Doctor Valkyrie II Ultra Gorilla Grodd",
       "email": "test2@test.com",
       "licensed": false,
-      "profile_image": "http://effertz.co/cristobal.cummings"
+      "profile_image": "http://boyer-ankunding.net/walton.bashirian"
     }
   }
 }
@@ -5357,9 +5357,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/teams/12599/members" -d '{"data":{"type":"team","attributes":{"user_id":12305,"role":"billing_admin"}}}' -X POST \
+curl "http://localhost:3000/api/v1/teams/707/members" -d '{"data":{"type":"team","attributes":{"user_id":699,"role":"billing_admin"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYTM2YzY5Mi1lNjg3LTRhMzAtODU0OS02MTQ2MTUzMGU3YTkiLCJzdWIiOiIxMjMwMyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NiwiZXhwIjoxNjA1ODA0OTY2fQ.lKXEdGjdywf4NxRn5MYFwwJs7qf9Oz4yjhBoF83ckwg"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YTg0MTM0Mi0xOTI0LTRjNjYtOGFiMC0yMzkzOTZhMDM4YTMiLCJzdWIiOiI2OTciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.QqYYnBX9Ih-nMsHECaiuedg4jwPBQb_9QEFoZ2sXM7w"
 ```
 ## Delete membership
 
@@ -5369,9 +5369,9 @@ curl "http://localhost:3000/api/v1/teams/12599/members" -d '{"data":{"type":"tea
 #### Endpoint
 
 ```plaintext
-DELETE /api/v1/teams/12605/members/12491
+DELETE /api/v1/teams/713/members/740
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MTcwOGM3Ny1kOTFkLTRlZDYtYmQ5OC1hOTcxMmVjNzM0YjMiLCJzdWIiOiIxMjMxMCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NiwiZXhwIjoxNjA1ODA0OTY2fQ.ywgDGkVwTQ9VLBT7mTST5pU-Ak5l_WBELJEV1b4ZltQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MTgzNWY3Ni1mYjU4LTRlNGEtODM3Yy04N2YzOWM1NTMyNDIiLCJzdWIiOiI3MDQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.7xoZW8B6HMyB7PfCh1BYrCO5FXRKYo9qISboAG0pL3s
 ```
 
 `DELETE /api/v1/teams/:id/members/:membership_id`
@@ -5399,9 +5399,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MTcwOGM3Ny1kOTFkLTRlZDYtY
 
 
 ```shell
-curl "http://localhost:3000/api/v1/teams/12605/members/12491" -d '' -X DELETE \
+curl "http://localhost:3000/api/v1/teams/713/members/740" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MTcwOGM3Ny1kOTFkLTRlZDYtYmQ5OC1hOTcxMmVjNzM0YjMiLCJzdWIiOiIxMjMxMCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NiwiZXhwIjoxNjA1ODA0OTY2fQ.ywgDGkVwTQ9VLBT7mTST5pU-Ak5l_WBELJEV1b4ZltQ"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MTgzNWY3Ni1mYjU4LTRlNGEtODM3Yy04N2YzOWM1NTMyNDIiLCJzdWIiOiI3MDQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.7xoZW8B6HMyB7PfCh1BYrCO5FXRKYo9qISboAG0pL3s"
 ```
 ## List team memberships
 
@@ -5411,9 +5411,9 @@ curl "http://localhost:3000/api/v1/teams/12605/members/12491" -d '' -X DELETE \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/teams/12601/members
+GET /api/v1/teams/711/members
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNTc0YmNiMC02ODMyLTQwZWMtOTAyNC01MDQxYjdkOTM1MjkiLCJzdWIiOiIxMjMwNiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NiwiZXhwIjoxNjA1ODA0OTY2fQ.YjqLSzML_JBo9vqecjc3NcO6y5LcdNi8pxLwePfLv60
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZTU1MGFmNi00Yjc4LTRkMWQtOTFhMy00MDYzMGE0NGVlODMiLCJzdWIiOiI3MDIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.a-L5EwrychvjaD54BBRIFRdN11rG2rIHigfDstgQuVI
 ```
 
 `GET /api/v1/teams/:id/members`
@@ -5442,27 +5442,27 @@ Content-Type: application/vnd.api+json; charset=utf-8
 {
   "data": [
     {
-      "id": "12483",
+      "id": "735",
       "type": "memberships",
       "attributes": {
-        "user_id": 12306,
+        "user_id": 702,
         "role": "billing_admin",
-        "name": "General Ripcord Magnificent Hercules",
-        "email": "rich@kris.name",
+        "name": "Hancock Strike Lizard",
+        "email": "garret@greenfelder.net",
         "licensed": true,
-        "profile_image": "http://moen-gleichner.net/valentina.muller"
+        "profile_image": "http://will.co/laurence"
       }
     },
     {
-      "id": "12485",
+      "id": "737",
       "type": "memberships",
       "attributes": {
-        "user_id": 12307,
+        "user_id": 703,
         "role": "billing_admin",
-        "name": "Doctor Synch the Hunter Cable XI",
+        "name": "Sage Claw Dark Sabretooth the Fated",
         "email": "test1@test.com",
         "licensed": true,
-        "profile_image": "http://mante-gutmann.biz/nohemi_carroll"
+        "profile_image": "http://mills.org/jordan_ruecker"
       }
     }
   ],
@@ -5476,9 +5476,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/teams/12601/members" -X GET \
+curl -g "http://localhost:3000/api/v1/teams/711/members" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNTc0YmNiMC02ODMyLTQwZWMtOTAyNC01MDQxYjdkOTM1MjkiLCJzdWIiOiIxMjMwNiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NiwiZXhwIjoxNjA1ODA0OTY2fQ.YjqLSzML_JBo9vqecjc3NcO6y5LcdNi8pxLwePfLv60"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZTU1MGFmNi00Yjc4LTRkMWQtOTFhMy00MDYzMGE0NGVlODMiLCJzdWIiOiI3MDIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.a-L5EwrychvjaD54BBRIFRdN11rG2rIHigfDstgQuVI"
 ```
 ## Update membership
 
@@ -5488,9 +5488,9 @@ curl -g "http://localhost:3000/api/v1/teams/12601/members" -X GET \
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/teams/12603/members/12488
+PUT /api/v1/teams/709/members/734
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNDEyYzIyYS01ZDA5LTQzZjMtOWZlYi00NWQ5NDNmZWY0NTIiLCJzdWIiOiIxMjMwOCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NiwiZXhwIjoxNjA1ODA0OTY2fQ.cREP0WPaHhPW6M1JWcWFyQxYqX0AgCSrSOb7FHFHz_w
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyZTNkZTE0YS1lZTliLTRkMmUtOTE1ZC03ODcyNzA4ZTc4ODIiLCJzdWIiOiI3MDAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.lGlcyAJFS-i7ETfA7et6vtPzAfMF8MbORtn2SMe6rgw
 ```
 
 `PUT /api/v1/teams/:id/members/:membership_id`
@@ -5522,15 +5522,15 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "12488",
+    "id": "734",
     "type": "memberships",
     "attributes": {
-      "user_id": 12309,
+      "user_id": 701,
       "role": "billing_admin",
-      "name": "Ultron I Osiris Machine",
+      "name": "Beak Spirit Supah Bloodhawk",
       "email": "test1@test.com",
       "licensed": true,
-      "profile_image": "http://nikolaus.net/jade"
+      "profile_image": "http://schulist.io/darlena"
     }
   }
 }
@@ -5539,13 +5539,13 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/teams/12603/members/12488" -d '{"data":{"type":"team","attributes":{"role":"billing_admin","licensed":true}}}' -X PUT \
+curl "http://localhost:3000/api/v1/teams/709/members/734" -d '{"data":{"type":"team","attributes":{"role":"billing_admin","licensed":true}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNDEyYzIyYS01ZDA5LTQzZjMtOWZlYi00NWQ5NDNmZWY0NTIiLCJzdWIiOiIxMjMwOCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2NiwiZXhwIjoxNjA1ODA0OTY2fQ.cREP0WPaHhPW6M1JWcWFyQxYqX0AgCSrSOb7FHFHz_w"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyZTNkZTE0YS1lZTliLTRkMmUtOTE1ZC03ODcyNzA4ZTc4ODIiLCJzdWIiOiI3MDAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.lGlcyAJFS-i7ETfA7et6vtPzAfMF8MbORtn2SMe6rgw"
 ```
 # Teams
 
-Update team attributes or evaluation settings
+
 
 ## List teams
 
@@ -5557,7 +5557,7 @@ Update team attributes or evaluation settings
 ```plaintext
 GET /api/v1/teams
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2Nzc2NTliNy0wMTBjLTRiNjUtYTdjZS0yNDVmZGYyNjhiN2YiLCJzdWIiOiIxMjM4NiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OCwiZXhwIjoxNjA1ODA0OTc4fQ.iOefMk59MI0nFJGWMpdVNvf6_vLEdllV-05qS_9Paos
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5NmQ4OGI4Mi05ZGI2LTQwZjYtOWMyNy1jYmQ2ZWNhNjM3YTkiLCJzdWIiOiI3ODgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjMsImV4cCI6MTYwNjA2NzEyM30.UJEJ-tKZpIY2PS7SD-5OFrYlzSZrTDBzSjQieY_48Jo
 ```
 
 `GET /api/v1/teams`
@@ -5580,20 +5580,20 @@ Content-Type: application/vnd.api+json; charset=utf-8
 {
   "data": [
     {
-      "id": "12683",
+      "id": "798",
       "type": "teams",
       "attributes": {
-        "name": "ruecker",
+        "name": "rowe-kuvalis",
         "image": null,
-        "domain": "ruecker.co",
+        "domain": "rowe-kuvalis.info",
         "license_by": "domain",
         "current_user_membership": {
-          "id": 12566,
-          "user_id": 12386,
-          "created_at": "2020-10-25T16:56:18.591Z",
-          "updated_at": "2020-10-25T16:56:18.591Z",
+          "id": 823,
+          "user_id": 788,
+          "created_at": "2020-10-28T17:45:23.596Z",
+          "updated_at": "2020-10-28T17:45:23.596Z",
           "role": "billing_admin",
-          "team_id": 12683,
+          "team_id": 798,
           "licensed": true
         }
       }
@@ -5607,7 +5607,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/teams" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2Nzc2NTliNy0wMTBjLTRiNjUtYTdjZS0yNDVmZGYyNjhiN2YiLCJzdWIiOiIxMjM4NiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OCwiZXhwIjoxNjA1ODA0OTc4fQ.iOefMk59MI0nFJGWMpdVNvf6_vLEdllV-05qS_9Paos"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5NmQ4OGI4Mi05ZGI2LTQwZjYtOWMyNy1jYmQ2ZWNhNjM3YTkiLCJzdWIiOiI3ODgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjMsImV4cCI6MTYwNjA2NzEyM30.UJEJ-tKZpIY2PS7SD-5OFrYlzSZrTDBzSjQieY_48Jo"
 ```
 ## Show team
 
@@ -5617,9 +5617,9 @@ curl -g "http://localhost:3000/api/v1/teams" -X GET \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/teams/12682
+GET /api/v1/teams/800
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhOTFhYTYzZi1hYmFjLTRlNjMtOGI0Ni04MjMyMTNmZmI3NTMiLCJzdWIiOiIxMjM4NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OCwiZXhwIjoxNjA1ODA0OTc4fQ.RUXZCE7aL9766uHFCKMiqojGG9cg_7hgZ6zIBWtokcw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2YjQ0M2U3Yy01NGI0LTQ3NDQtOWEzOS1lZjI4OTY5Y2IxOTEiLCJzdWIiOiI3OTAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjQsImV4cCI6MTYwNjA2NzEyNH0.iJ_cImbptbdN0zp3pjd3xV3ANuPbRP-nhqoSpwzyf1s
 ```
 
 `GET /api/v1/teams/:id`
@@ -5641,20 +5641,20 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "12682",
+    "id": "800",
     "type": "teams",
     "attributes": {
-      "name": "powlowski",
+      "name": "casper-cummings",
       "image": null,
-      "domain": "powlowski.net",
+      "domain": "casper-cummings.io",
       "license_by": "domain",
       "current_user_membership": {
-        "id": 12565,
-        "user_id": 12385,
-        "created_at": "2020-10-25T16:56:18.459Z",
-        "updated_at": "2020-10-25T16:56:18.459Z",
+        "id": 825,
+        "user_id": 790,
+        "created_at": "2020-10-28T17:45:23.975Z",
+        "updated_at": "2020-10-28T17:45:23.975Z",
         "role": "billing_admin",
-        "team_id": 12682,
+        "team_id": 800,
         "licensed": true
       }
     }
@@ -5665,9 +5665,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/teams/12682" -X GET \
+curl -g "http://localhost:3000/api/v1/teams/800" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhOTFhYTYzZi1hYmFjLTRlNjMtOGI0Ni04MjMyMTNmZmI3NTMiLCJzdWIiOiIxMjM4NSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OCwiZXhwIjoxNjA1ODA0OTc4fQ.RUXZCE7aL9766uHFCKMiqojGG9cg_7hgZ6zIBWtokcw"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2YjQ0M2U3Yy01NGI0LTQ3NDQtOWEzOS1lZjI4OTY5Y2IxOTEiLCJzdWIiOiI3OTAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjQsImV4cCI6MTYwNjA2NzEyNH0.iJ_cImbptbdN0zp3pjd3xV3ANuPbRP-nhqoSpwzyf1s"
 ```
 ## Update team
 
@@ -5677,9 +5677,9 @@ curl -g "http://localhost:3000/api/v1/teams/12682" -X GET \
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/teams/12681
+PUT /api/v1/teams/799
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNmVkNDBhZi04MmFiLTQ0MTctOGQ3ZC1jZmNhMTI0YTNmZGMiLCJzdWIiOiIxMjM4NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OCwiZXhwIjoxNjA1ODA0OTc4fQ.OHaAsADmZs2rnShau5EbHQamcimdNe4nBVBPvBtFfCE
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwM2IxOTQyMi0xMzI1LTQ1ZWItOWE0ZS1lZGM3Yjg3ODllYjAiLCJzdWIiOiI3ODkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjMsImV4cCI6MTYwNjA2NzEyM30.iTBUEorC_OwD-aKJovjBb2jBFR3e3tEDg1EgVJehiyg
 ```
 
 `PUT /api/v1/teams/:id`
@@ -5710,20 +5710,20 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "12681",
+    "id": "799",
     "type": "teams",
     "attributes": {
-      "name": "grady-fadel",
+      "name": "hoeger-aufderhar",
       "image": null,
-      "domain": "grady-fadel.io",
+      "domain": "hoeger-aufderhar.co",
       "license_by": "invite",
       "current_user_membership": {
-        "id": 12564,
-        "user_id": 12384,
-        "created_at": "2020-10-25T16:56:18.311Z",
-        "updated_at": "2020-10-25T16:56:18.311Z",
+        "id": 824,
+        "user_id": 789,
+        "created_at": "2020-10-28T17:45:23.774Z",
+        "updated_at": "2020-10-28T17:45:23.774Z",
         "role": "billing_admin",
-        "team_id": 12681,
+        "team_id": 799,
         "licensed": true
       }
     }
@@ -5734,9 +5734,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/teams/12681" -d '{"data":{"type":"team","attributes":{"required_category":true,"required_agenda":true,"license_by":"invite","annual_salary":220000}}}' -X PUT \
+curl "http://localhost:3000/api/v1/teams/799" -d '{"data":{"type":"team","attributes":{"required_category":true,"required_agenda":true,"license_by":"invite","annual_salary":220000}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNmVkNDBhZi04MmFiLTQ0MTctOGQ3ZC1jZmNhMTI0YTNmZGMiLCJzdWIiOiIxMjM4NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3OCwiZXhwIjoxNjA1ODA0OTc4fQ.OHaAsADmZs2rnShau5EbHQamcimdNe4nBVBPvBtFfCE"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwM2IxOTQyMi0xMzI1LTQ1ZWItOWE0ZS1lZGM3Yjg3ODllYjAiLCJzdWIiOiI3ODkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMjMsImV4cCI6MTYwNjA2NzEyM30.iTBUEorC_OwD-aKJovjBb2jBFR3e3tEDg1EgVJehiyg"
 ```
 # Tips
 
@@ -5752,7 +5752,7 @@ curl "http://localhost:3000/api/v1/teams/12681" -d '{"data":{"type":"team","attr
 ```plaintext
 DELETE /api/v1/tips/all
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NzA0ZDkzOS1hZDhlLTRhYmQtOWVkYS02ZTA0YzYxNWYyY2EiLCJzdWIiOiIxMjI3NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MiwiZXhwIjoxNjA1ODA0OTYyfQ.-pSmnDwG6IwVh2bIWTlsH490wNBMn5IS3FT-wwgNVw0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMTJiZjMwOS1kZmI2LTQ2NmYtYWU3NC0zZDQ1ZjkyMzIzNDYiLCJzdWIiOiI3MDYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.04mS6Cr47wGCZ3YEd4TFVfWEpubPzYox_d9iB4QlyQ4
 ```
 
 `DELETE /api/v1/tips/all`
@@ -5776,7 +5776,7 @@ None known.
 ```shell
 curl "http://localhost:3000/api/v1/tips/all" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NzA0ZDkzOS1hZDhlLTRhYmQtOWVkYS02ZTA0YzYxNWYyY2EiLCJzdWIiOiIxMjI3NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MiwiZXhwIjoxNjA1ODA0OTYyfQ.-pSmnDwG6IwVh2bIWTlsH490wNBMn5IS3FT-wwgNVw0"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMTJiZjMwOS1kZmI2LTQ2NmYtYWU3NC0zZDQ1ZjkyMzIzNDYiLCJzdWIiOiI3MDYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.04mS6Cr47wGCZ3YEd4TFVfWEpubPzYox_d9iB4QlyQ4"
 ```
 ## Flag tip as seen for user
 
@@ -5788,7 +5788,7 @@ curl "http://localhost:3000/api/v1/tips/all" -d '' -X DELETE \
 ```plaintext
 PUT /api/v1/tips/5
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiNjRjNzVmOC1kMzBkLTQ2OTYtYjA5OS04ODQ5MmE1YjE3ZmEiLCJzdWIiOiIxMjI3NiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MiwiZXhwIjoxNjA1ODA0OTYyfQ.5jG8HKoUj1cCGc2_wwXahUAge8g-6CeUk6RqzocyO6I
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MTdkNjcwZi01ZDgwLTRjNzUtYmNiNi04YWE4N2UyMTg4MTQiLCJzdWIiOiI3MDciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.iXI-PeO1s5ruG_pFmrWmMhz6yJ3BLBJf8vnIQX4vfb8
 ```
 
 `PUT /api/v1/tips/:id`
@@ -5816,7 +5816,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
       "title": "Balance",
       "description": "Featuring your meeting preferences that are pre-optimized based on research from meeting experts.",
       "tag": "view-balance",
-      "seen_at": "2020-10-25T16:56:02.275Z"
+      "seen_at": "2020-10-28T17:45:11.925Z"
     }
   }
 }
@@ -5827,7 +5827,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl "http://localhost:3000/api/v1/tips/5" -d '' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiNjRjNzVmOC1kMzBkLTQ2OTYtYjA5OS04ODQ5MmE1YjE3ZmEiLCJzdWIiOiIxMjI3NiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MiwiZXhwIjoxNjA1ODA0OTYyfQ.5jG8HKoUj1cCGc2_wwXahUAge8g-6CeUk6RqzocyO6I"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MTdkNjcwZi01ZDgwLTRjNzUtYmNiNi04YWE4N2UyMTg4MTQiLCJzdWIiOiI3MDciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTEsImV4cCI6MTYwNjA2NzExMX0.iXI-PeO1s5ruG_pFmrWmMhz6yJ3BLBJf8vnIQX4vfb8"
 ```
 ## List tips for user
 
@@ -5839,7 +5839,7 @@ curl "http://localhost:3000/api/v1/tips/5" -d '' -X PUT \
 ```plaintext
 GET /api/v1/tips
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzODEwNjVkYS1lMWY4LTRkYjUtOTE4YS1kOWUwNDcwMjAyZmUiLCJzdWIiOiIxMjI3OCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MiwiZXhwIjoxNjA1ODA0OTYyfQ.vXi9Ki-IBbiKwUKKrTImgX18_zi18vjBUn34t3EwMwQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4YjMyMTNkOS01OWM4LTQ3ZjAtYjU3Ny0xMTE2ZWE2MTRkZjIiLCJzdWIiOiI3MDgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.efmqEZ3keb-RWWF9dtyGphmfvg3wzHB38SIMitl3XxM
 ```
 
 `GET /api/v1/tips`
@@ -5920,126 +5920,12 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/tips" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzODEwNjVkYS1lMWY4LTRkYjUtOTE4YS1kOWUwNDcwMjAyZmUiLCJzdWIiOiIxMjI3OCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MiwiZXhwIjoxNjA1ODA0OTYyfQ.vXi9Ki-IBbiKwUKKrTImgX18_zi18vjBUn34t3EwMwQ"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4YjMyMTNkOS01OWM4LTQ3ZjAtYjU3Ny0xMTE2ZWE2MTRkZjIiLCJzdWIiOiI3MDgiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTIsImV4cCI6MTYwNjA2NzExMn0.efmqEZ3keb-RWWF9dtyGphmfvg3wzHB38SIMitl3XxM"
 ```
-# Users
-
-Update user action or evaluation settings
-
-## Delete user account and all associated data
-
-
-### Request
-
-#### Endpoint
-
-```plaintext
-DELETE /api/v1/users
-Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlNGU3MjJmNS04OGFjLTQxMTctYjUzYi01ZjU0OTFjYmQxNjMiLCJzdWIiOiIxMjM1OSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NCwiZXhwIjoxNjA1ODA0OTc0fQ.p6FLhkBbNM3sqxz2cffdKuXR9p8uG1kihlhOJha9KUM
-```
-
-`DELETE /api/v1/users`
-
-#### Parameters
-
-
-None known.
-
-
-### Response
-
-```plaintext
-
-204 No Content
-```
+# User Settings
 
 
 
-
-```shell
-curl "http://localhost:3000/api/v1/users" -d '' -X DELETE \
-	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlNGU3MjJmNS04OGFjLTQxMTctYjUzYi01ZjU0OTFjYmQxNjMiLCJzdWIiOiIxMjM1OSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NCwiZXhwIjoxNjA1ODA0OTc0fQ.p6FLhkBbNM3sqxz2cffdKuXR9p8uG1kihlhOJha9KUM"
-```
-## Show user
-
-
-### Request
-
-#### Endpoint
-
-```plaintext
-GET /api/v1/users
-Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZjZlNWNjYi1jZTBjLTQzMDAtYWY2Mi0yOTJhZjEzNTJkNGUiLCJzdWIiOiIxMjM1OCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NCwiZXhwIjoxNjA1ODA0OTc0fQ.VZFpQBDN19XUhr6iQ3SfntxwFYe3c8J7Vc_hq3SdurY
-```
-
-`GET /api/v1/users`
-
-#### Parameters
-
-
-None known.
-
-
-### Response
-
-```plaintext
-Content-Type: application/vnd.api+json; charset=utf-8
-200 OK
-```
-
-
-```json
-{
-  "data": {
-    "id": "12358",
-    "type": "users",
-    "attributes": {
-      "email": "billy@weimann-larkin.org",
-      "domain": "weimann-larkin.org",
-      "first_name": "Crystal Dragon",
-      "last_name": "Ajax Lord",
-      "profile_image": "http://kreiger.biz/orval_kilback",
-      "time_zone": "UTC",
-      "onboarded": false,
-      "identity_providers": [
-
-      ],
-      "subscription_plan": null,
-      "daily_report_card_events": true,
-      "company": {
-        "id": 12653,
-        "name": "weimann-larkin",
-        "license_by": "domain",
-        "roles": [
-          "billing_admin"
-        ]
-      },
-      "organizer_blacklist": "",
-      "domain_whitelist": "weimann-larkin.org",
-      "communication_prefs": {
-        "all_communications": true,
-        "email_tips": true,
-        "email_weekly_reports": true,
-        "email_reminders": true
-      },
-      "goal_ids": [
-
-      ]
-    }
-  }
-}
-```
-
-
-
-```shell
-curl -g "http://localhost:3000/api/v1/users" -X GET \
-	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZjZlNWNjYi1jZTBjLTQzMDAtYWY2Mi0yOTJhZjEzNTJkNGUiLCJzdWIiOiIxMjM1OCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NCwiZXhwIjoxNjA1ODA0OTc0fQ.VZFpQBDN19XUhr6iQ3SfntxwFYe3c8J7Vc_hq3SdurY"
-```
 ## Show user settings
 
 
@@ -6050,7 +5936,7 @@ curl -g "http://localhost:3000/api/v1/users" -X GET \
 ```plaintext
 GET /api/v1/users/settings
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMzNlN2EwNy02NjQxLTRlYjEtOWMwZC1hNzNmZGQ3MGI1ZGYiLCJzdWIiOiIxMjI3NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MSwiZXhwIjoxNjA1ODA0OTYxfQ.prbfZsieumHYPpdPFlipBpMZVCJEc1kFjE-9qj7YhcQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ODIzODljYi00ZDFjLTQzMDktYWFmOC1jM2FkNzc2ZGJmYTMiLCJzdWIiOiI3NDkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.EBtbXDj9D5n3zxDL4SsKowGVa0dnGe3TnDAXWr_lQlE
 ```
 
 `GET /api/v1/users/settings`
@@ -6072,14 +5958,14 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "12274",
+    "id": "749",
     "type": "user_settings",
     "attributes": {
       "action_settings": {
         "meeting_conflict": "block",
         "focus_block_conflict": "block",
         "non_compliance_action": "remind",
-        "domains_whitelist": "smith.org",
+        "domains_whitelist": "bergstrom.org",
         "last_minute_schedule": 6,
         "compliance_deadline": 6,
         "max_attendees": 12,
@@ -6165,94 +6051,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/users/settings" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMzNlN2EwNy02NjQxLTRlYjEtOWMwZC1hNzNmZGQ3MGI1ZGYiLCJzdWIiOiIxMjI3NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MSwiZXhwIjoxNjA1ODA0OTYxfQ.prbfZsieumHYPpdPFlipBpMZVCJEc1kFjE-9qj7YhcQ"
-```
-## Update user
-
-
-### Request
-
-#### Endpoint
-
-```plaintext
-PUT /api/v1/users
-Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkOTZlMzNiNS0wYmE3LTRiZTQtOTkzMC1mYWFiNGNiNDg5ZTMiLCJzdWIiOiIxMjM1NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NCwiZXhwIjoxNjA1ODA0OTc0fQ.1PpA1AtpYYBFdw5_C0sPG-7R9SGAHmwmwPMzHGCCq6o
-```
-
-`PUT /api/v1/users`
-
-#### Parameters
-
-
-```json
-{"data":{"type":"team","attributes":{"required_category":true,"required_agenda":true,"annual_salary":220000}}}
-```
-
-
-| Name | Description |
-|:-----|:------------|
-| evaluation_setting  |  evaluation setting |
-| action_setting  |  action setting |
-
-
-
-### Response
-
-```plaintext
-Content-Type: application/vnd.api+json; charset=utf-8
-202 Accepted
-```
-
-
-```json
-{
-  "data": {
-    "id": "12357",
-    "type": "users",
-    "attributes": {
-      "email": "geoffrey_beatty@vonrueden.name",
-      "domain": "vonrueden.name",
-      "first_name": "Supah Omega Red XI",
-      "last_name": "Agent Callisto the Fated",
-      "profile_image": "http://deckow.org/tanner",
-      "time_zone": "UTC",
-      "onboarded": false,
-      "identity_providers": [
-
-      ],
-      "subscription_plan": null,
-      "daily_report_card_events": true,
-      "company": {
-        "id": 12652,
-        "name": "vonrueden",
-        "license_by": "domain",
-        "roles": [
-          "billing_admin"
-        ]
-      },
-      "organizer_blacklist": "",
-      "domain_whitelist": "vonrueden.name",
-      "communication_prefs": {
-        "all_communications": true,
-        "email_tips": true,
-        "email_weekly_reports": true,
-        "email_reminders": true
-      },
-      "goal_ids": [
-
-      ]
-    }
-  }
-}
-```
-
-
-
-```shell
-curl "http://localhost:3000/api/v1/users" -d '{"data":{"type":"team","attributes":{"required_category":true,"required_agenda":true,"annual_salary":220000}}}' -X PUT \
-	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkOTZlMzNiNS0wYmE3LTRiZTQtOTkzMC1mYWFiNGNiNDg5ZTMiLCJzdWIiOiIxMjM1NyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk3NCwiZXhwIjoxNjA1ODA0OTc0fQ.1PpA1AtpYYBFdw5_C0sPG-7R9SGAHmwmwPMzHGCCq6o"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ODIzODljYi00ZDFjLTQzMDktYWFmOC1jM2FkNzc2ZGJmYTMiLCJzdWIiOiI3NDkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.EBtbXDj9D5n3zxDL4SsKowGVa0dnGe3TnDAXWr_lQlE"
 ```
 ## Update user settings
 
@@ -6264,7 +6063,7 @@ curl "http://localhost:3000/api/v1/users" -d '{"data":{"type":"team","attributes
 ```plaintext
 PUT /api/v1/users/settings
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlY2Q0NjFiYS1mZWJiLTQ0MDQtOGI3NC0wYmI0NTM5NDY2ZGIiLCJzdWIiOiIxMjI3MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MSwiZXhwIjoxNjA1ODA0OTYxfQ.MUHZNK-KjNERLLkefcjxTFDz7DKmRrSZ1LidbwXXlwo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYjViZjhmMC0xYjUyLTQyMzgtYTM0NC0xYTMzYjIzNzY2MDciLCJzdWIiOiI3NTAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.byM1UXf6aU1nGyzSVKk-OjzUIHrQhC1D4tRpIYFjja8
 ```
 
 `PUT /api/v1/users/settings`
@@ -6295,14 +6094,14 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "12273",
+    "id": "750",
     "type": "user_settings",
     "attributes": {
       "action_settings": {
         "meeting_conflict": "block",
         "focus_block_conflict": "block",
         "non_compliance_action": "remind",
-        "domains_whitelist": "lesch.net",
+        "domains_whitelist": "hintz-considine.com",
         "last_minute_schedule": 6,
         "compliance_deadline": 6,
         "max_attendees": 12,
@@ -6388,7 +6187,217 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl "http://localhost:3000/api/v1/users/settings" -d '{"data":{"type":"team","attributes":{"action_settings":{"required_agenda":false,"desired_duration":60,"last_minute_schedule":6},"evaluation_settings":{"max_attendees":8}}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlY2Q0NjFiYS1mZWJiLTQ0MDQtOGI3NC0wYmI0NTM5NDY2ZGIiLCJzdWIiOiIxMjI3MyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk2MSwiZXhwIjoxNjA1ODA0OTYxfQ.MUHZNK-KjNERLLkefcjxTFDz7DKmRrSZ1LidbwXXlwo"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYjViZjhmMC0xYjUyLTQyMzgtYTM0NC0xYTMzYjIzNzY2MDciLCJzdWIiOiI3NTAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.byM1UXf6aU1nGyzSVKk-OjzUIHrQhC1D4tRpIYFjja8"
+```
+# Users
+
+Update user attributes or evaluation settings
+
+## Delete user account and all associated data
+
+
+### Request
+
+#### Endpoint
+
+```plaintext
+DELETE /api/v1/users
+Content-Type: application/vnd.api+json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwYWQxMWZkZC05ZmQzLTRjNWQtYWViNy04Y2U4Y2U4MTlmNGIiLCJzdWIiOiI3MzAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.SAf_ZWTmHmHky8dQ3lQgk-PFPHHSTj-nC-cH8qEf_Vc
+```
+
+`DELETE /api/v1/users`
+
+#### Parameters
+
+
+None known.
+
+
+### Response
+
+```plaintext
+
+204 No Content
+```
+
+
+
+
+```shell
+curl "http://localhost:3000/api/v1/users" -d '' -X DELETE \
+	-H "Content-Type: application/vnd.api+json" \
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwYWQxMWZkZC05ZmQzLTRjNWQtYWViNy04Y2U4Y2U4MTlmNGIiLCJzdWIiOiI3MzAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.SAf_ZWTmHmHky8dQ3lQgk-PFPHHSTj-nC-cH8qEf_Vc"
+```
+## Show user
+
+
+### Request
+
+#### Endpoint
+
+```plaintext
+GET /api/v1/users
+Content-Type: application/vnd.api+json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4M2NiNTIyNi01MDZiLTQyMGUtOGM5MC0zOTU4ZTQzYzM3ZjEiLCJzdWIiOiI3MzEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.zZcW_VdjdwQcE-72IR3gp81COeI86S_jEIAYlZAgHW0
+```
+
+`GET /api/v1/users`
+
+#### Parameters
+
+
+None known.
+
+
+### Response
+
+```plaintext
+Content-Type: application/vnd.api+json; charset=utf-8
+200 OK
+```
+
+
+```json
+{
+  "data": {
+    "id": "731",
+    "type": "users",
+    "attributes": {
+      "email": "guillermo_dooley@weissnat.net",
+      "domain": "weissnat.net",
+      "first_name": "Shatterstar",
+      "last_name": "Green Darkside",
+      "profile_image": "http://gutmann-mayer.net/tatiana",
+      "time_zone": "UTC",
+      "onboarded": false,
+      "identity_providers": [
+
+      ],
+      "subscription_plan": null,
+      "daily_report_card_events": true,
+      "company": {
+        "id": 740,
+        "name": "weissnat",
+        "license_by": "domain",
+        "roles": [
+          "billing_admin"
+        ]
+      },
+      "organizer_blacklist": "",
+      "domain_whitelist": "weissnat.net",
+      "communication_prefs": {
+        "all_communications": "pre_and_post",
+        "email_tips": true,
+        "email_weekly_reports": true,
+        "email_reminders": "pre_and_post"
+      },
+      "goal_ids": [
+
+      ]
+    }
+  }
+}
+```
+
+
+
+```shell
+curl -g "http://localhost:3000/api/v1/users" -X GET \
+	-H "Content-Type: application/vnd.api+json" \
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4M2NiNTIyNi01MDZiLTQyMGUtOGM5MC0zOTU4ZTQzYzM3ZjEiLCJzdWIiOiI3MzEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.zZcW_VdjdwQcE-72IR3gp81COeI86S_jEIAYlZAgHW0"
+```
+## Update user
+
+
+### Request
+
+#### Endpoint
+
+```plaintext
+PUT /api/v1/users
+Content-Type: application/vnd.api+json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5NDljYjQyMi0yMmRmLTQ2YjgtOWYwOS0yNDIxYTRhMDE0MTIiLCJzdWIiOiI3MjkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.P6rc3BF7M4maxvkrqv0nc4-x8qoaYbnUKh79y7Umyqw
+```
+
+`PUT /api/v1/users`
+
+#### Parameters
+
+
+```json
+{"communication_prefs":{"email_reminders":"pre_and_post","all_communications":true,"email_tips":true,"email_weekly_reports":true},"data":{"type":"team","attributes":{"required_category":true,"required_agenda":true,"annual_salary":220000}}}
+```
+
+
+| Name | Description |
+|:-----|:------------|
+| evaluation_setting  |  evaluation setting |
+| action_setting  |  action setting |
+| communication_prefs  |  communication prefs |
+| communications_prefs[all_communications]  | True value sets all prefs to true |
+| communications_prefs[email_tips]  | Ex: onboarding emails |
+| communications_prefs[email_reminders]  | no_email, pre_and_post, pre_action, post_action |
+| communications_prefs[email_weekly_reports]  | Communications prefs email weekly reports |
+
+
+
+### Response
+
+```plaintext
+Content-Type: application/vnd.api+json; charset=utf-8
+202 Accepted
+```
+
+
+```json
+{
+  "data": {
+    "id": "729",
+    "type": "users",
+    "attributes": {
+      "email": "drew_wolf@bashirian-roob.com",
+      "domain": "bashirian-roob.com",
+      "first_name": "Falcon",
+      "last_name": "Cyborg Maxima",
+      "profile_image": "http://kshlerin.net/nestor",
+      "time_zone": "UTC",
+      "onboarded": false,
+      "identity_providers": [
+
+      ],
+      "subscription_plan": null,
+      "daily_report_card_events": true,
+      "company": {
+        "id": 738,
+        "name": "bashirian-roob",
+        "license_by": "domain",
+        "roles": [
+          "billing_admin"
+        ]
+      },
+      "organizer_blacklist": "",
+      "domain_whitelist": "bashirian-roob.com",
+      "communication_prefs": {
+        "all_communications": "pre_and_post",
+        "email_tips": true,
+        "email_weekly_reports": true,
+        "email_reminders": "pre_and_post"
+      },
+      "goal_ids": [
+
+      ]
+    }
+  }
+}
+```
+
+
+
+```shell
+curl "http://localhost:3000/api/v1/users" -d '{"communication_prefs":{"email_reminders":"pre_and_post","all_communications":true,"email_tips":true,"email_weekly_reports":true},"data":{"type":"team","attributes":{"required_category":true,"required_agenda":true,"annual_salary":220000}}}' -X PUT \
+	-H "Content-Type: application/vnd.api+json" \
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5NDljYjQyMi0yMmRmLTQ2YjgtOWYwOS0yNDIxYTRhMDE0MTIiLCJzdWIiOiI3MjkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTUsImV4cCI6MTYwNjA2NzExNX0.P6rc3BF7M4maxvkrqv0nc4-x8qoaYbnUKh79y7Umyqw"
 ```
 # Wellness Blocks
 
@@ -6404,7 +6413,7 @@ curl "http://localhost:3000/api/v1/users/settings" -d '{"data":{"type":"team","a
 ```plaintext
 POST /api/v1/focus_blocks
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NzViMmRkNi0yNjJjLTQ0YjQtOTJlNC0zYmRhMzFjMmM4NDIiLCJzdWIiOiIxMjQwNyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.NunaVAx0z6jMnfq4r9mDfy_vvngqQ3xa8yv1788BX4A
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiMTVhMjc4NS1mZjQ5LTRjZDktODUwMC01ZmE3M2RlZmU5MTQiLCJzdWIiOiI3NTEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.iUSO304-yHVlJo3MjU6flJIxYE-9GfuUXkOiec1SiZc
 ```
 
 `POST /api/v1/focus_blocks`
@@ -6413,7 +6422,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NzViMmRkNi0yNjJjLTQ0YjQtO
 
 
 ```json
-{"data":{"type":"focus_block","attributes":{"label":"Coding MeetWell","calendar_id":14142,"rrule":"DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA","starts_at":"2019-12-28 22:03:57 UTC","ends_at":"2019-12-28 23:03:57 UTC"}}}
+{"data":{"type":"focus_block","attributes":{"label":"Coding MeetWell","calendar_id":778,"rrule":"DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA","starts_at":"2019-12-28 22:03:57 UTC","ends_at":"2019-12-28 23:03:57 UTC"}}}
 ```
 
 
@@ -6436,16 +6445,16 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "460",
+    "id": "37",
     "type": "focus_blocks",
     "attributes": {
       "label": "Coding MeetWell",
       "category": "focus",
-      "calendar_id": 14142,
+      "calendar_id": 778,
       "recurring_meeting_uuid": null,
       "duration": 3600,
-      "starts_at": "2020-10-19T22:03:00.000Z",
-      "ends_at": "2020-10-19T23:03:00.000Z",
+      "starts_at": "2020-10-26T22:03:00.000Z",
+      "ends_at": "2020-10-26T23:03:00.000Z",
       "rrule": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA",
       "recurring": true
     }
@@ -6456,9 +6465,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/focus_blocks" -d '{"data":{"type":"focus_block","attributes":{"label":"Coding MeetWell","calendar_id":14142,"rrule":"DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA","starts_at":"2019-12-28 22:03:57 UTC","ends_at":"2019-12-28 23:03:57 UTC"}}}' -X POST \
+curl "http://localhost:3000/api/v1/focus_blocks" -d '{"data":{"type":"focus_block","attributes":{"label":"Coding MeetWell","calendar_id":778,"rrule":"DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA","starts_at":"2019-12-28 22:03:57 UTC","ends_at":"2019-12-28 23:03:57 UTC"}}}' -X POST \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NzViMmRkNi0yNjJjLTQ0YjQtOTJlNC0zYmRhMzFjMmM4NDIiLCJzdWIiOiIxMjQwNyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.NunaVAx0z6jMnfq4r9mDfy_vvngqQ3xa8yv1788BX4A"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiMTVhMjc4NS1mZjQ5LTRjZDktODUwMC01ZmE3M2RlZmU5MTQiLCJzdWIiOiI3NTEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTcsImV4cCI6MTYwNjA2NzExN30.iUSO304-yHVlJo3MjU6flJIxYE-9GfuUXkOiec1SiZc"
 ```
 ## Delete wellness block
 
@@ -6468,9 +6477,9 @@ curl "http://localhost:3000/api/v1/focus_blocks" -d '{"data":{"type":"focus_bloc
 #### Endpoint
 
 ```plaintext
-DELETE /api/v1/focus_blocks/458
+DELETE /api/v1/focus_blocks/39
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZjE1OThlNC1hMGVhLTRhNDItYjNhZi0xZjdmNzhmN2Q5MGQiLCJzdWIiOiIxMjQwNSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.abpxAvHpgfywgpuVjN81Gu2LykRFc-A-7K-QJWLeuIU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NzY2ODdiZS1jZGQ1LTQ0YTctYmJiMy00ZTliNzg4MGE0NDgiLCJzdWIiOiI3NTUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.bg9TjkEFqRsUeX0hRzoeTTTB9NdYt4i5hcfuG_NH4EU
 ```
 
 `DELETE /api/v1/focus_blocks/:id`
@@ -6498,9 +6507,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZjE1OThlNC1hMGVhLTRhNDItY
 
 
 ```shell
-curl "http://localhost:3000/api/v1/focus_blocks/458" -d '' -X DELETE \
+curl "http://localhost:3000/api/v1/focus_blocks/39" -d '' -X DELETE \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZjE1OThlNC1hMGVhLTRhNDItYjNhZi0xZjdmNzhmN2Q5MGQiLCJzdWIiOiIxMjQwNSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.abpxAvHpgfywgpuVjN81Gu2LykRFc-A-7K-QJWLeuIU"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NzY2ODdiZS1jZGQ1LTQ0YTctYmJiMy00ZTliNzg4MGE0NDgiLCJzdWIiOiI3NTUiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.bg9TjkEFqRsUeX0hRzoeTTTB9NdYt4i5hcfuG_NH4EU"
 ```
 ## List maybe wellness blocks
 
@@ -6512,7 +6521,7 @@ curl "http://localhost:3000/api/v1/focus_blocks/458" -d '' -X DELETE \
 ```plaintext
 GET /api/v1/focus_blocks/maybe
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4ZGRjYTkwZC04OTU2LTQzMTItYjA1ZS05Y2ZiYzg3N2ZiZTMiLCJzdWIiOiIxMjQwNCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.7td8lIyQ5EgW2WRkfenqkOkgqJXrZLyruuQi2_rTGHM
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2Njc3NzIyZS1hNGI4LTRjYTUtOGU3Ny01NjJiYWJlMzEzZTAiLCJzdWIiOiI3NTIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.tB7yOIGISqujHmya2n2joZqua9W7vSPh9URM-11aFFQ
 ```
 
 `GET /api/v1/focus_blocks/maybe`
@@ -6550,7 +6559,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/focus_blocks/maybe" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4ZGRjYTkwZC04OTU2LTQzMTItYjA1ZS05Y2ZiYzg3N2ZiZTMiLCJzdWIiOiIxMjQwNCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.7td8lIyQ5EgW2WRkfenqkOkgqJXrZLyruuQi2_rTGHM"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2Njc3NzIyZS1hNGI4LTRjYTUtOGU3Ny01NjJiYWJlMzEzZTAiLCJzdWIiOiI3NTIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.tB7yOIGISqujHmya2n2joZqua9W7vSPh9URM-11aFFQ"
 ```
 ## List wellness blocks
 
@@ -6562,7 +6571,7 @@ curl -g "http://localhost:3000/api/v1/focus_blocks/maybe" -X GET \
 ```plaintext
 GET /api/v1/focus_blocks
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkN2U4OTg5Yi1iZjQ0LTRhMTItOTg5Ni04NGQ1ZjY4YTY5Y2IiLCJzdWIiOiIxMjQwNiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.5_PPc0VQh8la63OV7WHLHYHvvt2DPTIvxV6AkwZ1EBU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkOGFhZjkyMC1jN2YzLTRhNzQtODJjYS1iMGU5ODVhYmY3ODEiLCJzdWIiOiI3NTQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.8GWnkAqFF4TN_VV4tAo4Q-qUo3N_zZYPFARh_vyFHj4
 ```
 
 `GET /api/v1/focus_blocks`
@@ -6600,7 +6609,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```shell
 curl -g "http://localhost:3000/api/v1/focus_blocks" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkN2U4OTg5Yi1iZjQ0LTRhMTItOTg5Ni04NGQ1ZjY4YTY5Y2IiLCJzdWIiOiIxMjQwNiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.5_PPc0VQh8la63OV7WHLHYHvvt2DPTIvxV6AkwZ1EBU"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkOGFhZjkyMC1jN2YzLTRhNzQtODJjYS1iMGU5ODVhYmY3ODEiLCJzdWIiOiI3NTQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.8GWnkAqFF4TN_VV4tAo4Q-qUo3N_zZYPFARh_vyFHj4"
 ```
 ## Show wellness blocks
 
@@ -6610,9 +6619,9 @@ curl -g "http://localhost:3000/api/v1/focus_blocks" -X GET \
 #### Endpoint
 
 ```plaintext
-GET /api/v1/focus_blocks/457
+GET /api/v1/focus_blocks/38
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyM2RjNzE0NS00OThmLTQ3YWUtOWZlNy02NDExNTdhZmNkZWQiLCJzdWIiOiIxMjQwMyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.b6hzKuH52uxrD1rYIG9mPed_ODnl0QOQTff5INbmII0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZGFhNWE2MC0wN2MyLTQ5ZTctODBiMy1kYjQxMWI2MDJmNjMiLCJzdWIiOiI3NTMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.IkLaLty4f2OP1Gg57hvp1xNhlEQeXi0Z5LLFGOKcoPM
 ```
 
 `GET /api/v1/focus_blocks/:id`
@@ -6640,16 +6649,16 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "457",
+    "id": "38",
     "type": "focus_blocks",
     "attributes": {
       "label": "test",
       "category": "focus",
-      "calendar_id": 14138,
+      "calendar_id": 780,
       "recurring_meeting_uuid": "foo",
       "duration": 3600,
-      "starts_at": "2020-10-25T16:56:00.000Z",
-      "ends_at": "2020-10-25T17:56:00.000Z",
+      "starts_at": "2020-10-28T17:45:00.000Z",
+      "ends_at": "2020-10-28T18:45:00.000Z",
       "rrule": "RRULE:FREQ=DAILY",
       "recurring": true
     }
@@ -6660,9 +6669,9 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl -g "http://localhost:3000/api/v1/focus_blocks/457" -X GET \
+curl -g "http://localhost:3000/api/v1/focus_blocks/38" -X GET \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyM2RjNzE0NS00OThmLTQ3YWUtOWZlNy02NDExNTdhZmNkZWQiLCJzdWIiOiIxMjQwMyIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.b6hzKuH52uxrD1rYIG9mPed_ODnl0QOQTff5INbmII0"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZGFhNWE2MC0wN2MyLTQ5ZTctODBiMy1kYjQxMWI2MDJmNjMiLCJzdWIiOiI3NTMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.IkLaLty4f2OP1Gg57hvp1xNhlEQeXi0Z5LLFGOKcoPM"
 ```
 ## Update wellness block
 
@@ -6672,9 +6681,9 @@ curl -g "http://localhost:3000/api/v1/focus_blocks/457" -X GET \
 #### Endpoint
 
 ```plaintext
-PUT /api/v1/focus_blocks/456
+PUT /api/v1/focus_blocks/40
 Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOWYwZTJhYi0wNTMzLTQ4ZmItODY3ZS1iMWZhOWU5Zjc0MTEiLCJzdWIiOiIxMjQwMiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.n-1PIrdK_A53a662LYFX4lKdX34oy1q15swqhxZH6pM
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlNTFhYzk3Mi00ZGE1LTQwODItOWRhMS1kYTBmMzMxOThmNGMiLCJzdWIiOiI3NTYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.vjb_b43lgtwhIdmxvb3QvDnquCe2981WpSNFM99iCo0
 ```
 
 `PUT /api/v1/focus_blocks/:id`
@@ -6706,16 +6715,16 @@ Content-Type: application/vnd.api+json; charset=utf-8
 ```json
 {
   "data": {
-    "id": "456",
+    "id": "40",
     "type": "focus_blocks",
     "attributes": {
       "label": "test",
       "category": "focus",
-      "calendar_id": 14137,
+      "calendar_id": 783,
       "recurring_meeting_uuid": "foo",
       "duration": 3600,
-      "starts_at": "2020-10-23T16:56:00.000Z",
-      "ends_at": "2020-10-23T17:56:00.000Z",
+      "starts_at": "2020-10-23T17:45:00.000Z",
+      "ends_at": "2020-10-23T18:45:00.000Z",
       "rrule": "RRULE:FREQ=WEEKLY;BYDAY=FR,SA",
       "recurring": true
     }
@@ -6726,7 +6735,7 @@ Content-Type: application/vnd.api+json; charset=utf-8
 
 
 ```shell
-curl "http://localhost:3000/api/v1/focus_blocks/456" -d '{"data":{"type":"focus_block","attributes":{"label":"test","rrule":"DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=FR,SA","duration":3600}}}' -X PUT \
+curl "http://localhost:3000/api/v1/focus_blocks/40" -d '{"data":{"type":"focus_block","attributes":{"label":"test","rrule":"DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=FR,SA","duration":3600}}}' -X PUT \
 	-H "Content-Type: application/vnd.api+json" \
-	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlOWYwZTJhYi0wNTMzLTQ4ZmItODY3ZS1iMWZhOWU5Zjc0MTEiLCJzdWIiOiIxMjQwMiIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTYwMzY0NDk4MSwiZXhwIjoxNjA1ODA0OTgxfQ.n-1PIrdK_A53a662LYFX4lKdX34oy1q15swqhxZH6pM"
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlNTFhYzk3Mi00ZGE1LTQwODItOWRhMS1kYTBmMzMxOThmNGMiLCJzdWIiOiI3NTYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDcxMTgsImV4cCI6MTYwNjA2NzExOH0.vjb_b43lgtwhIdmxvb3QvDnquCe2981WpSNFM99iCo0"
 ```

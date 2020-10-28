@@ -169,19 +169,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxOWM1ZmVmMi1lMTM5LTQxYzgtYWE2MC0zZGYyNjRiODRmOTciLCJzdWIiOiI1Njk2Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjE4LCJleHAiOjE2MDU5NzI2MTh9.6yaLhw3kmM1VFxbv548nmNOH4gjesAEf0nHCBaqeyiQ</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1ODgxMWQyMy02NWZiLTRlODUtODZiYi1lZTY0MWI3MjJmZmIiLCJzdWIiOiI1NTEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4OTksImV4cCI6MTYwNjA2Njg5OX0.9n5nPSVzqniwtPGGNQegy3jlSmI9JLrAK-GopcadQdQ</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">POST /api/v1/meetings/2750/attendees</pre>
+          <pre class="request route highlight">POST /api/v1/meetings/137/attendees</pre>
 
 
             <h4>Body</h4>
             <pre class="request body">{"data":{"type":"attendee","attributes":{"email":"test@test.com","attendee_name":"Test","status":"confirmed"}}}</pre>
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/meetings/2750/attendees&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;attendee&quot;,&quot;attributes&quot;:{&quot;email&quot;:&quot;test@test.com&quot;,&quot;attendee_name&quot;:&quot;Test&quot;,&quot;status&quot;:&quot;confirmed&quot;}}}&#39; -X POST \
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/meetings/137/attendees&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;attendee&quot;,&quot;attributes&quot;:{&quot;email&quot;:&quot;test@test.com&quot;,&quot;attendee_name&quot;:&quot;Test&quot;,&quot;status&quot;:&quot;confirmed&quot;}}}&#39; -X POST \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxOWM1ZmVmMi1lMTM5LTQxYzgtYWE2MC0zZGYyNjRiODRmOTciLCJzdWIiOiI1Njk2Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjE4LCJleHAiOjE2MDU5NzI2MTh9.6yaLhw3kmM1VFxbv548nmNOH4gjesAEf0nHCBaqeyiQ&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1ODgxMWQyMy02NWZiLTRlODUtODZiYi1lZTY0MWI3MjJmZmIiLCJzdWIiOiI1NTEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4OTksImV4cCI6MTYwNjA2Njg5OX0.9n5nPSVzqniwtPGGNQegy3jlSmI9JLrAK-GopcadQdQ&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -191,10 +191,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxOWM1ZmVmMi1lMTM5LTQxYzgtY
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;2962&quot;,
+    &quot;id&quot;: &quot;74&quot;,
     &quot;type&quot;: &quot;attendees&quot;,
     &quot;attributes&quot;: {
-      &quot;id&quot;: 2962,
+      &quot;id&quot;: 74,
       &quot;email&quot;: &quot;test@test.com&quot;,
       &quot;status&quot;: &quot;confirmed&quot;,
       &quot;role&quot;: null,

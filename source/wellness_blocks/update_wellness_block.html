@@ -153,19 +153,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNWQ1NjEyNi0wMjg3LTRlNTktYTJiYy03YzgyMDY3ZTRjNzciLCJzdWIiOiI1NjMyIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjA4LCJleHAiOjE2MDU5NzI2MDh9.lMu-rOmczO7L2RgCYghhgqh-qCJx4GsGWYVJoPLjcDA</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZjFjMTZkYi1lYzRjLTQyMmQtODA5My03NzVhNjY2MWJkN2IiLCJzdWIiOiI0MzkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODMsImV4cCI6MTYwNjA2Njg4M30.LxonXtI5DxU-t1skGRzoD-rTj49Ghjo8Sz37MYYQ3u8</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">PUT /api/v1/focus_blocks/215</pre>
+          <pre class="request route highlight">PUT /api/v1/focus_blocks/26</pre>
 
 
             <h4>Body</h4>
             <pre class="request body">{"data":{"type":"focus_block","attributes":{"label":"test","rrule":"DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=FR,SA","duration":3600}}}</pre>
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/focus_blocks/215&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;focus_block&quot;,&quot;attributes&quot;:{&quot;label&quot;:&quot;test&quot;,&quot;rrule&quot;:&quot;DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=FR,SA&quot;,&quot;duration&quot;:3600}}}&#39; -X PUT \
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/focus_blocks/26&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;focus_block&quot;,&quot;attributes&quot;:{&quot;label&quot;:&quot;test&quot;,&quot;rrule&quot;:&quot;DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=FR,SA&quot;,&quot;duration&quot;:3600}}}&#39; -X PUT \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNWQ1NjEyNi0wMjg3LTRlNTktYTJiYy03YzgyMDY3ZTRjNzciLCJzdWIiOiI1NjMyIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjA4LCJleHAiOjE2MDU5NzI2MDh9.lMu-rOmczO7L2RgCYghhgqh-qCJx4GsGWYVJoPLjcDA&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZjFjMTZkYi1lYzRjLTQyMmQtODA5My03NzVhNjY2MWJkN2IiLCJzdWIiOiI0MzkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODMsImV4cCI6MTYwNjA2Njg4M30.LxonXtI5DxU-t1skGRzoD-rTj49Ghjo8Sz37MYYQ3u8&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -175,16 +175,16 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNWQ1NjEyNi0wMjg3LTRlNTktY
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;215&quot;,
+    &quot;id&quot;: &quot;26&quot;,
     &quot;type&quot;: &quot;focus_blocks&quot;,
     &quot;attributes&quot;: {
       &quot;label&quot;: &quot;test&quot;,
       &quot;category&quot;: &quot;focus&quot;,
-      &quot;calendar_id&quot;: 6485,
+      &quot;calendar_id&quot;: 454,
       &quot;recurring_meeting_uuid&quot;: &quot;foo&quot;,
       &quot;duration&quot;: 3600,
-      &quot;starts_at&quot;: &quot;2020-10-23T15:30:00.000Z&quot;,
-      &quot;ends_at&quot;: &quot;2020-10-23T16:30:00.000Z&quot;,
+      &quot;starts_at&quot;: &quot;2020-10-23T17:41:00.000Z&quot;,
+      &quot;ends_at&quot;: &quot;2020-10-23T18:41:00.000Z&quot;,
       &quot;rrule&quot;: &quot;RRULE:FREQ=WEEKLY;BYDAY=FR,SA&quot;,
       &quot;recurring&quot;: true
     }

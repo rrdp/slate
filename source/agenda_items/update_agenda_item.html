@@ -169,19 +169,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNThkMmYyNS02ZGZiLTQxMDYtODJkOS01YTQ1ZmNjODA0ZWMiLCJzdWIiOiI1NzYwIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjI4LCJleHAiOjE2MDU5NzI2Mjh9.AI4EmS7qzHMa6HmmHbEwmefAFWX_F0c-EDDwrAJxwQc</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NTlkMDI3Zi0yN2M3LTRjMzEtYjRiMy1iOTE2MTAxZTI2MDYiLCJzdWIiOiI0NzQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODgsImV4cCI6MTYwNjA2Njg4OH0.8IyoQA-MkzBbKW-2RU1YkgdkGEJa8u4tBJQOG9InZmc</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">PUT /api/v1/meetings/2769/agenda_items/1296</pre>
+          <pre class="request route highlight">PUT /api/v1/meetings/120/agenda_items/16</pre>
 
 
             <h4>Body</h4>
             <pre class="request body">{"data":{"type":"agenda_item","attributes":{"description":"Talk about things"}}}</pre>
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/meetings/2769/agenda_items/1296&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;agenda_item&quot;,&quot;attributes&quot;:{&quot;description&quot;:&quot;Talk about things&quot;}}}&#39; -X PUT \
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/meetings/120/agenda_items/16&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;agenda_item&quot;,&quot;attributes&quot;:{&quot;description&quot;:&quot;Talk about things&quot;}}}&#39; -X PUT \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNThkMmYyNS02ZGZiLTQxMDYtODJkOS01YTQ1ZmNjODA0ZWMiLCJzdWIiOiI1NzYwIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjI4LCJleHAiOjE2MDU5NzI2Mjh9.AI4EmS7qzHMa6HmmHbEwmefAFWX_F0c-EDDwrAJxwQc&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NTlkMDI3Zi0yN2M3LTRjMzEtYjRiMy1iOTE2MTAxZTI2MDYiLCJzdWIiOiI0NzQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODgsImV4cCI6MTYwNjA2Njg4OH0.8IyoQA-MkzBbKW-2RU1YkgdkGEJa8u4tBJQOG9InZmc&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -191,19 +191,19 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNThkMmYyNS02ZGZiLTQxMDYtO
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;1296&quot;,
+    &quot;id&quot;: &quot;16&quot;,
     &quot;type&quot;: &quot;agenda_items&quot;,
     &quot;attributes&quot;: {
-      &quot;id&quot;: 1296,
-      &quot;owner_name&quot;: &quot;Garbage Machine Agent Demogoblin&quot;,
-      &quot;owner_id&quot;: 5761,
+      &quot;id&quot;: 16,
+      &quot;owner_name&quot;: &quot;Ultra Electro Dark Plastique I&quot;,
+      &quot;owner_id&quot;: 475,
       &quot;description&quot;: &quot;Talk about things&quot;,
-      &quot;duration_in_mins&quot;: 46,
+      &quot;duration_in_mins&quot;: 60,
       &quot;time_spent_in_secs&quot;: null,
       &quot;started_at&quot;: null,
       &quot;ended_at&quot;: null,
-      &quot;meeting_id&quot;: 2769,
-      &quot;position&quot;: 1
+      &quot;meeting_id&quot;: 120,
+      &quot;position&quot;: 2
     }
   }
 }</pre>

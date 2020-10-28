@@ -171,19 +171,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMzhmYjQwYS1iNDkxLTQ5MzQtODU3Mi00ODRhZTE4NTBjZTYiLCJzdWIiOiI1NjQ2Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjExLCJleHAiOjE2MDU5NzI2MTF9.B_KMbNUt4BmloN58yipSzY1_TZoLic05l1whZcdr7zY</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYjJhMzdmNC1lMTE5LTRlYWYtYWYyZS1hNzIxNDliODNiZjciLCJzdWIiOiI1NDAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4OTcsImV4cCI6MTYwNjA2Njg5N30.DcSMkwF_4H0dRmJUV6ENjE_AY6bXgBaXyB20xdZflMI</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /api/v1/reporting/team/evaluations/user_counts?by_period[starts_at]=2020-10-27+15%3A30%3A11+UTC&amp;by_period[ends_at]=2020-11-03+15%3A30%3A11+UTC</pre>
+          <pre class="request route highlight">GET /api/v1/reporting/team/evaluations/user_counts?by_period[starts_at]=2020-10-28+17%3A41%3A37+UTC&amp;by_period[ends_at]=2020-11-04+17%3A41%3A37+UTC</pre>
 
             <h4>Query Parameters</h4>
-            <pre class="request query_parameters highlight">by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-27 15:30:11 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-03 15:30:11 UTC&quot;}</pre>
+            <pre class="request query_parameters highlight">by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:41:37 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:41:37 UTC&quot;}</pre>
 
 
             <h4>cURL</h4>
-            <pre class="request curl">curl -g &quot;http://localhost:3000/api/v1/reporting/team/evaluations/user_counts?by_period[starts_at]=2020-10-27+15%3A30%3A11+UTC&amp;by_period[ends_at]=2020-11-03+15%3A30%3A11+UTC&quot; -X GET \
+            <pre class="request curl">curl -g &quot;http://localhost:3000/api/v1/reporting/team/evaluations/user_counts?by_period[starts_at]=2020-10-28+17%3A41%3A37+UTC&amp;by_period[ends_at]=2020-11-04+17%3A41%3A37+UTC&quot; -X GET \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMzhmYjQwYS1iNDkxLTQ5MzQtODU3Mi00ODRhZTE4NTBjZTYiLCJzdWIiOiI1NjQ2Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjExLCJleHAiOjE2MDU5NzI2MTF9.B_KMbNUt4BmloN58yipSzY1_TZoLic05l1whZcdr7zY&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYjJhMzdmNC1lMTE5LTRlYWYtYWYyZS1hNzIxNDliODNiZjciLCJzdWIiOiI1NDAiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4OTcsImV4cCI6MTYwNjA2Njg5N30.DcSMkwF_4H0dRmJUV6ENjE_AY6bXgBaXyB20xdZflMI&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -193,12 +193,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMzhmYjQwYS1iNDkxLTQ5MzQtO
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;dc9b58e6-af72-424b-a921-6bfaa2cd0f53&quot;,
+    &quot;id&quot;: &quot;05e5daf8-3727-406a-8805-49e5d337db66&quot;,
     &quot;type&quot;: &quot;reports&quot;,
     &quot;attributes&quot;: {
       &quot;name&quot;: &quot;Team User Count&quot;,
-      &quot;starts_at&quot;: &quot;2020-10-27T00:00:00.000Z&quot;,
-      &quot;ends_at&quot;: &quot;2020-11-03T23:59:59.999Z&quot;,
+      &quot;starts_at&quot;: &quot;2020-10-28T00:00:00.000Z&quot;,
+      &quot;ends_at&quot;: &quot;2020-11-04T23:59:59.999Z&quot;,
       &quot;spans_days&quot;: 8,
       &quot;rows&quot;: {
         &quot;evaluatable_users&quot;: 0,

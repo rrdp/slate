@@ -137,7 +137,7 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiODM1NzQ3Mi00YzJmLTRkMmEtOWFiMS0zYjg2NmIwNzRhNmYiLCJzdWIiOiI1NjQ1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjExLCJleHAiOjE2MDU5NzI2MTF9.-I2TYrTEAurRWNUxNehpiWhNq2_eBuFGo3CXKSkN45I</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMThiNzExNS0yYTRkLTQ1MzEtOGMyNy0wNDdjNWY1ZjY4ZTQiLCJzdWIiOiI0OTciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4OTAsImV4cCI6MTYwNjA2Njg5MH0._hpO956UPDj9ivUsW62UqUc16YwU2KXMGZG-cOxxM48</pre>
 
           <h4>Route</h4>
           <pre class="request route highlight">POST /api/v1/users/blacklist_organizers/bulk</pre>
@@ -149,7 +149,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiODM1NzQ3Mi00YzJmLTRkMmEtO
             <h4>cURL</h4>
             <pre class="request curl">curl &quot;http://localhost:3000/api/v1/users/blacklist_organizers/bulk&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;attendee&quot;,&quot;attributes&quot;:{&quot;email_list&quot;:&quot;test@test.com,test2@test.com&quot;}}}&#39; -X POST \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiODM1NzQ3Mi00YzJmLTRkMmEtOWFiMS0zYjg2NmIwNzRhNmYiLCJzdWIiOiI1NjQ1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjExLCJleHAiOjE2MDU5NzI2MTF9.-I2TYrTEAurRWNUxNehpiWhNq2_eBuFGo3CXKSkN45I&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMThiNzExNS0yYTRkLTQ1MzEtOGMyNy0wNDdjNWY1ZjY4ZTQiLCJzdWIiOiI0OTciLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4OTAsImV4cCI6MTYwNjA2Njg5MH0._hpO956UPDj9ivUsW62UqUc16YwU2KXMGZG-cOxxM48&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -160,14 +160,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiODM1NzQ3Mi00YzJmLTRkMmEtO
               <pre class="response body">{
   &quot;data&quot;: [
     {
-      &quot;id&quot;: &quot;91&quot;,
+      &quot;id&quot;: &quot;15&quot;,
       &quot;type&quot;: &quot;blacklist_organizers&quot;,
       &quot;attributes&quot;: {
         &quot;email&quot;: &quot;test@test.com&quot;
       }
     },
     {
-      &quot;id&quot;: &quot;92&quot;,
+      &quot;id&quot;: &quot;16&quot;,
       &quot;type&quot;: &quot;blacklist_organizers&quot;,
       &quot;attributes&quot;: {
         &quot;email&quot;: &quot;test2@test.com&quot;

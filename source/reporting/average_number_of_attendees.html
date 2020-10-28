@@ -171,19 +171,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMjYxM2I3Yi0xM2VmLTRjOTQtOTM3Zi04YWVhOGM1Njc4MTYiLCJzdWIiOiI1Njc3Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjE1LCJleHAiOjE2MDU5NzI2MTV9.sAgi8OgA3j_-a4DqDJOXErRg2ZstiHAmV_82Qu51j2A</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2MGNjZDI2Ny1jZmM0LTQwODYtOGVlNC04YTE2ZjNiZTQxODAiLCJzdWIiOiI0NDYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODQsImV4cCI6MTYwNjA2Njg4NH0.KUYPFnr_LxsJIayV4sJakENrNXpO6Hzb4mzhbxwo-LE</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /api/v1/reporting/user/evaluations/average_attendees?by_period[starts_at]=2020-10-27+15%3A30%3A15+UTC&amp;by_period[ends_at]=2020-11-03+15%3A30%3A15+UTC</pre>
+          <pre class="request route highlight">GET /api/v1/reporting/user/evaluations/average_attendees?by_period[starts_at]=2020-10-28+17%3A41%3A24+UTC&amp;by_period[ends_at]=2020-11-04+17%3A41%3A24+UTC</pre>
 
             <h4>Query Parameters</h4>
-            <pre class="request query_parameters highlight">by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-27 15:30:15 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-03 15:30:15 UTC&quot;}</pre>
+            <pre class="request query_parameters highlight">by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:41:24 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:41:24 UTC&quot;}</pre>
 
 
             <h4>cURL</h4>
-            <pre class="request curl">curl -g &quot;http://localhost:3000/api/v1/reporting/user/evaluations/average_attendees?by_period[starts_at]=2020-10-27+15%3A30%3A15+UTC&amp;by_period[ends_at]=2020-11-03+15%3A30%3A15+UTC&quot; -X GET \
+            <pre class="request curl">curl -g &quot;http://localhost:3000/api/v1/reporting/user/evaluations/average_attendees?by_period[starts_at]=2020-10-28+17%3A41%3A24+UTC&amp;by_period[ends_at]=2020-11-04+17%3A41%3A24+UTC&quot; -X GET \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMjYxM2I3Yi0xM2VmLTRjOTQtOTM3Zi04YWVhOGM1Njc4MTYiLCJzdWIiOiI1Njc3Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjE1LCJleHAiOjE2MDU5NzI2MTV9.sAgi8OgA3j_-a4DqDJOXErRg2ZstiHAmV_82Qu51j2A&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2MGNjZDI2Ny1jZmM0LTQwODYtOGVlNC04YTE2ZjNiZTQxODAiLCJzdWIiOiI0NDYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODQsImV4cCI6MTYwNjA2Njg4NH0.KUYPFnr_LxsJIayV4sJakENrNXpO6Hzb4mzhbxwo-LE&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -193,12 +193,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMjYxM2I3Yi0xM2VmLTRjOTQtO
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;9fb7795f-1815-4792-9d38-6c1b131c7ddb&quot;,
+    &quot;id&quot;: &quot;35cc2b3d-d3c0-43a4-8c36-378362ed86ff&quot;,
     &quot;type&quot;: &quot;reports&quot;,
     &quot;attributes&quot;: {
       &quot;name&quot;: &quot;Attendees&quot;,
-      &quot;starts_at&quot;: &quot;2020-10-27T00:00:00.000Z&quot;,
-      &quot;ends_at&quot;: &quot;2020-11-03T23:59:59.999Z&quot;,
+      &quot;starts_at&quot;: &quot;2020-10-28T00:00:00.000Z&quot;,
+      &quot;ends_at&quot;: &quot;2020-11-04T23:59:59.999Z&quot;,
       &quot;spans_days&quot;: 8,
       &quot;rows&quot;: {
       },

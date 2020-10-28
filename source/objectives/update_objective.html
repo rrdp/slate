@@ -145,19 +145,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMjZlNGJkZC0xOGU4LTQyMjctYTJkYy1jOWJjNGZjMzhhMDYiLCJzdWIiOiI1NjI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjA3LCJleHAiOjE2MDU5NzI2MDd9.At8P0UH2mBlqLo397y9-uBIFXU6-yxff7n4kZNIfUKs</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNDgyZWVkZi00MjVjLTRiODYtOGRmMC05MzRkYmNhZjg5MGMiLCJzdWIiOiI0NDEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODMsImV4cCI6MTYwNjA2Njg4M30.cE6Nhyo6tfwJpFlWcGG0az-u1mdxFFpIJUCaaOG4x10</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">PUT /api/v1/meetings/2736/objectives/156</pre>
+          <pre class="request route highlight">PUT /api/v1/meetings/111/objectives/19</pre>
 
 
             <h4>Body</h4>
             <pre class="request body">{"data":{"type":"objective","attributes":{"description":"Figure it all out"}}}</pre>
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/meetings/2736/objectives/156&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;objective&quot;,&quot;attributes&quot;:{&quot;description&quot;:&quot;Figure it all out&quot;}}}&#39; -X PUT \
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/meetings/111/objectives/19&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;objective&quot;,&quot;attributes&quot;:{&quot;description&quot;:&quot;Figure it all out&quot;}}}&#39; -X PUT \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMjZlNGJkZC0xOGU4LTQyMjctYTJkYy1jOWJjNGZjMzhhMDYiLCJzdWIiOiI1NjI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjA3LCJleHAiOjE2MDU5NzI2MDd9.At8P0UH2mBlqLo397y9-uBIFXU6-yxff7n4kZNIfUKs&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNDgyZWVkZi00MjVjLTRiODYtOGRmMC05MzRkYmNhZjg5MGMiLCJzdWIiOiI0NDEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODMsImV4cCI6MTYwNjA2Njg4M30.cE6Nhyo6tfwJpFlWcGG0az-u1mdxFFpIJUCaaOG4x10&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -167,12 +167,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMjZlNGJkZC0xOGU4LTQyMjctY
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;156&quot;,
+    &quot;id&quot;: &quot;19&quot;,
     &quot;type&quot;: &quot;objectives&quot;,
     &quot;attributes&quot;: {
-      &quot;meeting_id&quot;: 2736,
+      &quot;meeting_id&quot;: 111,
       &quot;description&quot;: &quot;Figure it all out&quot;,
-      &quot;position&quot;: 1
+      &quot;position&quot;: null
     }
   }
 }</pre>

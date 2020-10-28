@@ -153,19 +153,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5N2UwM2NmZi01NDg4LTQwMzctOWYzOS1iODA2MTUxZDlmMDEiLCJzdWIiOiI1NjM0Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjA5LCJleHAiOjE2MDU5NzI2MDl9.82FGQ_hAGaEC_maIk8pbHsKCRCL8nF-_19JlmCAt-gc</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNWMzMzAyOC0yODQ5LTQxM2UtOWUxNC04ZGY3NzhjNjQwMWUiLCJzdWIiOiI0MzYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODIsImV4cCI6MTYwNjA2Njg4Mn0.iiOPxYwkHGvVqvJ3GOcaTH68n7mcKGf6T9NdD8woF0A</pre>
 
           <h4>Route</h4>
           <pre class="request route highlight">POST /api/v1/focus_blocks</pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"data":{"type":"focus_block","attributes":{"label":"Coding MeetWell","calendar_id":6487,"rrule":"DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA","starts_at":"2019-12-28 22:03:57 UTC","ends_at":"2019-12-28 23:03:57 UTC"}}}</pre>
+            <pre class="request body">{"data":{"type":"focus_block","attributes":{"label":"Coding MeetWell","calendar_id":451,"rrule":"DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA","starts_at":"2019-12-28 22:03:57 UTC","ends_at":"2019-12-28 23:03:57 UTC"}}}</pre>
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/focus_blocks&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;focus_block&quot;,&quot;attributes&quot;:{&quot;label&quot;:&quot;Coding MeetWell&quot;,&quot;calendar_id&quot;:6487,&quot;rrule&quot;:&quot;DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA&quot;,&quot;starts_at&quot;:&quot;2019-12-28 22:03:57 UTC&quot;,&quot;ends_at&quot;:&quot;2019-12-28 23:03:57 UTC&quot;}}}&#39; -X POST \
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/focus_blocks&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;focus_block&quot;,&quot;attributes&quot;:{&quot;label&quot;:&quot;Coding MeetWell&quot;,&quot;calendar_id&quot;:451,&quot;rrule&quot;:&quot;DTSTART;TZID=PST:20191228T140357\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR,SA&quot;,&quot;starts_at&quot;:&quot;2019-12-28 22:03:57 UTC&quot;,&quot;ends_at&quot;:&quot;2019-12-28 23:03:57 UTC&quot;}}}&#39; -X POST \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5N2UwM2NmZi01NDg4LTQwMzctOWYzOS1iODA2MTUxZDlmMDEiLCJzdWIiOiI1NjM0Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjA5LCJleHAiOjE2MDU5NzI2MDl9.82FGQ_hAGaEC_maIk8pbHsKCRCL8nF-_19JlmCAt-gc&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNWMzMzAyOC0yODQ5LTQxM2UtOWUxNC04ZGY3NzhjNjQwMWUiLCJzdWIiOiI0MzYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODIsImV4cCI6MTYwNjA2Njg4Mn0.iiOPxYwkHGvVqvJ3GOcaTH68n7mcKGf6T9NdD8woF0A&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -175,12 +175,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5N2UwM2NmZi01NDg4LTQwMzctO
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;217&quot;,
+    &quot;id&quot;: &quot;24&quot;,
     &quot;type&quot;: &quot;focus_blocks&quot;,
     &quot;attributes&quot;: {
       &quot;label&quot;: &quot;Coding MeetWell&quot;,
       &quot;category&quot;: &quot;focus&quot;,
-      &quot;calendar_id&quot;: 6487,
+      &quot;calendar_id&quot;: 451,
       &quot;recurring_meeting_uuid&quot;: null,
       &quot;duration&quot;: 3600,
       &quot;starts_at&quot;: &quot;2020-10-26T22:03:00.000Z&quot;,

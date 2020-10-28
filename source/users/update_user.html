@@ -139,6 +139,46 @@ table th, table td {
                   <span class="description"> action setting</span>
                 </td>
               </tr>
+              <tr>
+                <td>
+                    <span class="name">communication_prefs</span>
+                </td>
+                <td>
+                  <span class="description"> communication prefs</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">communications_prefs[all_communications]</span>
+                </td>
+                <td>
+                  <span class="description">True value sets all prefs to true</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">communications_prefs[email_tips]</span>
+                </td>
+                <td>
+                  <span class="description">Ex: onboarding emails</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">communications_prefs[email_reminders]</span>
+                </td>
+                <td>
+                  <span class="description">no_email, pre_and_post, pre_action, post_action</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">communications_prefs[email_weekly_reports]</span>
+                </td>
+                <td>
+                  <span class="description">Communications prefs email weekly reports</span>
+                </td>
+              </tr>
             </tbody>
           </table>
 
@@ -147,19 +187,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxYzJiYjIyNy1jNjBjLTRmNjYtYTlmNC00N2MxZjQ0NjBmOTIiLCJzdWIiOiI1NzI0Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjIzLCJleHAiOjE2MDU5NzI2MjN9.cQ_RTqNBRfJ1A0MbvMh-GhJoY_tjHmWBcENJ-gRveXk</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNDZhNDU5NC04OWMzLTQzYzItYThkZS1kZmVmZjE3NjdmOWMiLCJzdWIiOiI0NjMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODYsImV4cCI6MTYwNjA2Njg4Nn0.OC5IxKa0vMxcMv6-ryqQRfY75J3mJGvzV9-Fx1ki8TA</pre>
 
           <h4>Route</h4>
           <pre class="request route highlight">PUT /api/v1/users</pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"data":{"type":"team","attributes":{"required_category":true,"required_agenda":true,"annual_salary":220000}}}</pre>
+            <pre class="request body">{"communication_prefs":{"email_reminders":"pre_and_post","all_communications":true,"email_tips":true,"email_weekly_reports":true},"data":{"type":"team","attributes":{"required_category":true,"required_agenda":true,"annual_salary":220000}}}</pre>
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/users&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;team&quot;,&quot;attributes&quot;:{&quot;required_category&quot;:true,&quot;required_agenda&quot;:true,&quot;annual_salary&quot;:220000}}}&#39; -X PUT \
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/users&quot; -d &#39;{&quot;communication_prefs&quot;:{&quot;email_reminders&quot;:&quot;pre_and_post&quot;,&quot;all_communications&quot;:true,&quot;email_tips&quot;:true,&quot;email_weekly_reports&quot;:true},&quot;data&quot;:{&quot;type&quot;:&quot;team&quot;,&quot;attributes&quot;:{&quot;required_category&quot;:true,&quot;required_agenda&quot;:true,&quot;annual_salary&quot;:220000}}}&#39; -X PUT \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxYzJiYjIyNy1jNjBjLTRmNjYtYTlmNC00N2MxZjQ0NjBmOTIiLCJzdWIiOiI1NzI0Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjIzLCJleHAiOjE2MDU5NzI2MjN9.cQ_RTqNBRfJ1A0MbvMh-GhJoY_tjHmWBcENJ-gRveXk&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNDZhNDU5NC04OWMzLTQzYzItYThkZS1kZmVmZjE3NjdmOWMiLCJzdWIiOiI0NjMiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODYsImV4cCI6MTYwNjA2Njg4Nn0.OC5IxKa0vMxcMv6-ryqQRfY75J3mJGvzV9-Fx1ki8TA&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -169,14 +209,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxYzJiYjIyNy1jNjBjLTRmNjYtY
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;5724&quot;,
+    &quot;id&quot;: &quot;463&quot;,
     &quot;type&quot;: &quot;users&quot;,
     &quot;attributes&quot;: {
-      &quot;email&quot;: &quot;carole.auer@muller.co&quot;,
-      &quot;domain&quot;: &quot;muller.co&quot;,
-      &quot;first_name&quot;: &quot;Polaris&quot;,
-      &quot;last_name&quot;: &quot;Molten Man Thirteen&quot;,
-      &quot;profile_image&quot;: &quot;http://denesik.name/jeannetta_armstrong&quot;,
+      &quot;email&quot;: &quot;linwood@dooley-marquardt.info&quot;,
+      &quot;domain&quot;: &quot;dooley-marquardt.info&quot;,
+      &quot;first_name&quot;: &quot;General Speedy&quot;,
+      &quot;last_name&quot;: &quot;Green Winter Soldier Eyes&quot;,
+      &quot;profile_image&quot;: &quot;http://runte.io/melodi&quot;,
       &quot;time_zone&quot;: &quot;UTC&quot;,
       &quot;onboarded&quot;: false,
       &quot;identity_providers&quot;: [
@@ -185,20 +225,20 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxYzJiYjIyNy1jNjBjLTRmNjYtY
       &quot;subscription_plan&quot;: null,
       &quot;daily_report_card_events&quot;: true,
       &quot;company&quot;: {
-        &quot;id&quot;: 5862,
-        &quot;name&quot;: &quot;muller&quot;,
+        &quot;id&quot;: 470,
+        &quot;name&quot;: &quot;dooley-marquardt&quot;,
         &quot;license_by&quot;: &quot;domain&quot;,
         &quot;roles&quot;: [
           &quot;billing_admin&quot;
         ]
       },
       &quot;organizer_blacklist&quot;: &quot;&quot;,
-      &quot;domain_whitelist&quot;: &quot;muller.co&quot;,
+      &quot;domain_whitelist&quot;: &quot;dooley-marquardt.info&quot;,
       &quot;communication_prefs&quot;: {
-        &quot;all_communications&quot;: true,
+        &quot;all_communications&quot;: &quot;pre_and_post&quot;,
         &quot;email_tips&quot;: true,
         &quot;email_weekly_reports&quot;: true,
-        &quot;email_reminders&quot;: true
+        &quot;email_reminders&quot;: &quot;pre_and_post&quot;
       },
       &quot;goal_ids&quot;: [
 

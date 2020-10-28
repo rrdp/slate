@@ -153,19 +153,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiN2JjMTlmYy1iM2JhLTQ0ZGItYTFiOC01N2I5ZDEzM2U1NGYiLCJzdWIiOiI1NzM1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjI1LCJleHAiOjE2MDU5NzI2MjV9.S3ix0q9tbypYVZwpKAV9sKe0CsxuiZUh3zGNlYUY1KU</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjZDZjN2FhNy1lMmMyLTRmYTEtODFhYi1iMjE1ZjhkOTA1NGMiLCJzdWIiOiI1MDQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4OTIsImV4cCI6MTYwNjA2Njg5Mn0.0HqKMlyJwuoF-mdN4A8dq40h7v1Fm6yZBI094Tvw52g</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /api/v1/meetings/2759/make_focus_block?by_period[starts_at]=2020-10-27+15%3A30%3A25+UTC&amp;by_period[ends_at]=2020-11-03+15%3A30%3A25+UTC</pre>
+          <pre class="request route highlight">GET /api/v1/meetings/124/make_focus_block?by_period[starts_at]=2020-10-28+17%3A41%3A32+UTC&amp;by_period[ends_at]=2020-11-04+17%3A41%3A32+UTC</pre>
 
             <h4>Query Parameters</h4>
-            <pre class="request query_parameters highlight">by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-27 15:30:25 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-03 15:30:25 UTC&quot;}</pre>
+            <pre class="request query_parameters highlight">by_period: {&quot;starts_at&quot;=&gt;&quot;2020-10-28 17:41:32 UTC&quot;, &quot;ends_at&quot;=&gt;&quot;2020-11-04 17:41:32 UTC&quot;}</pre>
 
 
             <h4>cURL</h4>
-            <pre class="request curl">curl -g &quot;http://localhost:3000/api/v1/meetings/2759/make_focus_block?by_period[starts_at]=2020-10-27+15%3A30%3A25+UTC&amp;by_period[ends_at]=2020-11-03+15%3A30%3A25+UTC&quot; -X GET \
+            <pre class="request curl">curl -g &quot;http://localhost:3000/api/v1/meetings/124/make_focus_block?by_period[starts_at]=2020-10-28+17%3A41%3A32+UTC&amp;by_period[ends_at]=2020-11-04+17%3A41%3A32+UTC&quot; -X GET \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiN2JjMTlmYy1iM2JhLTQ0ZGItYTFiOC01N2I5ZDEzM2U1NGYiLCJzdWIiOiI1NzM1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjI1LCJleHAiOjE2MDU5NzI2MjV9.S3ix0q9tbypYVZwpKAV9sKe0CsxuiZUh3zGNlYUY1KU&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjZDZjN2FhNy1lMmMyLTRmYTEtODFhYi1iMjE1ZjhkOTA1NGMiLCJzdWIiOiI1MDQiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4OTIsImV4cCI6MTYwNjA2Njg5Mn0.0HqKMlyJwuoF-mdN4A8dq40h7v1Fm6yZBI094Tvw52g&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -175,12 +175,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiN2JjMTlmYy1iM2JhLTQ0ZGItY
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;219&quot;,
+    &quot;id&quot;: &quot;27&quot;,
     &quot;type&quot;: &quot;focus_blocks&quot;,
     &quot;attributes&quot;: {
       &quot;label&quot;: &quot;Coding&quot;,
       &quot;category&quot;: &quot;focus&quot;,
-      &quot;calendar_id&quot;: 6593,
+      &quot;calendar_id&quot;: 519,
       &quot;recurring_meeting_uuid&quot;: &quot;6vkb5i9kqmu36jr1t0v48lkcrk&quot;,
       &quot;duration&quot;: 3600,
       &quot;starts_at&quot;: &quot;2020-10-26T22:03:00.000Z&quot;,

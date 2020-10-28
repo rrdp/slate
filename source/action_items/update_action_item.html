@@ -179,19 +179,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmZjkzZTYyYi03NzkyLTQyODAtYjQ1Yi05MDBmOTczYzEyMzQiLCJzdWIiOiI1Njg4Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjE3LCJleHAiOjE2MDU5NzI2MTd9.k0xOzElGP2tN0v4lHA00sbGKrXC9eoqs-sczqXHTEnQ</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMTVmMzk0YS1kZDdjLTRlYzAtOTdiOC00MWYxNGI1ZjI1MTQiLCJzdWIiOiI0MjIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODAsImV4cCI6MTYwNjA2Njg4MH0.30wkbNRdJRvgvY7x0cXukeW3e7YAaZgEYIxhHbuMDiI</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">PUT /api/v1/meetings/2747/action_items/97</pre>
+          <pre class="request route highlight">PUT /api/v1/meetings/107/action_items/14</pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"data":{"type":"action_item","attributes":{"description":"Talk.","owner_id":5688,"creator_id":5688,"category":"action_item","position":2,"due_by":"2020-10-28T15:30:17.430Z"}}}</pre>
+            <pre class="request body">{"data":{"type":"action_item","attributes":{"description":"Talk.","owner_id":422,"creator_id":422,"category":"action_item","position":2,"due_by":"2020-10-29T17:41:20.501Z"}}}</pre>
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/meetings/2747/action_items/97&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;action_item&quot;,&quot;attributes&quot;:{&quot;description&quot;:&quot;Talk.&quot;,&quot;owner_id&quot;:5688,&quot;creator_id&quot;:5688,&quot;category&quot;:&quot;action_item&quot;,&quot;position&quot;:2,&quot;due_by&quot;:&quot;2020-10-28T15:30:17.430Z&quot;}}}&#39; -X PUT \
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/meetings/107/action_items/14&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;action_item&quot;,&quot;attributes&quot;:{&quot;description&quot;:&quot;Talk.&quot;,&quot;owner_id&quot;:422,&quot;creator_id&quot;:422,&quot;category&quot;:&quot;action_item&quot;,&quot;position&quot;:2,&quot;due_by&quot;:&quot;2020-10-29T17:41:20.501Z&quot;}}}&#39; -X PUT \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmZjkzZTYyYi03NzkyLTQyODAtYjQ1Yi05MDBmOTczYzEyMzQiLCJzdWIiOiI1Njg4Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjE3LCJleHAiOjE2MDU5NzI2MTd9.k0xOzElGP2tN0v4lHA00sbGKrXC9eoqs-sczqXHTEnQ&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMTVmMzk0YS1kZDdjLTRlYzAtOTdiOC00MWYxNGI1ZjI1MTQiLCJzdWIiOiI0MjIiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODAsImV4cCI6MTYwNjA2Njg4MH0.30wkbNRdJRvgvY7x0cXukeW3e7YAaZgEYIxhHbuMDiI&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -201,18 +201,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmZjkzZTYyYi03NzkyLTQyODAtY
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;97&quot;,
+    &quot;id&quot;: &quot;14&quot;,
     &quot;type&quot;: &quot;action_items&quot;,
     &quot;attributes&quot;: {
-      &quot;id&quot;: 97,
+      &quot;id&quot;: 14,
       &quot;category&quot;: &quot;action_item&quot;,
-      &quot;owner_name&quot;: &quot;Falcon Boy Dark Forge&quot;,
-      &quot;owner_id&quot;: 5688,
+      &quot;owner_name&quot;: &quot;Copycat Strike General Annihilus Thirteen&quot;,
+      &quot;owner_id&quot;: 422,
       &quot;description&quot;: &quot;Talk.&quot;,
-      &quot;creator_id&quot;: 5688,
-      &quot;due_by&quot;: &quot;2020-10-28T15:30:17.430Z&quot;,
+      &quot;creator_id&quot;: 422,
+      &quot;due_by&quot;: &quot;2020-10-29T17:41:20.501Z&quot;,
       &quot;position&quot;: 2,
-      &quot;creator_name&quot;: &quot;Falcon Boy Dark Forge&quot;
+      &quot;creator_name&quot;: &quot;Copycat Strike General Annihilus Thirteen&quot;
     }
   }
 }</pre>

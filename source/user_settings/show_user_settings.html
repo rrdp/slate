@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Users API</title>
+    <title>User Settings API</title>
     <meta charset="utf-8">
     <style>
       
@@ -106,7 +106,7 @@ table th, table td {
   </head>
   <body>
     <div class="container">
-      <h1>Users API</h1>
+      <h1>User Settings API</h1>
 
       <div class="article">
         <h2>Show user settings</h2>
@@ -118,7 +118,7 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiMmQ3NmJjZS01ZWVmLTRhOTgtYWZiMi04NzM3YjU2ZDZkNDMiLCJzdWIiOiI1NjY4Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjE0LCJleHAiOjE2MDU5NzI2MTR9.xiMpOnSfh_ovNoGqirUabIIth3fAE9luwdbtwNwWfL4</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3YmNiMGExOS0wODdkLTQzNDAtYjk2OS1hN2JkNGRhZDA1YzMiLCJzdWIiOiI0NjYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODYsImV4cCI6MTYwNjA2Njg4Nn0.MEf3XkzrOIdgPrk-1OPDUNcW4GwVsZ4sB_OTAPll8Q0</pre>
 
           <h4>Route</h4>
           <pre class="request route highlight">GET /api/v1/users/settings</pre>
@@ -128,7 +128,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiMmQ3NmJjZS01ZWVmLTRhOTgtY
             <h4>cURL</h4>
             <pre class="request curl">curl -g &quot;http://localhost:3000/api/v1/users/settings&quot; -X GET \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiMmQ3NmJjZS01ZWVmLTRhOTgtYWZiMi04NzM3YjU2ZDZkNDMiLCJzdWIiOiI1NjY4Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjE0LCJleHAiOjE2MDU5NzI2MTR9.xiMpOnSfh_ovNoGqirUabIIth3fAE9luwdbtwNwWfL4&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3YmNiMGExOS0wODdkLTQzNDAtYjk2OS1hN2JkNGRhZDA1YzMiLCJzdWIiOiI0NjYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODYsImV4cCI6MTYwNjA2Njg4Nn0.MEf3XkzrOIdgPrk-1OPDUNcW4GwVsZ4sB_OTAPll8Q0&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -138,14 +138,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiMmQ3NmJjZS01ZWVmLTRhOTgtY
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;5668&quot;,
+    &quot;id&quot;: &quot;466&quot;,
     &quot;type&quot;: &quot;user_settings&quot;,
     &quot;attributes&quot;: {
       &quot;action_settings&quot;: {
         &quot;meeting_conflict&quot;: &quot;block&quot;,
         &quot;focus_block_conflict&quot;: &quot;block&quot;,
         &quot;non_compliance_action&quot;: &quot;remind&quot;,
-        &quot;domains_whitelist&quot;: &quot;runte.biz&quot;,
+        &quot;domains_whitelist&quot;: &quot;bernhard.io&quot;,
         &quot;last_minute_schedule&quot;: 6,
         &quot;compliance_deadline&quot;: 6,
         &quot;max_attendees&quot;: 12,

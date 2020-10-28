@@ -179,19 +179,19 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjN2EwZjE5Ny1iZDg2LTRlZTctOWY5NS04YjhlMjA0N2QyMzIiLCJzdWIiOiI1NjkxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjE3LCJleHAiOjE2MDU5NzI2MTd9.b2qHIK9H9d8LXR5FOCofZ4xWQuRaNqqDFxdf0H0Xtjc</pre>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YzZmNzM2NC1iYzVlLTQwZjQtYTVjYi1mNTYwMjI0M2NmY2MiLCJzdWIiOiI0MjEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODAsImV4cCI6MTYwNjA2Njg4MH0.G-9JoGiDwCE-vwoipfFSSopG-nXjwhteQCHP88jTm-s</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">POST /api/v1/meetings/2748/action_items</pre>
+          <pre class="request route highlight">POST /api/v1/meetings/106/action_items</pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"data":{"type":"action_item","attributes":{"description":"Discuss reticulating the splines.","owner_id":5691,"creator_id":5691,"category":"action_item","position":3,"due_by":"2020-10-28T15:30:17.911Z"}}}</pre>
+            <pre class="request body">{"data":{"type":"action_item","attributes":{"description":"Discuss reticulating the splines.","owner_id":421,"creator_id":421,"category":"action_item","position":3,"due_by":"2020-10-29T17:41:20.106Z"}}}</pre>
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/meetings/2748/action_items&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;action_item&quot;,&quot;attributes&quot;:{&quot;description&quot;:&quot;Discuss reticulating the splines.&quot;,&quot;owner_id&quot;:5691,&quot;creator_id&quot;:5691,&quot;category&quot;:&quot;action_item&quot;,&quot;position&quot;:3,&quot;due_by&quot;:&quot;2020-10-28T15:30:17.911Z&quot;}}}&#39; -X POST \
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/meetings/106/action_items&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;action_item&quot;,&quot;attributes&quot;:{&quot;description&quot;:&quot;Discuss reticulating the splines.&quot;,&quot;owner_id&quot;:421,&quot;creator_id&quot;:421,&quot;category&quot;:&quot;action_item&quot;,&quot;position&quot;:3,&quot;due_by&quot;:&quot;2020-10-29T17:41:20.106Z&quot;}}}&#39; -X POST \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjN2EwZjE5Ny1iZDg2LTRlZTctOWY5NS04YjhlMjA0N2QyMzIiLCJzdWIiOiI1NjkxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjAzODEyNjE3LCJleHAiOjE2MDU5NzI2MTd9.b2qHIK9H9d8LXR5FOCofZ4xWQuRaNqqDFxdf0H0Xtjc&quot;</pre>
+	-H &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YzZmNzM2NC1iYzVlLTQwZjQtYTVjYi1mNTYwMjI0M2NmY2MiLCJzdWIiOiI0MjEiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE2MDM5MDY4ODAsImV4cCI6MTYwNjA2Njg4MH0.G-9JoGiDwCE-vwoipfFSSopG-nXjwhteQCHP88jTm-s&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -201,18 +201,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjN2EwZjE5Ny1iZDg2LTRlZTctO
               <h4>Body</h4>
               <pre class="response body">{
   &quot;data&quot;: {
-    &quot;id&quot;: &quot;98&quot;,
+    &quot;id&quot;: &quot;13&quot;,
     &quot;type&quot;: &quot;action_items&quot;,
     &quot;attributes&quot;: {
-      &quot;id&quot;: 98,
+      &quot;id&quot;: 13,
       &quot;category&quot;: &quot;action_item&quot;,
-      &quot;owner_name&quot;: &quot;Doctor Booster Gold Copycat Knight&quot;,
-      &quot;owner_id&quot;: 5691,
+      &quot;owner_name&quot;: &quot;Valkyrie Niki Sanders&quot;,
+      &quot;owner_id&quot;: 421,
       &quot;description&quot;: &quot;Discuss reticulating the splines.&quot;,
-      &quot;creator_id&quot;: 5691,
-      &quot;due_by&quot;: &quot;2020-10-28T15:30:17.911Z&quot;,
+      &quot;creator_id&quot;: 421,
+      &quot;due_by&quot;: &quot;2020-10-29T17:41:20.106Z&quot;,
       &quot;position&quot;: 3,
-      &quot;creator_name&quot;: &quot;Doctor Booster Gold Copycat Knight&quot;
+      &quot;creator_name&quot;: &quot;Valkyrie Niki Sanders&quot;
     }
   }
 }</pre>
